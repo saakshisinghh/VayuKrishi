@@ -1,0 +1,88 @@
+/* ============================================================
+   VAYUKRISHI — Animations & Micro-interactions
+   ============================================================ */
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in-scale {
+  from { opacity: 0; transform: scale(0.97); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slide-in-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position:  400px 0; }
+}
+
+@keyframes pulse-ring {
+  0%   { transform: scale(1);    opacity: 0.6; }
+  50%  { transform: scale(1.12); opacity: 0.2; }
+  100% { transform: scale(1);    opacity: 0.6; }
+}
+
+@keyframes mic-pulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.08); }
+}
+
+@keyframes wave-bar {
+  0%, 100% { transform: scaleY(0.3); }
+  50%       { transform: scaleY(1); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ── Utility Classes ── */
+.animate-fade-in        { animation: fade-in        240ms var(--transition-base) both; }
+.animate-fade-in-scale  { animation: fade-in-scale  240ms var(--transition-base) both; }
+.animate-slide-in-left  { animation: slide-in-left  280ms var(--transition-base) both; }
+.animate-slide-in-right { animation: slide-in-right 280ms var(--transition-base) both; }
+.animate-slide-in-up    { animation: slide-in-up    220ms var(--transition-base) both; }
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--bg-surface-2) 0%,
+    var(--bg-surface-3) 40%,
+    var(--bg-surface-2) 80%
+  );
+  background-size: 800px 100%;
+  animation: shimmer 1.4s linear infinite;
+}
+
+/* ── Stagger Helpers ── */
+.stagger-1 { animation-delay:  60ms; }
+.stagger-2 { animation-delay: 120ms; }
+.stagger-3 { animation-delay: 180ms; }
+.stagger-4 { animation-delay: 240ms; }
+.stagger-5 { animation-delay: 300ms; }
+
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration:        0.01ms !important;
+    animation-iteration-count: 1      !important;
+    transition-duration:       0.01ms !important;
+  }
+}

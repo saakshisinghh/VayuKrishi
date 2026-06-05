@@ -1,0 +1,120 @@
+/* ============================================================
+   VAYUKRISHI — Global Styles
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&family=Noto+Sans+Tamil:wght@300;400;500;600;700&family=Noto+Sans+Gujarati:wght@300;400;500;600;700&family=Noto+Sans+Kannada:wght@300;400;500;600;700&display=swap');
+
+@import './tokens.css';
+@import './theme.css';
+@import './animations.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  min-height: 100dvh;
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base);
+}
+
+/* ── Custom Scrollbar ── */
+::-webkit-scrollbar             { width: 6px; height: 6px; }
+::-webkit-scrollbar-track       { background: var(--scrollbar-track); border-radius: 99px; }
+::-webkit-scrollbar-thumb       { background: var(--scrollbar-thumb); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-slate-400); }
+
+/* ── Focus Visible ── */
+:focus-visible {
+  outline:        2px solid var(--color-brand);
+  outline-offset: 2px;
+  border-radius:  var(--radius-sm);
+}
+
+/* ── Text Selection ── */
+::selection {
+  background: var(--color-brand-muted);
+  color:      var(--text-brand);
+}
+
+/* ── Locale-aware Font Stacking ── */
+:lang(mr),
+:lang(hi) {
+  font-family: 'Noto Sans Devanagari', 'Noto Sans', sans-serif;
+}
+:lang(ta) {
+  font-family: 'Noto Sans Tamil', 'Noto Sans', sans-serif;
+}
+:lang(gu) {
+  font-family: 'Noto Sans Gujarati', 'Noto Sans', sans-serif;
+}
+:lang(kn) {
+  font-family: 'Noto Sans Kannada', 'Noto Sans', sans-serif;
+}
+
+/* ── Layout Utilities ── */
+.layout-sidebar-expanded  { --sidebar-width: 256px; }
+.layout-sidebar-collapsed { --sidebar-width: 64px; }
+
+/* ── Card Base ── */
+.card-base {
+  background:    var(--card-bg);
+  border:        1px solid var(--card-border);
+  border-radius: var(--radius-xl);
+  box-shadow:    var(--card-shadow);
+  transition:
+    box-shadow    var(--transition-base),
+    border-color  var(--transition-base),
+    transform     var(--transition-base);
+}
+
+.card-base:hover {
+  box-shadow:   var(--shadow-card-hover);
+  border-color: var(--border-brand);
+}
+
+/* ── Glass Morphism ── */
+.glass {
+  background:              var(--bg-overlay);
+  backdrop-filter:         var(--navbar-backdrop);
+  -webkit-backdrop-filter: var(--navbar-backdrop);
+}
+
+/* ── Gradient Text ── */
+.text-gradient-brand {
+  background:              linear-gradient(135deg, var(--color-leaf-600), var(--color-leaf-400));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip:         text;
+}
+
+/* ── Subtle Dot Grid Background ── */
+.surface-grid {
+  background-image: radial-gradient(
+    circle,
+    var(--border-subtle) 1px,
+    transparent 1px
+  );
+  background-size: 24px 24px;
+}

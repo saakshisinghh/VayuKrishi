@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "cropRecommendation": "Crop Recommendation",
+    "diseaseDetection": "Disease Detection",
+    "assistant": "Voice Assistant",
+    "market": "Market Intelligence",
+    "farmHealth": "Farm Health",
+    "planner": "Farm Planner",
+    "schemes": "Gov. Schemes",
+    "analytics": "Analytics",
+    "settings": "Settings",
+    "profile": "Profile",
+    "notifications": "Notifications",
+    "search": "Search\u2026",
+    "logout": "Log out"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "language": {
+    "label": "Language",
+    "select": "Select language"
+  },
+  "dashboard": {
+    "greeting": "Good morning",
+    "subtitle": "Here's what's happening on your farm today.",
+    "weather": "Weather",
+    "farmHealth": "Farm Health Score",
+    "activeCrop": "Active Crop",
+    "aiRecommendation": "AI Recommendation",
+    "diseaseRisk": "Disease Risk",
+    "marketForecast": "Market Forecast",
+    "schemes": "Government Schemes",
+    "voiceAssistant": "Ask Vayu"
+  },
+  "common": {
+    "loading": "Loading\u2026",
+    "error": "Something went wrong",
+    "retry": "Try again",
+    "viewAll": "View all",
+    "save": "Save",
+    "cancel": "Cancel",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit"
+  }
+}
