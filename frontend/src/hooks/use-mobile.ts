@@ -1,21 +1,16 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { BREAKPOINTS } from '@/config/constants';
+import { useState, useEffect } from "react";
 
-export function useMobile(
-  breakpoint: keyof typeof BREAKPOINTS = 'md'
-): boolean {
+export function useMobile(breakpoint = 768) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mq = window.matchMedia(
-      `(max-width: ${BREAKPOINTS[breakpoint] - 1}px)`
-    );
+    const mq = window.matchMedia(`(max-width: ${breakpoint - 1}px)`);
     setIsMobile(mq.matches);
     const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
-    mq.addEventListener('change', handler);
-    return () => mq.removeEventListener('change', handler);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
   }, [breakpoint]);
 
   return isMobile;

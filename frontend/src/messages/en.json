@@ -1,51 +1,121 @@
 {
   "nav": {
-    "dashboard": "Dashboard",
-    "cropRecommendation": "Crop Recommendation",
-    "diseaseDetection": "Disease Detection",
-    "assistant": "Voice Assistant",
-    "market": "Market Intelligence",
-    "farmHealth": "Farm Health",
-    "planner": "Farm Planner",
-    "schemes": "Gov. Schemes",
-    "analytics": "Analytics",
-    "settings": "Settings",
-    "profile": "Profile",
-    "notifications": "Notifications",
-    "search": "Search\u2026",
-    "logout": "Log out"
-  },
-  "theme": {
-    "light": "Light",
-    "dark": "Dark",
-    "system": "System"
-  },
-  "language": {
-    "label": "Language",
-    "select": "Select language"
-  },
-  "dashboard": {
-    "greeting": "Good morning",
-    "subtitle": "Here's what's happening on your farm today.",
-    "weather": "Weather",
-    "farmHealth": "Farm Health Score",
-    "activeCrop": "Active Crop",
-    "aiRecommendation": "AI Recommendation",
-    "diseaseRisk": "Disease Risk",
-    "marketForecast": "Market Forecast",
-    "schemes": "Government Schemes",
-    "voiceAssistant": "Ask Vayu"
+    "groups": {
+      "main":         "Main",
+      "farm":         "Farm Tools",
+      "intelligence": "Intelligence",
+      "tools":        "Tools"
+    },
+    "items": {
+      "overview":            "Overview",
+      "crop_recommendation": "Crop Recommendation",
+      "disease_detection":   "Disease Detection",
+      "assistant":           "Voice Assistant",
+      "market":              "Market Intelligence",
+      "farm_health":         "Farm Health",
+      "planner":             "Farm Planner",
+      "schemes":             "Government Schemes",
+      "analytics":           "Analytics",
+      "profile":             "Profile",
+      "settings":            "Settings"
+    }
   },
   "common": {
-    "loading": "Loading\u2026",
-    "error": "Something went wrong",
-    "retry": "Try again",
-    "viewAll": "View all",
-    "save": "Save",
-    "cancel": "Cancel",
-    "close": "Close",
-    "back": "Back",
-    "next": "Next",
-    "submit": "Submit"
+    "season":     "Season",
+    "loading":    "Loading…",
+    "save":       "Save",
+    "cancel":     "Cancel",
+    "retry":      "Try again",
+    "back":       "Back",
+    "view_all":   "View all"
+  },
+  "notifications": {
+    "title":       "Notifications",
+    "markAllRead": "Mark all read",
+    "clearAll":    "Clear all",
+    "empty":       "You're all caught up"
+  },
+  "search": {
+    "placeholder":   "Search pages…",
+    "dialog_label":  "Search dialog",
+    "no_results":    "No results for \"{query}\"",
+    "hint":          "Type to search pages and features"
+  },
+  "user_menu": {
+    "title":    "User menu",
+    "profile":  "Profile",
+    "language": "Language",
+    "theme":    "Theme",
+    "settings": "Settings",
+    "logout":   "Log out"
+  },
+  "errors": {
+    "generic_title":   "Something went wrong",
+    "generic_message": "An unexpected error occurred. Please try again.",
+    "retry":           "Try again"
+  },
+  "pages": {
+    "overview": {
+      "title":       "Overview",
+      "description": "Your farm at a glance",
+      "sections": {
+        "farm_at_a_glance": "Farm at a Glance",
+        "quick_actions":    "Quick Actions"
+      },
+      "metrics": {
+        "total_area":    "Total Area",
+        "active_crops":  "Active Crops",
+        "health_score":  "Health Score",
+        "alerts":        "Alerts"
+      },
+      "action_descriptions": {
+        "crop":      "Get AI-powered crop recommendations",
+        "disease":   "Detect diseases from photos instantly",
+        "assistant": "Ask questions in your language",
+        "market":    "Live mandi prices and trends",
+        "planner":   "Plan your crop calendar",
+        "schemes":   "Find eligible government schemes"
+      }
+    },
+    "crop_recommendation": {
+      "title":       "Crop Recommendation",
+      "description": "AI-powered suggestions based on soil, climate and market data"
+    },
+    "disease_detection": {
+      "title":       "Disease Detection",
+      "description": "Upload a crop photo to identify diseases instantly"
+    },
+    "assistant": {
+      "title":       "Voice Assistant",
+      "description": "Your multilingual farm advisor — available 24/7"
+    },
+    "market": {
+      "title":       "Market Intelligence",
+      "description": "Live prices, trends and demand forecasts from mandis across India"
+    },
+    "farm_health": {
+      "title":       "Farm Health",
+      "description": "Soil health, irrigation status and environmental monitoring"
+    },
+    "planner": {
+      "title":       "Farm Planner",
+      "description": "Plan your crop calendar, tasks and seasonal schedule"
+    },
+    "schemes": {
+      "title":       "Government Schemes",
+      "description": "Discover and apply for central and state agricultural schemes"
+    },
+    "analytics": {
+      "title":       "Analytics",
+      "description": "Yield trends, cost analysis and performance insights"
+    },
+    "profile": {
+      "title":       "My Profile",
+      "description": "Manage your personal and farm details"
+    },
+    "settings": {
+      "title":       "Settings",
+      "description": "App preferences, language, notifications and integrations"
+    }
   }
 }

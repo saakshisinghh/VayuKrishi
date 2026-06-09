@@ -1,51 +1,30 @@
 {
   "nav": {
-    "dashboard": "\u0aa1\u0ac7\u0ab6\u0aac\u0acb\u0ab0\u0acd\u0aa1",
-    "cropRecommendation": "\u0aaa\u0abe\u0a95 \u0aad\u0ab2\u0abe\u0aae\u0aa3",
-    "diseaseDetection": "\u0ab0\u0acb\u0a97 \u0ab6\u0acb\u0aa7",
-    "assistant": "\u0ab5\u0ac9\u0a87\u0ab8 \u0a86\u0ab8\u0abf\u0ab8\u0acd\u0a9f\u0aa8\u0acd\u0a9f",
-    "market": "\u0aac\u0a9c\u0abe\u0ab0 \u0aae\u0abe\u0ab9\u0abf\u0aa4\u0ac0",
-    "farmHealth": "\u0a96\u0ac7\u0aa4 \u0a86\u0ab0\u0acb\u0a97\u0acd\u0aaf",
-    "planner": "\u0a96\u0ac7\u0aa4 \u0a86\u0aaf\u0acb\u0a9c\u0a95",
-    "schemes": "\u0ab8\u0ab0\u0a95\u0abe\u0ab0\u0ac0 \u0aaf\u0acb\u0a9c\u0aa8\u0abe\u0a93",
-    "analytics": "\u0ab5\u0abf\u0ab6\u0acd\u0ab2\u0ac7\u0ab7\u0aa3",
-    "settings": "\u0ab8\u0ac7\u0a9f\u0abf\u0a82\u0a97\u0acd\u0ab8",
-    "profile": "\u0aaa\u0acd\u0ab0\u0acb\u0aab\u0abe\u0a87\u0ab2",
-    "notifications": "\u0ab8\u0ac2\u0a9a\u0aa8\u0abe\u0a93",
-    "search": "\u0ab6\u0acb\u0aa7\u0acb\u2026",
-    "logout": "\u0ab2\u0ac9\u0a97 \u0a86\u0a89\u0a9f"
+    "groups": { "main": "મુખ્ય", "farm": "ખેત સાધનો", "intelligence": "બુદ્ધિ", "tools": "સાધનો" },
+    "items": {
+      "overview": "અવલોકન", "crop_recommendation": "પાક ભલામણ",
+      "disease_detection": "રોગ શોધ", "assistant": "વૉઇસ સહાયક",
+      "market": "બજાર માહિતી", "farm_health": "ખેત સ્વાસ્થ્ય",
+      "planner": "ખેત આયોજક", "schemes": "સરકારી યોજનાઓ",
+      "analytics": "વિશ્લેષણ", "profile": "પ્રોફાઇલ", "settings": "સેટિંગ્સ"
+    }
   },
-  "theme": {
-    "light": "\u0aaa\u0acd\u0ab0\u0a95\u0abe\u0ab6",
-    "dark": "\u0a85\u0a82\u0aa7\u0abe\u0ab0\u0ac1\u0a82",
-    "system": "\u0ab8\u0abf\u0ab8\u0acd\u0a9f\u0aae"
-  },
-  "language": {
-    "label": "\u0aad\u0abe\u0ab7\u0abe",
-    "select": "\u0aad\u0abe\u0ab7\u0abe \u0aaa\u0ab8\u0a82\u0aa6 \u0a95\u0ab0\u0acb"
-  },
-  "dashboard": {
-    "greeting": "\u0ab8\u0ac1\u0aaa\u0acd\u0ab0\u0aad\u0abe\u0aa4",
-    "subtitle": "\u0a86\u0a9c\u0ac7 \u0aa4\u0aae\u0abe\u0ab0\u0abe \u0a96\u0ac7\u0aa4\u0ab0\u0aae\u0abe\u0a82 \u0ab6\u0ac1\u0a82 \u0aa5\u0a88 \u0ab0\u0ab9\u0acd\u0aaf\u0ac1\u0a82 \u0a9b\u0ac7.",
-    "weather": "\u0ab9\u0ab5\u0abe\u0aae\u0abe\u0aa8",
-    "farmHealth": "\u0a96\u0ac7\u0aa4 \u0a86\u0ab0\u0acb\u0a97\u0acd\u0aaf \u0ab8\u0acd\u0a95\u0acb\u0ab0",
-    "activeCrop": "\u0ab8\u0a95\u0acd\u0ab0\u0abf\u0aaf \u0aaa\u0abe\u0a95",
-    "aiRecommendation": "AI \u0aad\u0ab2\u0abe\u0aae\u0aa3",
-    "diseaseRisk": "\u0ab0\u0acb\u0a97 \u0a9c\u0acb\u0a96\u0aae",
-    "marketForecast": "\u0aac\u0a9c\u0abe\u0ab0 \u0a85\u0aa8\u0ac1\u0aae\u0abe\u0aa8",
-    "schemes": "\u0ab8\u0ab0\u0a95\u0abe\u0ab0\u0ac0 \u0aaf\u0acb\u0a9c\u0aa8\u0abe\u0a93",
-    "voiceAssistant": "\u0ab5\u0abe\u0aaf\u0ac1\u0aa8\u0ac7 \u0aaa\u0ac2\u0a9b\u0acb"
-  },
-  "common": {
-    "loading": "\u0ab2\u0acb\u0aa1 \u0aa5\u0a88 \u0ab0\u0ab9\u0acd\u0aaf\u0ac1\u0a82 \u0a9b\u0ac7\u2026",
-    "error": "\u0a95\u0a82\u0a88\u0a95 \u0a96\u0acb\u0a9f\u0ac1\u0a82 \u0aa5\u0aaf\u0ac1\u0a82",
-    "retry": "\u0aab\u0ab0\u0ac0 \u0aaa\u0acd\u0ab0\u0aaf\u0abe\u0ab8 \u0a95\u0ab0\u0acb",
-    "viewAll": "\u0aac\u0aa7\u0ac1\u0a82 \u0a9c\u0ac1\u0a93",
-    "save": "\u0ab8\u0abe\u0a9a\u0ab5\u0acb",
-    "cancel": "\u0ab0\u0aa6 \u0a95\u0ab0\u0acb",
-    "close": "\u0aac\u0a82\u0aa7 \u0a95\u0ab0\u0acb",
-    "back": "\u0aaa\u0abe\u0a9b\u0ab3",
-    "next": "\u0a86\u0a97\u0ab3",
-    "submit": "\u0ab8\u0aac\u0aae\u0abf\u0a9f \u0a95\u0ab0\u0acb"
+  "common": { "season": "મોસમ", "loading": "લોડ થઈ રહ્યું છે…", "save": "સાચવો", "cancel": "રદ કરો", "retry": "ફરી પ્રયાસ કરો", "back": "પાછળ", "view_all": "બધા જુઓ" },
+  "notifications": { "title": "સૂચનાઓ", "markAllRead": "બધાં વાંચ્યાં ચિહ્નિત કરો", "clearAll": "બધાં સાફ કરો", "empty": "બધી સૂચનાઓ વાંચી છે" },
+  "search": { "placeholder": "પૃષ્ઠો શોધો…", "dialog_label": "શોધ સંવાદ", "no_results": "\"{query}\" માટે કોઈ પરિણામ નથી", "hint": "પૃષ્ઠો અને સુવિધાઓ શોધવા ટાઇપ કરો" },
+  "user_menu": { "title": "વપરાશકર્તા મેનૂ", "profile": "પ્રોફાઇલ", "language": "ભાષા", "theme": "થીમ", "settings": "સેટિંગ્સ", "logout": "લૉગ આઉટ" },
+  "errors": { "generic_title": "કંઈક ખોટું થયું", "generic_message": "અણધારી ભૂલ આવી. કૃપા કરી ફરી પ્રયાસ કરો.", "retry": "ફરી પ્રયાસ કરો" },
+  "pages": {
+    "overview": { "title": "અવલોકન", "description": "તમારા ખેતની એક ઝલક", "sections": { "farm_at_a_glance": "ખેતની સ્થિતિ", "quick_actions": "ઝડપી ક્રિયાઓ" }, "metrics": { "total_area": "કુલ વિસ્તાર", "active_crops": "સક્રિય પાક", "health_score": "સ્વાસ્થ્ય સ્કોર", "alerts": "ચેતવણીઓ" }, "action_descriptions": { "crop": "AI-આધારિત પાક ભલામણો મેળવો", "disease": "ફોટોથી રોગ ઓળખો", "assistant": "તમારી ભાષામાં પ્રશ્નો પૂછો", "market": "લાઇવ મંડી ભાવ અને ટ્રેન્ડ", "planner": "તમારૂ પાક કૅલેન્ડર બનાવો", "schemes": "પાત્ર સરકારી યોજનાઓ શોધો" } },
+    "crop_recommendation": { "title": "પાક ભલામણ", "description": "માટી, આબોહવા અને બજાર ડેટા પર આધારિત AI ભલામણો" },
+    "disease_detection": { "title": "રોગ શોધ", "description": "રોગ તરત ઓળખવા પાકનો ફોટો અપલોડ કરો" },
+    "assistant": { "title": "વૉઇસ સહાયક", "description": "તમારો બહુભાષી ખેત સલાહકાર — 24/7 ઉપલબ્ધ" },
+    "market": { "title": "બજાર માહિતી", "description": "ભારત ભરની મંડીઓમાંથી લાઇવ ભાવ અને અનુમાન" },
+    "farm_health": { "title": "ખેત સ્વાસ્થ્ય", "description": "માટી સ્વાસ્થ્ય, સિંચાઈ સ્થિતિ અને પર્યાવરણ નિરીક્ષણ" },
+    "planner": { "title": "ખેત આયોજક", "description": "તમારૂ પાક કૅલેન્ડર, કાર્યો અને મોસમી સૂચી બનાવો" },
+    "schemes": { "title": "સરકારી યોજનાઓ", "description": "કેન્દ્ર અને રાજ્ય કૃષિ યોજનાઓ શોધો અને અરજી કરો" },
+    "analytics": { "title": "વિશ્લેષણ", "description": "ઉત્પાદન ટ્રેન્ડ, ખર્ચ વિશ્લેષણ અને પ્રદર્શન આંતરદૃષ્ટિ" },
+    "profile": { "title": "મારી પ્રોફાઇલ", "description": "તમારી વ્યક્તિગત અને ખેત માહિતી સંચાલિત કરો" },
+    "settings": { "title": "સેટિંગ્સ", "description": "ઍપ પ્રાધાન્ય, ભાષા, સૂચનાઓ અને સંકલન" }
   }
 }

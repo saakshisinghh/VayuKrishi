@@ -1,134 +1,71 @@
-/* ============================================================
-   VAYUKRISHI — Design Tokens
-   Agriculture-inspired. Premium. Linear/Stripe/Apple quality.
-   ============================================================ */
+/* ─── Vayukrishi Design Tokens ─── */
 
 :root {
-  /* ── Brand: Leaf Green ── */
-  --color-leaf-50:  #f0faf0;
-  --color-leaf-100: #dcf5dc;
-  --color-leaf-200: #b5eab6;
-  --color-leaf-300: #82d884;
-  --color-leaf-400: #4ec252;
-  --color-leaf-500: #28a82d;
-  --color-leaf-600: #1d8a22;
-  --color-leaf-700: #186c1c;
-  --color-leaf-800: #145419;
-  --color-leaf-900: #0f3f13;
-  --color-leaf-950: #072309;
+  /* Brand */
+  --color-brand-green:        #2d6a4f;
+  --color-brand-green-light:  #52b788;
+  --color-brand-green-alpha:  rgba(45, 106, 79, 0.1);
 
-  /* ── Brand: Forest Green ── */
-  --color-forest-500: #1a5e20;
-  --color-forest-600: #144d19;
-  --color-forest-700: #0e3c12;
-  --color-forest-800: #092b0c;
-  --color-forest-900: #041a07;
+  /* Surfaces */
+  --color-bg-base:        #f7f8f5;
+  --color-card-bg:        #ffffff;
+  --color-surface-hover:  rgba(0, 0, 0, 0.04);
+  --color-surface-soft:   rgba(0, 0, 0, 0.03);
+  --color-sidebar-bg:     rgba(255, 255, 255, 0.88);
+  --color-navbar-bg:      rgba(255, 255, 255, 0.82);
 
-  /* ── Secondary: Earth Brown ── */
-  --color-earth-50:  #fdf8f0;
-  --color-earth-100: #f8eddb;
-  --color-earth-200: #f0d8b2;
-  --color-earth-300: #e4be82;
-  --color-earth-400: #d49e50;
-  --color-earth-500: #c4822a;
-  --color-earth-600: #a86820;
-  --color-earth-700: #8a5019;
-  --color-earth-800: #6e3d14;
-  --color-earth-900: #4f2b0e;
+  /* Text */
+  --color-text-primary:   #111810;
+  --color-text-secondary: #374038;
+  --color-text-muted:     #6b7660;
 
-  /* ── Secondary: Harvest Gold ── */
-  --color-gold-50:  #fffbeb;
-  --color-gold-100: #fef3c7;
-  --color-gold-200: #fde68a;
-  --color-gold-300: #fcd34d;
-  --color-gold-400: #fbbf24;
-  --color-gold-500: #f59e0b;
-  --color-gold-600: #d97706;
-  --color-gold-700: #b45309;
-  --color-gold-800: #92400e;
+  /* Borders */
+  --color-border-subtle:  rgba(0, 0, 0, 0.07);
+  --color-border-default: rgba(0, 0, 0, 0.12);
 
-  /* ── Secondary: Sky Blue ── */
-  --color-sky-50:  #f0f9ff;
-  --color-sky-100: #e0f2fe;
-  --color-sky-200: #bae6fd;
-  --color-sky-300: #7dd3fc;
-  --color-sky-400: #38bdf8;
-  --color-sky-500: #0ea5e9;
-  --color-sky-600: #0284c7;
-  --color-sky-700: #0369a1;
-
-  /* ── Neutral: Slate ── */
-  --color-slate-50:  #f8fafc;
-  --color-slate-100: #f1f5f9;
-  --color-slate-150: #eaeff5;
-  --color-slate-200: #e2e8f0;
-  --color-slate-300: #cbd5e1;
-  --color-slate-400: #94a3b8;
-  --color-slate-500: #64748b;
-  --color-slate-600: #475569;
-  --color-slate-700: #334155;
-  --color-slate-800: #1e293b;
-  --color-slate-850: #172033;
-  --color-slate-900: #0f172a;
-  --color-slate-950: #020617;
-
-  /* ── Semantic ── */
-  --color-success: var(--color-leaf-500);
-  --color-warning: var(--color-gold-500);
+  /* Feedback */
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
   --color-error:   #ef4444;
-  --color-info:    var(--color-sky-500);
+  --color-info:    #3b82f6;
 
-  /* ── Typography ── */
-  --font-sans:    'Noto Sans', 'Noto Sans Devanagari', system-ui, sans-serif;
-  --font-display: 'Noto Sans', sans-serif;
+  /* Skeleton */
+  --color-skeleton-bg: rgba(0, 0, 0, 0.07);
 
-  /* ── Font Sizes ── */
-  --text-xs:   0.75rem;
-  --text-sm:   0.875rem;
-  --text-base: 1rem;
-  --text-lg:   1.125rem;
-  --text-xl:   1.25rem;
-  --text-2xl:  1.5rem;
-  --text-3xl:  1.875rem;
-  --text-4xl:  2.25rem;
+  /* Radius */
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  14px;
+  --radius-xl:  18px;
+  --radius-2xl: 24px;
 
-  /* ── Spacing ── */
-  --space-1:  0.25rem;
-  --space-2:  0.5rem;
-  --space-3:  0.75rem;
-  --space-4:  1rem;
-  --space-5:  1.25rem;
-  --space-6:  1.5rem;
-  --space-8:  2rem;
-  --space-10: 2.5rem;
-  --space-12: 3rem;
-  --space-16: 4rem;
+  /* Shadow */
+  --shadow-xs:  0 1px 3px rgba(0,0,0,0.06);
+  --shadow-sm:  0 2px 8px rgba(0,0,0,0.07);
+  --shadow-md:  0 4px 16px rgba(0,0,0,0.09);
+  --shadow-lg:  0 8px 32px rgba(0,0,0,0.11);
+  --shadow-xl:  0 16px 48px rgba(0,0,0,0.14);
+}
 
-  /* ── Radii ── */
-  --radius-sm:   0.375rem;
-  --radius-md:   0.625rem;
-  --radius-lg:   0.875rem;
-  --radius-xl:   1.25rem;
-  --radius-2xl:  1.75rem;
-  --radius-full: 9999px;
+.dark {
+  --color-brand-green:        #52b788;
+  --color-brand-green-light:  #95d5b2;
+  --color-brand-green-alpha:  rgba(82, 183, 136, 0.12);
 
-  /* ── Shadows ── */
-  --shadow-sm:        0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md:        0 4px 12px -2px rgb(0 0 0 / 0.08), 0 2px 4px -1px rgb(0 0 0 / 0.04);
-  --shadow-lg:        0 10px 24px -4px rgb(0 0 0 / 0.1), 0 4px 8px -2px rgb(0 0 0 / 0.06);
-  --shadow-card:      0 0 0 1px rgb(0 0 0 / 0.04), 0 4px 16px -4px rgb(0 0 0 / 0.08);
-  --shadow-card-hover: 0 0 0 1px rgb(40 168 45 / 0.15), 0 8px 24px -4px rgb(0 0 0 / 0.12);
+  --color-bg-base:        #0a0f0a;
+  --color-card-bg:        #111810;
+  --color-card-bg-dark:   #111810;
+  --color-surface-hover:  rgba(255, 255, 255, 0.05);
+  --color-surface-soft:   rgba(255, 255, 255, 0.03);
+  --color-sidebar-bg:     rgba(10, 15, 10, 0.92);
+  --color-navbar-bg:      rgba(8, 12, 8, 0.88);
 
-  /* ── Transitions ── */
-  --transition-fast:   120ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-base:   200ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow:   350ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-spring: 400ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  --color-text-primary:   #e8ede6;
+  --color-text-secondary: #b8c5b5;
+  --color-text-muted:     #7a8f77;
 
-  /* ── Z-Index ── */
-  --z-sidebar: 40;
-  --z-navbar:  50;
-  --z-modal:   60;
-  --z-toast:   70;
-  --z-tooltip: 80;
+  --color-border-subtle:  rgba(255, 255, 255, 0.07);
+  --color-border-default: rgba(255, 255, 255, 0.12);
+
+  --color-skeleton-bg: rgba(255, 255, 255, 0.07);
 }

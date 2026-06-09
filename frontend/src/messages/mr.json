@@ -1,51 +1,91 @@
 {
   "nav": {
-    "dashboard": "\u0921\u0945\u0936\u092c\u094b\u0930\u094d\u0921",
-    "cropRecommendation": "\u092a\u0940\u0915 \u0936\u093f\u092b\u093e\u0930\u0938",
-    "diseaseDetection": "\u0930\u094b\u0917 \u0936\u094b\u0927",
-    "assistant": "\u0935\u094d\u0939\u0949\u0907\u0938 \u0905\u0938\u093f\u0938\u094d\u091f\u0902\u091f",
-    "market": "\u092c\u093e\u091c\u093e\u0930 \u092e\u093e\u0939\u093f\u0924\u0940",
-    "farmHealth": "\u0936\u0947\u0924 \u0906\u0930\u094b\u0917\u094d\u092f",
-    "planner": "\u0936\u0947\u0924 \u0928\u093f\u092f\u094b\u091c\u0915",
-    "schemes": "\u0938\u0930\u0915\u093e\u0930\u0940 \u092f\u094b\u091c\u0928\u093e",
-    "analytics": "\u0935\u093f\u0936\u094d\u0932\u0947\u0937\u0923",
-    "settings": "\u0938\u0947\u091f\u093f\u0902\u0917\u094d\u091c",
-    "profile": "\u092a\u094d\u0930\u094b\u092b\u093e\u0907\u0932",
-    "notifications": "\u0938\u0942\u091a\u0928\u093e",
-    "search": "\u0936\u094b\u0927\u093e\u2026",
-    "logout": "\u092c\u093e\u0939\u0947\u0930 \u092a\u0921\u093e"
-  },
-  "theme": {
-    "light": "\u092a\u094d\u0930\u0915\u093e\u0936",
-    "dark": "\u0905\u0902\u0927\u093e\u0930",
-    "system": "\u0938\u093f\u0938\u094d\u091f\u092e"
-  },
-  "language": {
-    "label": "\u092d\u093e\u0937\u093e",
-    "select": "\u092d\u093e\u0937\u093e \u0928\u093f\u0935\u0921\u093e"
-  },
-  "dashboard": {
-    "greeting": "\u0938\u0941\u092a\u094d\u0930\u092d\u093e\u0924",
-    "subtitle": "\u0906\u091c \u0924\u0941\u092e\u091a\u094d\u092f\u093e \u0936\u0947\u0924\u093e\u0924 \u0915\u093e\u092f \u0939\u094b\u0924 \u0906\u0939\u0947 \u0924\u0947 \u092a\u093e\u0939\u093e.",
-    "weather": "\u0939\u0935\u093e\u092e\u093e\u0928",
-    "farmHealth": "\u0936\u0947\u0924 \u0906\u0930\u094b\u0917\u094d\u092f \u0917\u0941\u0923",
-    "activeCrop": "\u0938\u0915\u094d\u0930\u093f\u092f \u092a\u0940\u0915",
-    "aiRecommendation": "AI \u0936\u093f\u092b\u093e\u0930\u0938",
-    "diseaseRisk": "\u0930\u094b\u0917 \u091c\u094b\u0916\u0940\u092e",
-    "marketForecast": "\u092c\u093e\u091c\u093e\u0930 \u0905\u0902\u0926\u093e\u091c",
-    "schemes": "\u0938\u0930\u0915\u093e\u0930\u0940 \u092f\u094b\u091c\u0928\u093e",
-    "voiceAssistant": "\u0935\u093e\u092f\u0942 \u0935\u093f\u091a\u093e\u0930\u093e"
+    "groups": {
+      "main":         "मुख्य",
+      "farm":         "शेत साधने",
+      "intelligence": "बुद्धिमत्ता",
+      "tools":        "साधने"
+    },
+    "items": {
+      "overview":            "आढावा",
+      "crop_recommendation": "पीक शिफारस",
+      "disease_detection":   "रोग ओळख",
+      "assistant":           "व्हॉइस असिस्टंट",
+      "market":              "बाजार माहिती",
+      "farm_health":         "शेत आरोग्य",
+      "planner":             "शेत नियोजन",
+      "schemes":             "सरकारी योजना",
+      "analytics":           "विश्लेषण",
+      "profile":             "प्रोफाइल",
+      "settings":            "सेटिंग्ज"
+    }
   },
   "common": {
-    "loading": "\u0932\u094b\u0921 \u0939\u094b\u0924 \u0906\u0939\u0947\u2026",
-    "error": "\u0915\u093e\u0939\u0940\u0924\u0930\u0940 \u091a\u0941\u0915\u0932\u0947",
-    "retry": "\u092a\u0941\u0928\u094d\u0939\u093e \u092a\u094d\u0930\u092f\u0924\u094d\u0928 \u0915\u0930\u093e",
-    "viewAll": "\u0938\u0930\u094d\u0935 \u092a\u093e\u0939\u093e",
-    "save": "\u091c\u0924\u0928 \u0915\u0930\u093e",
-    "cancel": "\u0930\u0926\u094d\u0926 \u0915\u0930\u093e",
-    "close": "\u092c\u0902\u0926 \u0915\u0930\u093e",
-    "back": "\u092e\u093e\u0917\u0947",
-    "next": "\u092a\u0941\u0922\u0947",
-    "submit": "\u0938\u092c\u092e\u093f\u091f \u0915\u0930\u093e"
+    "season":   "हंगाम",
+    "loading":  "लोड होत आहे…",
+    "save":     "जतन करा",
+    "cancel":   "रद्द करा",
+    "retry":    "पुन्हा प्रयत्न करा",
+    "back":     "मागे",
+    "view_all": "सर्व पहा"
+  },
+  "notifications": {
+    "title":       "सूचना",
+    "markAllRead": "सर्व वाचले म्हणून चिन्हांकित करा",
+    "clearAll":    "सर्व साफ करा",
+    "empty":       "सर्व सूचना वाचल्या आहेत"
+  },
+  "search": {
+    "placeholder":  "पृष्ठे शोधा…",
+    "dialog_label": "शोध संवाद",
+    "no_results":   "\"{query}\" साठी कोणतेही निकाल नाहीत",
+    "hint":         "पृष्ठे आणि वैशिष्ट्ये शोधण्यासाठी टाइप करा"
+  },
+  "user_menu": {
+    "title":    "वापरकर्ता मेनू",
+    "profile":  "प्रोफाइल",
+    "language": "भाषा",
+    "theme":    "थीम",
+    "settings": "सेटिंग्ज",
+    "logout":   "लॉग आउट"
+  },
+  "errors": {
+    "generic_title":   "काहीतरी चुकले",
+    "generic_message": "एक अनपेक्षित त्रुटी आली. कृपया पुन्हा प्रयत्न करा.",
+    "retry":           "पुन्हा प्रयत्न करा"
+  },
+  "pages": {
+    "overview": {
+      "title":       "आढावा",
+      "description": "तुमच्या शेताचा थोडक्यात आढावा",
+      "sections": {
+        "farm_at_a_glance": "शेताची स्थिती",
+        "quick_actions":    "द्रुत क्रिया"
+      },
+      "metrics": {
+        "total_area":   "एकूण क्षेत्र",
+        "active_crops": "सक्रिय पिके",
+        "health_score": "आरोग्य गुण",
+        "alerts":       "इशारे"
+      },
+      "action_descriptions": {
+        "crop":      "AI-आधारित पीक शिफारसी मिळवा",
+        "disease":   "फोटोवरून रोग ओळखा",
+        "assistant": "तुमच्या भाषेत प्रश्न विचारा",
+        "market":    "थेट मंडी किमती आणि ट्रेंड",
+        "planner":   "तुमचे पीक कॅलेंडर बनवा",
+        "schemes":   "पात्र सरकारी योजना शोधा"
+      }
+    },
+    "crop_recommendation": { "title": "पीक शिफारस",     "description": "माती, हवामान आणि बाजार डेटावर आधारित AI शिफारसी" },
+    "disease_detection":   { "title": "रोग ओळख",         "description": "रोग त्वरित ओळखण्यासाठी पिकाचा फोटो अपलोड करा" },
+    "assistant":           { "title": "व्हॉइस असिस्टंट", "description": "तुमचा बहुभाषिक शेत सल्लागार — 24/7 उपलब्ध" },
+    "market":              { "title": "बाजार माहिती",    "description": "भारतभरातील मंडींमधून थेट किमती आणि अंदाज" },
+    "farm_health":         { "title": "शेत आरोग्य",      "description": "माती आरोग्य, सिंचन स्थिती आणि पर्यावरण निरीक्षण" },
+    "planner":             { "title": "शेत नियोजन",      "description": "तुमचे पीक कॅलेंडर, कार्ये आणि हंगामी वेळापत्रक बनवा" },
+    "schemes":             { "title": "सरकारी योजना",    "description": "केंद्रीय आणि राज्य कृषी योजना शोधा आणि अर्ज करा" },
+    "analytics":           { "title": "विश्लेषण",         "description": "उत्पन्न ट्रेंड, खर्च विश्लेषण आणि कामगिरी अंतर्दृष्टी" },
+    "profile":             { "title": "माझे प्रोफाइल",   "description": "तुमची वैयक्तिक आणि शेत माहिती व्यवस्थापित करा" },
+    "settings":            { "title": "सेटिंग्ज",         "description": "अ‍ॅप प्राधान्ये, भाषा, सूचना आणि एकत्रीकरण" }
   }
 }
