@@ -1,0 +1,32 @@
+{
+  "auth": {
+    "login": {
+      "title": "પાછા સ્વાગત છે",
+      "subtitle": "તમારા ખેડૂત ડૅશબોર્ડમાં સાઇન ઇન કરો",
+      "submit": "સાઇન ઇન કરો",
+      "continue_with_otp": "OTP સાથે ચાલુ રાખો",
+      "forgot_password": "પાસવર્ડ ભૂલ્યા?",
+      "no_account": "ખાતું નથી?",
+      "register_link": "નોંધણી કરો",
+      "or": "અથવા"
+    },
+    "register": {
+      "step1_title": "શરૂ કરીએ",
+      "step2_title": "તમારું સ્થાન",
+      "step3_title": "તમારી ખેતી",
+      "step4_title": "ખાતું સુરક્ષિત કરો",
+      "next": "આગળ",
+      "back": "પાછળ",
+      "submit": "ખાતું બનાવો"
+    },
+    "otp": {
+      "title": "તમારો નંબર ચકાસો",
+      "resend": "કોડ ફરી મોકલો"
+    },
+    "forgot": {
+      "title": "પાસવર્ડ ભૂલ્યા?",
+      "send_otp": "રીસેટ કોડ મોકલો",
+      "reset_password": "પાસવર્ડ રીસેટ કરો"
+    }
+  }
+}

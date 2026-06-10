@@ -1,8 +1,7 @@
+﻿import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { notFound } from "next/navigation";
-import { routing } from "@/lib/i18n/routing";
-import { ThemeProvider } from "next-themes";
+import { Providers } from "./providers";
 
 export default async function LocaleLayout({
   children,
@@ -12,21 +11,16 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-
-  if (!routing.locales.includes(locale as any)) {
-    notFound();
-  }
-
   const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale}>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-          <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <Providers>
             {children}
-          </NextIntlClientProvider>
-        </ThemeProvider>
+          </Providers>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
