@@ -239,7 +239,7 @@ export function RegisterForm() {
             </select>
             {step1.formState.errors.language && (
               <p className="auth-field-error">
-                {step1.formState.errors.language.message}
+                {t(step1.formState.errors.language.message as string)}
               </p>
             )}
           </div>
