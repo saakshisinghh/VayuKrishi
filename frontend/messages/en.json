@@ -1,7 +1,7 @@
 {
   "auth": {
     "login": {
-      "page_title": "Sign In — Vayukrishi",
+      "page_title": "Sign In – Vayukrishi",
       "page_description": "Sign in to your Vayukrishi account",
       "title": "Welcome back",
       "subtitle": "Sign in to your farmer dashboard",
@@ -16,7 +16,7 @@
       "or": "or"
     },
     "register": {
-      "page_title": "Create Account — Vayukrishi",
+      "page_title": "Create Account – Vayukrishi",
       "page_description": "Create your Vayukrishi farmer account",
       "subtitle": "Join 2.4 lakh farmers across India",
       "step1_title": "Let's get started",
@@ -32,7 +32,7 @@
       "progress_label": "Registration steps"
     },
     "otp": {
-      "page_title": "Verify OTP — Vayukrishi",
+      "page_title": "Verify OTP – Vayukrishi",
       "page_description": "Enter the OTP sent to your mobile number",
       "title": "Verify your number",
       "subtitle": "We sent a 6-digit code to",
@@ -44,7 +44,7 @@
       "resend": "Resend Code"
     },
     "forgot": {
-      "page_title": "Forgot Password — Vayukrishi",
+      "page_title": "Forgot Password – Vayukrishi",
       "page_description": "Reset your Vayukrishi account password",
       "title": "Forgot password?",
       "subtitle": "Enter your registered mobile number",
@@ -148,5 +148,137 @@
     "testimonial_2_quote": "The disease detection saved my entire crop this season",
     "testimonial_2_author": "Sunita Devi",
     "testimonial_2_location": "Gorakhpur, UP"
+  },
+  "dashboard": {
+    "greeting": "Good morning",
+    "farmer": "Farmer",
+
+    "header": {
+      "title": "Farm Dashboard",
+      "goodMorning": "Good Morning",
+      "goodAfternoon": "Good Afternoon",
+      "goodEvening": "Good Evening",
+      "greeting": "Good morning",
+      "farmerGreeting": "Welcome back",
+      "lastUpdated": "Last updated",
+      "refresh": "Refresh",
+      "farmOverview": "Farm Overview",
+      "todaysSummary": "Today's Summary"
+    },
+
+    "weather": {
+      "humidity": "Humidity",
+      "wind": "Wind",
+      "rain": "Rain",
+      "visibility": "Visibility",
+      "feelsLike": "Feels like",
+      "sowingWindow": "Sowing Window",
+      "season": "Season",
+      "Season": {
+        "Kharif": "Kharif Season",
+        "Rabi": "Rabi Season",
+        "Zaid": "Zaid Season"
+      }
+    },
+
+    "snapshot": {
+      "activeCrop": "Active Crop",
+      "projectedProfit": "Projected Profit",
+      "thisSeasonEstimate": "This season estimate",
+      "farmHealth": "Farm Health",
+      "overallScore": "Overall Score",
+      "diseaseRisk": "Disease Risk"
+    },
+
+    "ai": {
+      "title": "AI Recommendations",
+      "tapToExpand": "Tap to expand",
+      "recommendationFor": "Recommendation for",
+      "demand": "demand",
+      "aiPick": "AI Pick",
+      "expectedProfit": "Expected Profit",
+      "risk": "Risk",
+      "Demand": "Demand",
+      "confidence": "Confidence",
+      "viewMore": "View More"
+    },
+
+    "market": {
+      "title": "Market Prices",
+      "sevenDayTrend": "7-Day Trend",
+      "forecastTitle": "Price Forecast",
+      "thirtyDay": "30-day",
+      "historical": "Historical",
+      "forecast": "Forecast",
+      "week": "This Week",
+      "bullish": "Bullish",
+      "bearish": "Bearish",
+      "neutral": "Neutral",
+      "currentPrice": "Current Price",
+      "viewAll": "View All"
+    },
+
+    "disease": {
+      "title": "Disease Alerts",
+      "viewDetails": "View details",
+      "kmAway": "km away",
+      "kmRadius": "km radius",
+      "noAlerts": "No active alerts in your area",
+      "severity": "Severity",
+      "reportedOn": "Reported on"
+    },
+
+    "health": {
+      "title": "Farm Health",
+      "lastAssessed": "Last assessed",
+      "nextDue": "Next assessment due",
+      "recommendations": "Recommendations",
+      "grade": "Grade",
+      "soil": "Soil",
+      "water": "Water",
+      "disease": "Disease",
+      "market": "Market",
+      "overall": "Overall"
+    },
+
+    "schemes": {
+      "title": "Government Schemes",
+      "viewAll": "View All Schemes",
+      "matchScore": "Match Score",
+      "eligible": "Eligible",
+      "apply": "Apply Now",
+      "deadline": "Deadline",
+      "benefit": "Benefit",
+      "subsidy": "Subsidy",
+      "loan": "Loan",
+      "insurance": "Insurance",
+      "training": "Training",
+      "viewScheme": "View Scheme",
+      "eligibleBadge": "Eligible",
+      "checkEligibility": "Check Eligibility",
+      "schemesFound": "schemes found"
+    },
+
+    "scheme": {
+      "title": "Government Schemes",
+      "eligible": "Eligible",
+      "apply": "Apply Now",
+      "deadline": "Deadline"
+    },
+
+    "voice": {
+      "title": "Voice Assistant",
+      "subtitle": "Ask anything about your farm",
+      "startRecording": "Start recording",
+      "stopRecording": "Stop recording",
+      "tapToSpeak": "Tap to speak",
+      "whatToPlant": "What should I plant?",
+      "diseaseDetected": "Check my crop for disease",
+      "weatherForecast": "What's the weather forecast?",
+      "bestMarket": "Where's the best market price?",
+      "placeholder": "Ask me anything about your farm…",
+      "listening": "Listening…",
+      "tap": "Tap to speak"
+    }
   }
 }

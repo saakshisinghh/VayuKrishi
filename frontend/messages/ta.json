@@ -28,5 +28,127 @@
       "send_otp": "மீட்டமைப்பு குறியீடு அனுப்பு",
       "reset_password": "கடவுச்சொல் மீட்டமை"
     }
+  },
+  "dashboard": {
+    "greeting": "காலை வணக்கம்",
+    "farmer": "விவசாயி",
+    "header": {
+      "title": "பண்ணை டாஷ்போர்டு",
+      "greeting": "காலை வணக்கம்",
+      "farmerGreeting": "மீண்டும் வரவேற்கிறோம்",
+      "lastUpdated": "கடைசியாக புதுப்பிக்கப்பட்டது",
+      "refresh": "புதுப்பிக்கவும்",
+      "farmOverview": "பண்ணை கண்ணோட்டம்",
+      "todaysSummary": "இன்றைய சுருக்கம்",
+      "goodMorning": "காலை வணக்கம்",
+      "goodAfternoon": "மதிய வணக்கம்",
+      "goodEvening": "மாலை வணக்கம்"
+    },
+    "weather": {
+      "humidity": "ஈரப்பதம்",
+      "wind": "காற்று",
+      "rain": "மழை",
+      "visibility": "தெரிவுநிலை",
+      "feelsLike": "உணர்கிறது",
+      "sowingWindow": "விதைப்பு காலம்",
+      "season": "பருவம்",
+      "Season": {
+        "Kharif": "கரீஃப் பருவம்",
+        "Rabi": "ரபி பருவம்",
+        "Zaid": "ஜாய்த் பருவம்"
+      }
+    },
+    "snapshot": {
+      "activeCrop": "செயலில் உள்ள பயிர்",
+      "projectedProfit": "எதிர்பார்க்கப்படும் லாபம்",
+      "thisSeasonEstimate": "இந்த பருவ மதிப்பீடு",
+      "farmHealth": "பண்ணை ஆரோக்கியம்",
+      "overallScore": "மொத்த மதிப்பெண்",
+      "diseaseRisk": "நோய் ஆபத்து"
+    },
+    "ai": {
+      "title": "AI பரிந்துரைகள்",
+      "tapToExpand": "விரிவாக்க தட்டவும்",
+      "recommendationFor": "க்கான பரிந்துரை",
+      "demand": "தேவை",
+      "aiPick": "AI தேர்வு",
+      "expectedProfit": "எதிர்பார்க்கப்படும் லாபம்",
+      "risk": "ஆபத்து",
+      "Demand": "தேவை",
+      "confidence": "நம்பகம்",
+      "viewMore": "மேலும் பார்க்க"
+    },
+    "market": {
+      "title": "சந்தை விலைகள்",
+      "sevenDayTrend": "7-நாள் போக்கு",
+      "forecastTitle": "விலை முன்னறிவிப்பு",
+      "thirtyDay": "30-நாள்",
+      "historical": "வரலாற்று",
+      "forecast": "முன்னறிவிப்பு",
+      "week": "இந்த வாரம்",
+      "bullish": "ஏற்றம்",
+      "bearish": "இறக்கம்",
+      "neutral": "நிலையான",
+      "currentPrice": "தற்போதைய விலை",
+      "viewAll": "அனைத்தும் பார்க்க"
+    },
+    "disease": {
+      "title": "நோய் எச்சரிக்கைகள்",
+      "viewDetails": "விவரங்கள் பார்க்க",
+      "kmAway": "கி.மீ தூரம்",
+      "kmRadius": "கி.மீ சுற்றளவில்",
+      "noAlerts": "உங்கள் பகுதியில் செயலில் உள்ள எச்சரிக்கைகள் இல்லை",
+      "severity": "தீவிரம்",
+      "reportedOn": "புகாரளிக்கப்பட்ட தேதி"
+    },
+    "health": {
+      "title": "பண்ணை ஆரோக்கியம்",
+      "lastAssessed": "கடைசியாக மதிப்பீடு செய்யப்பட்டது",
+      "nextDue": "அடுத்த மதிப்பீடு",
+      "recommendations": "பரிந்துரைகள்",
+      "grade": "தரம்",
+      "soil": "மண்",
+      "water": "நீர்",
+      "disease": "நோய்",
+      "market": "சந்தை",
+      "overall": "மொத்தம்"
+    },
+    "schemes": {
+      "title": "அரசு திட்டங்கள்",
+      "eligible": "தகுதியானவர்",
+      "apply": "இப்போது விண்ணப்பிக்கவும்",
+      "deadline": "கடைசி தேதி",
+      "benefit": "பலன்",
+      "subsidy": "மானியம்",
+      "loan": "கடன்",
+      "insurance": "காப்பீடு",
+      "training": "பயிற்சி",
+      "viewScheme": "திட்டம் பார்க்க",
+      "eligibleBadge": "தகுதியானவர்",
+      "checkEligibility": "தகுதி சரிபார்க்க",
+      "schemesFound": "திட்டங்கள் கண்டுபிடிக்கப்பட்டன",
+      "viewAll": "அனைத்து திட்டங்களும் பார்க்க",
+      "matchScore": "பொருத்த மதிப்பெண்"
+    },
+    "scheme": {
+      "title": "அரசு திட்டங்கள்",
+      "eligible": "தகுதியானவர்",
+      "apply": "இப்போது விண்ணப்பிக்கவும்",
+      "deadline": "கடைசி தேதி"
+    },
+    "voice": {
+      "title": "குரல் உதவியாளர்",
+      "subtitle": "உங்கள் பண்ணையைப் பற்றி எதையும் கேளுங்கள்",
+      "startRecording": "பதிவு தொடங்கு",
+      "stopRecording": "பதிவு நிறுத்து",
+      "tapToSpeak": "பேச தட்டவும்",
+      "whatToPlant": "நான் என்ன நடவேண்டும்?",
+      "diseaseDetected": "என் பயிரில் நோயை சரிபாருங்கள்",
+      "weatherForecast": "வானிலை முன்னறிவிப்பு என்ன?",
+      "bestMarket": "சிறந்த சந்தை விலை எங்கே?",
+      "placeholder": "உங்கள் பண்ணையைப் பற்றி எதையும் கேளுங்கள்…",
+      "listening": "கேட்கிறேன்…",
+      "tap": "பேச தட்டவும்"
+    }
   }
 }

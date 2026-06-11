@@ -28,5 +28,127 @@
       "send_otp": "રીસેટ કોડ મોકલો",
       "reset_password": "પાસવર્ડ રીસેટ કરો"
     }
+  },
+  "dashboard": {
+    "greeting": "સુપ્રભાત",
+    "farmer": "ખેડૂત",
+    "header": {
+      "title": "ફાર્મ ડેશબોર્ડ",
+      "greeting": "સુપ્રભાત",
+      "farmerGreeting": "પાછા સ્વાગત છે",
+      "lastUpdated": "છેલ્લું અપડેટ",
+      "refresh": "રિફ્રેશ કરો",
+      "farmOverview": "ફાર્મ ઝાંખી",
+      "todaysSummary": "આજનો સારાંશ",
+      "goodMorning": "સુપ્રભાત",
+      "goodAfternoon": "નમસ્કાર",
+      "goodEvening": "શુભ સાંજ"
+    },
+    "weather": {
+      "humidity": "ભેજ",
+      "wind": "પવન",
+      "rain": "વરસાદ",
+      "visibility": "દૃશ્યતા",
+      "feelsLike": "લાગે છે",
+      "sowingWindow": "વાવણી વિન્ડો",
+      "season": "ઋતુ",
+      "Season": {
+        "Kharif": "ખરીફ ઋતુ",
+        "Rabi": "રવિ ઋતુ",
+        "Zaid": "જાયદ ઋતુ"
+      }
+    },
+    "snapshot": {
+      "activeCrop": "સક્રિય પાક",
+      "projectedProfit": "અંદાજિત નફો",
+      "thisSeasonEstimate": "આ ઋતુનો અંદાજ",
+      "farmHealth": "ફાર્મ આરોગ્ય",
+      "overallScore": "કુલ સ્કોર",
+      "diseaseRisk": "રોગ જોખમ"
+    },
+    "ai": {
+      "title": "AI ભલામણો",
+      "tapToExpand": "વિસ્તાર માટે ટૅપ કરો",
+      "recommendationFor": "માટે ભલામણ",
+      "demand": "માંગ",
+      "aiPick": "AI પસંદગી",
+      "expectedProfit": "અપેક્ષિત નફો",
+      "risk": "જોખમ",
+      "Demand": "માંગ",
+      "confidence": "વિશ્વાસ",
+      "viewMore": "વધુ જુઓ"
+    },
+    "market": {
+      "title": "બજાર ભાવ",
+      "sevenDayTrend": "૭-દિવસનો ટ્રેન્ડ",
+      "forecastTitle": "ભાવ આગાહી",
+      "thirtyDay": "૩૦-દિવસ",
+      "historical": "ઐતિહાસિક",
+      "forecast": "આગાહી",
+      "week": "આ અઠવાડિયે",
+      "bullish": "તેજી",
+      "bearish": "મંદી",
+      "neutral": "સ્થિર",
+      "currentPrice": "વર્તમાન ભાવ",
+      "viewAll": "બધું જુઓ"
+    },
+    "disease": {
+      "title": "રોગ ચેતવણી",
+      "viewDetails": "વિગત જુઓ",
+      "kmAway": "કિમી દૂર",
+      "kmRadius": "કિમી ત્રિજ્યામાં",
+      "noAlerts": "તમારા વિસ્તારમાં કોઈ સક્રિય ચેતવણી નથી",
+      "severity": "ગંભીરતા",
+      "reportedOn": "નોંધાયેલ તારીખ"
+    },
+    "health": {
+      "title": "ફાર્મ આરોગ્ય",
+      "lastAssessed": "છેલ્લું મૂલ્યાંકન",
+      "nextDue": "આગળનું મૂલ્યાંકન",
+      "recommendations": "ભલામણો",
+      "grade": "ગ્રેડ",
+      "soil": "માટી",
+      "water": "પાણી",
+      "disease": "રોગ",
+      "market": "બજાર",
+      "overall": "કુલ"
+    },
+    "schemes": {
+      "title": "સરકારી યોજનાઓ",
+      "eligible": "પાત્ર",
+      "apply": "અભી અરજી કરો",
+      "deadline": "છેલ્લી તારીખ",
+      "benefit": "લાભ",
+      "subsidy": "સબસિડી",
+      "loan": "લોન",
+      "insurance": "વીમો",
+      "training": "તાલીમ",
+      "viewScheme": "યોજના જુઓ",
+      "eligibleBadge": "પાત્ર",
+      "checkEligibility": "પાત્રતા તપાસો",
+      "schemesFound": "યોજનાઓ મળી",
+      "viewAll": "બધી યોજનાઓ જુઓ",
+      "matchScore": "મેચ સ્કોર"
+    },
+    "scheme": {
+      "title": "સરકારી યોજનાઓ",
+      "eligible": "પાત્ર",
+      "apply": "અભી અરજી કરો",
+      "deadline": "છેલ્લી તારીખ"
+    },
+    "voice": {
+      "title": "વૉઇસ આસિસ્ટન્ટ",
+      "subtitle": "તમારા ખેત વિશે કંઈ પણ પૂછો",
+      "startRecording": "રેકોર્ડિંગ શરૂ કરો",
+      "stopRecording": "રેકોર્ડિંગ બંધ કરો",
+      "tapToSpeak": "બોલવા માટે ટૅપ કરો",
+      "whatToPlant": "મારે શું વાવવું જોઈએ?",
+      "diseaseDetected": "મારા પાકનો રોગ તપાસો",
+      "weatherForecast": "હવામાન આગાહી શું છે?",
+      "bestMarket": "સૌથી સારો બજારભાવ ક્યાં છે?",
+      "placeholder": "તમારા ખેત વિશે કંઈ પણ પૂછો…",
+      "listening": "સાંભળી રહ્યો છું…",
+      "tap": "બોલવા માટે ટૅપ કરો"
+    }
   }
 }

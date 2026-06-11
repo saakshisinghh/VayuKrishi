@@ -142,5 +142,127 @@
       "network_error": "नेटवर्क त्रुटि। कृपया अपना कनेक्शन जांचें।",
       "session_expired": "आपका सत्र समाप्त हो गया है। कृपया पुनः साइन इन करें।"
     }
+  },
+  "dashboard": {
+    "greeting": "सुप्रभात",
+    "farmer": "किसान",
+    "header": {
+      "title": "फार्म डैशबोर्ड",
+      "greeting": "सुप्रभात",
+      "farmerGreeting": "वापस स्वागत है",
+      "lastUpdated": "अंतिम अपडेट",
+      "refresh": "रिफ्रेश करें",
+      "farmOverview": "फार्म अवलोकन",
+      "todaysSummary": "आज का सारांश",
+      "goodMorning": "सुप्रभात",
+      "goodAfternoon": "नमस्कार",
+      "goodEvening": "शुभ संध्या"
+    },
+    "weather": {
+      "humidity": "आर्द्रता",
+      "wind": "हवा",
+      "rain": "बारिश",
+      "visibility": "दृश्यता",
+      "feelsLike": "महसूस होता है",
+      "sowingWindow": "बुवाई खिड़की",
+      "season": "मौसम",
+      "Season": {
+        "Kharif": "खरीफ मौसम",
+        "Rabi": "रबी मौसम",
+        "Zaid": "जायद मौसम"
+      }
+    },
+    "snapshot": {
+      "activeCrop": "सक्रिय फसल",
+      "projectedProfit": "अनुमानित लाभ",
+      "thisSeasonEstimate": "इस मौसम का अनुमान",
+      "farmHealth": "फार्म स्वास्थ्य",
+      "overallScore": "कुल स्कोर",
+      "diseaseRisk": "रोग जोखिम"
+    },
+    "ai": {
+      "title": "AI सिफारिशें",
+      "tapToExpand": "विस्तार के लिए टैप करें",
+      "recommendationFor": "के लिए सिफारिश",
+      "demand": "मांग",
+      "aiPick": "AI चयन",
+      "expectedProfit": "अपेक्षित लाभ",
+      "risk": "जोखिम",
+      "Demand": "मांग",
+      "confidence": "विश्वास",
+      "viewMore": "और देखें"
+    },
+    "market": {
+      "title": "बाजार भाव",
+      "sevenDayTrend": "7-दिन का रुझान",
+      "forecastTitle": "मूल्य पूर्वानुमान",
+      "thirtyDay": "30-दिन",
+      "historical": "ऐतिहासिक",
+      "forecast": "पूर्वानुमान",
+      "week": "इस सप्ताह",
+      "bullish": "तेजी",
+      "bearish": "मंदी",
+      "neutral": "स्थिर",
+      "currentPrice": "वर्तमान भाव",
+      "viewAll": "सभी देखें"
+    },
+    "disease": {
+      "title": "रोग चेतावनी",
+      "viewDetails": "विवरण देखें",
+      "kmAway": "किमी दूर",
+      "kmRadius": "किमी दायरे में",
+      "noAlerts": "आपके क्षेत्र में कोई सक्रिय चेतावनी नहीं",
+      "severity": "गंभीरता",
+      "reportedOn": "रिपोर्ट की तारीख"
+    },
+    "health": {
+      "title": "फार्म स्वास्थ्य",
+      "lastAssessed": "अंतिम मूल्यांकन",
+      "nextDue": "अगला मूल्यांकन",
+      "recommendations": "सिफारिशें",
+      "grade": "ग्रेड",
+      "soil": "मिट्टी",
+      "water": "पानी",
+      "disease": "रोग",
+      "market": "बाजार",
+      "overall": "कुल"
+    },
+    "schemes": {
+      "title": "सरकारी योजनाएं",
+      "eligible": "पात्र",
+      "apply": "अभी आवेदन करें",
+      "deadline": "अंतिम तिथि",
+      "benefit": "लाभ",
+      "subsidy": "सब्सिडी",
+      "loan": "ऋण",
+      "insurance": "बीमा",
+      "training": "प्रशिक्षण",
+      "viewScheme": "योजना देखें",
+      "eligibleBadge": "पात्र",
+      "checkEligibility": "पात्रता जांचें",
+      "schemesFound": "योजनाएं मिलीं",
+      "viewAll": "सभी योजनाएं देखें",
+      "matchScore": "मिलान स्कोर"
+    },
+    "scheme": {
+      "title": "सरकारी योजनाएं",
+      "eligible": "पात्र",
+      "apply": "अभी आवेदन करें",
+      "deadline": "अंतिम तिथि"
+    },
+    "voice": {
+      "title": "वॉइस असिस्टेंट",
+      "subtitle": "अपने खेत के बारे में कुछ भी पूछें",
+      "startRecording": "रिकॉर्डिंग शुरू करें",
+      "stopRecording": "रिकॉर्डिंग बंद करें",
+      "tapToSpeak": "बोलने के लिए टैप करें",
+      "whatToPlant": "मुझे क्या लगाना चाहिए?",
+      "diseaseDetected": "मेरी फसल की बीमारी जांचें",
+      "weatherForecast": "मौसम का पूर्वानुमान क्या है?",
+      "bestMarket": "सबसे अच्छा बाजार भाव कहाँ है?",
+      "placeholder": "अपने खेत के बारे में कुछ भी पूछें…",
+      "listening": "सुन रहा हूँ…",
+      "tap": "बोलने के लिए टैप करें"
+    }
   }
 }

@@ -28,5 +28,127 @@
       "send_otp": "ರೀಸೆಟ್ ಕೋಡ್ ಕಳುಹಿಸಿ",
       "reset_password": "ಪಾಸ್‌ವರ್ಡ್ ರೀಸೆಟ್ ಮಾಡಿ"
     }
+  },
+  "dashboard": {
+    "greeting": "ಶುಭೋದಯ",
+    "farmer": "ರೈತ",
+    "header": {
+      "title": "ಫಾರ್ಮ್ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+      "greeting": "ಶುಭೋದಯ",
+      "farmerGreeting": "ಮತ್ತೆ ಸ್ವಾಗತ",
+      "lastUpdated": "ಕೊನೆಯ ಅಪ್‌ಡೇಟ್",
+      "refresh": "ರಿಫ್ರೆಶ್ ಮಾಡಿ",
+      "farmOverview": "ಫಾರ್ಮ್ ಅವಲೋಕನ",
+      "todaysSummary": "ಇಂದಿನ ಸಾರಾಂಶ",
+      "goodMorning": "ಶುಭೋದಯ",
+      "goodAfternoon": "ಶುಭ ಮಧ್ಯಾಹ್ನ",
+      "goodEvening": "ಶುಭ ಸಂಜೆ"
+    },
+    "weather": {
+      "humidity": "ಆರ್ದ್ರತೆ",
+      "wind": "ಗಾಳಿ",
+      "rain": "ಮಳೆ",
+      "visibility": "ಗೋಚರತೆ",
+      "feelsLike": "ಅನಿಸುತ್ತದೆ",
+      "sowingWindow": "ಬಿತ್ತನೆ ಅವಕಾಶ",
+      "season": "ಋತು",
+      "Season": {
+        "Kharif": "ಖರೀಫ್ ಋತು",
+        "Rabi": "ರಬಿ ಋತು",
+        "Zaid": "ಜಾಯದ್ ಋತು"
+      }
+    },
+    "snapshot": {
+      "activeCrop": "ಸಕ್ರಿಯ ಬೆಳೆ",
+      "projectedProfit": "ಅಂದಾಜು ಲಾಭ",
+      "thisSeasonEstimate": "ಈ ಋತುವಿನ ಅಂದಾಜು",
+      "farmHealth": "ಫಾರ್ಮ್ ಆರೋಗ್ಯ",
+      "overallScore": "ಒಟ್ಟು ಅಂಕ",
+      "diseaseRisk": "ರೋಗ ಅಪಾಯ"
+    },
+    "ai": {
+      "title": "AI ಶಿಫಾರಸುಗಳು",
+      "tapToExpand": "ವಿಸ್ತರಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ",
+      "recommendationFor": "ಗಾಗಿ ಶಿಫಾರಸು",
+      "demand": "ಬೇಡಿಕೆ",
+      "aiPick": "AI ಆಯ್ಕೆ",
+      "expectedProfit": "ನಿರೀಕ್ಷಿತ ಲಾಭ",
+      "risk": "ಅಪಾಯ",
+      "Demand": "ಬೇಡಿಕೆ",
+      "confidence": "ವಿಶ್ವಾಸ",
+      "viewMore": "ಇನ್ನಷ್ಟು ನೋಡಿ"
+    },
+    "market": {
+      "title": "ಮಾರುಕಟ್ಟೆ ಬೆಲೆಗಳು",
+      "sevenDayTrend": "೭-ದಿನ ಟ್ರೆಂಡ್",
+      "forecastTitle": "ಬೆಲೆ ಮುನ್ಸೂಚನೆ",
+      "thirtyDay": "೩೦-ದಿನ",
+      "historical": "ಐತಿಹಾಸಿಕ",
+      "forecast": "ಮುನ್ಸೂಚನೆ",
+      "week": "ಈ ವಾರ",
+      "bullish": "ಏರಿಕೆ",
+      "bearish": "ಇಳಿಕೆ",
+      "neutral": "ಸ್ಥಿರ",
+      "currentPrice": "ಪ್ರಸ್ತುತ ಬೆಲೆ",
+      "viewAll": "ಎಲ್ಲವನ್ನೂ ನೋಡಿ"
+    },
+    "disease": {
+      "title": "ರೋಗ ಎಚ್ಚರಿಕೆಗಳು",
+      "viewDetails": "ವಿವರಗಳು ನೋಡಿ",
+      "kmAway": "ಕಿ.ಮೀ ದೂರ",
+      "kmRadius": "ಕಿ.ಮೀ ವ್ಯಾಪ್ತಿಯಲ್ಲಿ",
+      "noAlerts": "ನಿಮ್ಮ ಪ್ರದೇಶದಲ್ಲಿ ಯಾವುದೇ ಸಕ್ರಿಯ ಎಚ್ಚರಿಕೆಗಳಿಲ್ಲ",
+      "severity": "ತೀವ್ರತೆ",
+      "reportedOn": "ವರದಿ ಮಾಡಿದ ದಿನಾಂಕ"
+    },
+    "health": {
+      "title": "ಫಾರ್ಮ್ ಆರೋಗ್ಯ",
+      "lastAssessed": "ಕೊನೆಯ ಮೌಲ್ಯಮಾಪನ",
+      "nextDue": "ಮುಂದಿನ ಮೌಲ್ಯಮಾಪನ",
+      "recommendations": "ಶಿಫಾರಸುಗಳು",
+      "grade": "ಶ್ರೇಣಿ",
+      "soil": "ಮಣ್ಣು",
+      "water": "ನೀರು",
+      "disease": "ರೋಗ",
+      "market": "ಮಾರುಕಟ್ಟೆ",
+      "overall": "ಒಟ್ಟು"
+    },
+    "schemes": {
+      "title": "ಸರ್ಕಾರಿ ಯೋಜನೆಗಳು",
+      "eligible": "ಅರ್ಹ",
+      "apply": "ಈಗಲೇ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ",
+      "deadline": "ಕೊನೆಯ ದಿನಾಂಕ",
+      "benefit": "ಪ್ರಯೋಜನ",
+      "subsidy": "ಸಬ್ಸಿಡಿ",
+      "loan": "ಸಾಲ",
+      "insurance": "ವಿಮೆ",
+      "training": "ತರಬೇತಿ",
+      "viewScheme": "ಯೋಜನೆ ನೋಡಿ",
+      "eligibleBadge": "ಅರ್ಹ",
+      "checkEligibility": "ಅರ್ಹತೆ ಪರಿಶೀಲಿಸಿ",
+      "schemesFound": "ಯೋಜನೆಗಳು ಕಂಡುಬಂದಿವೆ",
+      "viewAll": "ಎಲ್ಲಾ ಯೋಜನೆಗಳನ್ನು ನೋಡಿ",
+      "matchScore": "ಹೊಂದಾಣಿಕೆ ಅಂಕ"
+    },
+    "scheme": {
+      "title": "ಸರ್ಕಾರಿ ಯೋಜನೆಗಳು",
+      "eligible": "ಅರ್ಹ",
+      "apply": "ಈಗಲೇ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ",
+      "deadline": "ಕೊನೆಯ ದಿನಾಂಕ"
+    },
+    "voice": {
+      "title": "ವಾಯ್ಸ್ ಅಸಿಸ್ಟೆಂಟ್",
+      "subtitle": "ನಿಮ್ಮ ಹೊಲದ ಬಗ್ಗೆ ಏನಾದರೂ ಕೇಳಿ",
+      "startRecording": "ರೆಕಾರ್ಡಿಂಗ್ ಪ್ರಾರಂಭಿಸಿ",
+      "stopRecording": "ರೆಕಾರ್ಡಿಂಗ್ ನಿಲ್ಲಿಸಿ",
+      "tapToSpeak": "ಮಾತನಾಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ",
+      "whatToPlant": "ನಾನು ಏನು ನೆಡಬೇಕು?",
+      "diseaseDetected": "ನನ್ನ ಬೆಳೆಯ ರೋಗ ಪರೀಕ್ಷಿಸಿ",
+      "weatherForecast": "ಹವಾಮಾನ ಮುನ್ಸೂಚನೆ ಏನು?",
+      "bestMarket": "ಅತ್ಯುತ್ತಮ ಮಾರುಕಟ್ಟೆ ಬೆಲೆ ಎಲ್ಲಿದೆ?",
+      "placeholder": "ನಿಮ್ಮ ಹೊಲದ ಬಗ್ಗೆ ಏನಾದರೂ ಕೇಳಿ…",
+      "listening": "ಆಲಿಸುತ್ತಿದ್ದೇನೆ…",
+      "tap": "ಮಾತನಾಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ"
+    }
   }
 }
