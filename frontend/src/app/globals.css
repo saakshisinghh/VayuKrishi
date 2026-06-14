@@ -1,105 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
 @import "tailwindcss";
 
-@theme {
-  /* Brand Colors */
-  --color-primary: #1B6B2F;
-  --color-primary-dark: #145224;
-  --color-primary-light: #2d8a45;
-  --color-secondary: #00796B;
-  --color-accent: #F57F17;
-  --color-success: #2E7D32;
-  --color-error: #C62828;
-  --color-warning: #F57F17;
-  --color-bg-primary: #0d0d0d;
-  --color-bg-secondary: #161616;
-
-  /* Typography */
-  --font-family-display: 'Sora', sans-serif;
-  --font-family-body: 'DM Sans', Inter, sans-serif;
-
-  /* Border Radius */
-  --radius-card: 12px;
-  --radius-button: 8px;
-
-  /* Shadows */
-  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
-}
-
-@layer base {
-  :root {
-    --background: #0d0d0d;
-    --foreground: #ffffff;
-  }
-}
-
-/* ── Reset ── */
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-family: var(--font-family-body);
-  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #0d0d0d;
-  color: #ffffff;
-  font-family: 'DM Sans', Inter, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.5;
+  background-color: #0a0f0a;
+  color: #f8fafc;
 }
 
-/* ── Focus visible ── */
-:focus-visible {
-  outline: 2px solid #1B6B2F;
-  outline-offset: 2px;
+/* Inputs match dark theme */
+input,
+textarea,
+[data-slot="input"],
+[data-slot="textarea"] {
+  color: #f8fafc !important;
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
 }
 
-/* ── Scrollbar ── */
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-::-webkit-scrollbar-track {
-  background: #1a1a1a;
-}
-::-webkit-scrollbar-thumb {
-  background: #333333;
-  border-radius: 3px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #444444;
+input::placeholder,
+textarea::placeholder {
+  color: #64748b !important;
 }
 
-/* ── Links ── */
-a {
-  color: inherit;
-  text-decoration: none;
+/* Select trigger */
+[data-slot="select-trigger"] {
+  color: #f8fafc !important;
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
 }
 
-/* ── Images ── */
-img, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
+/* Fix dropdown/select content */
+[role="listbox"],
+[role="option"],
+[data-radix-popper-content-wrapper],
+[data-slot="select-content"] {
+  background-color: #1e293b !important;
+  color: #f8fafc !important;
 }
 
-/* ── Button reset ── */
-button {
-  cursor: pointer;
-  font-family: inherit;
+[role="option"] {
+  color: #f8fafc !important;
 }
 
-/* ── Input reset ── */
-input, select, textarea {
-  font-family: inherit;
-  font-size: inherit;
+[role="option"]:hover,
+[role="option"][data-highlighted] {
+  background-color: #166534 !important;
+  color: #ffffff !important;
 }

@@ -1,13 +1,12 @@
-import { DashboardGrid } from '@/features/dashboard/components/dashboard-grid'
-import { DashboardHeader } from '@/features/dashboard/components/dashboard-header'
+﻿'use client';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { useState } from 'react';
 
-export default function DashboardPage() {
+export default function DashboardLayout({ children }: { children: React.ReactNode }) {
+  const [queryClient] = useState(() => new QueryClient());
   return (
-    <div className="min-h-screen bg-[#0d0d0d]">
-      <div className="w-full max-w-[1600px] mx-auto px-6 md:px-10 lg:px-14 py-8 space-y-6">
-        <DashboardHeader />
-        <DashboardGrid />
-      </div>
-    </div>
-  )
+    <QueryClientProvider client={queryClient}>
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-950">{children}</div>
+    </QueryClientProvider>
+  );
 }
