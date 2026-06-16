@@ -352,5 +352,109 @@
         "desc": "ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕ ಪರಿಶೀಲಿಸಿ."
       }
     }
+  },
+  "assistant": {
+    "hero": {
+      "title": "ವಾಯುಕೃಷಿ AI ಸಲಹೆಗಾರ",
+      "subtitle": "ಬೆಳೆಗಳು, ರೋಗಗಳು, ಹವಾಮಾನ, ನೀರಾವರಿ, ಮಾರುಕಟ್ಟೆ ಮತ್ತು ಕೃಷಿ ಬಗ್ಗೆ ಪ್ರಶ್ನಿಸಿ.",
+      "aiBadge": "AI ಚಾಲಿತ",
+      "memoryOn": "ಸ್ಮೃತಿ ಸಕ್ರಿಯ",
+      "memoryOff": "ಸ್ಮೃತಿ ಇಲ್ಲ",
+      "online": "ಆನ್‌ಲೈನ್",
+      "thinking": "ಯೋಚಿಸುತ್ತಿದೆ...",
+      "messages": "ಸಂದೇಶಗಳು",
+      "sessions": "ಅಧಿವೇಶನಗಳು",
+      "crops": "ಬೆಳೆಗಳು ಟ್ರ್ಯಾಕ್ ಆಗಿವೆ"
+    },
+    "memory": {
+      "panelTitle": "ರೈತ ಸ್ಮೃತಿ",
+      "active": "ಸಕ್ರಿಯ",
+      "farmSize": "ಜಮೀನಿನ ಗಾತ್ರ",
+      "soilType": "ಮಣ್ಣಿನ ಪ್ರಕಾರ",
+      "currentCrop": "ಪ್ರಸ್ತುತ ಬೆಳೆ",
+      "language": "ಭಾಷೆ",
+      "insights": "ಸ್ಮೃತಿ ಒಳನೋಟಗಳು",
+      "lastCrop": "ಕೊನೆಯ ಬೆಳೆ",
+      "previousDisease": "ಹಿಂದಿನ ರೋಗ",
+      "lastRecommendation": "ಕೊನೆಯ ಶಿಫಾರಸು",
+      "sessions": "{count} ಅಧಿವೇಶನಗಳು",
+      "noMemory": "ಸ್ಮೃತಿ ಡೇಟಾ ಕಂಡುಬಂದಿಲ್ಲ. ಸಂಭಾಷಣೆ ಪ್ರಾರಂಭಿಸಿ."
+    },
+    "context": {
+      "usedFor": "ಈ ಆಧಾರದ ಮೇಲೆ ಸಲಹೆ:",
+      "farmLocation": "ಜಮೀನಿನ ಸ್ಥಳ",
+      "soilType": "ಮಣ್ಣಿನ ಪ್ರಕಾರ",
+      "previousCrop": "ಹಿಂದಿನ ಬೆಳೆ",
+      "diseaseHistory": "ರೋಗ ಇತಿಹಾಸ",
+      "weatherData": "ಹವಾಮಾನ ಡೇಟಾ",
+      "marketData": "ಮಾರುಕಟ್ಟೆ ಡೇಟಾ"
+    },
+    "voice": {
+      "startRecording": "ರೆಕಾರ್ಡಿಂಗ್ ಪ್ರಾರಂಭಿಸಿ",
+      "pauseRecording": "ರೆಕಾರ್ಡಿಂಗ್ ವಿರಾಮಗೊಳಿಸಿ",
+      "resumeRecording": "ರೆಕಾರ್ಡಿಂಗ್ ಮತ್ತೆ ಪ್ರಾರಂಭಿಸಿ",
+      "stopRecording": "ರೆಕಾರ್ಡಿಂಗ್ ನಿಲ್ಲಿಸಿ",
+      "recording": "ರೆಕಾರ್ಡ್ ಆಗುತ್ತಿದೆ...",
+      "paused": "ವಿರಾಮಗೊಂಡಿದೆ",
+      "transcribing": "ಲಿಪ್ಯಂತರಿಸುತ್ತಿದೆ...",
+      "uploadAudio": "ಆಡಿಯೋ ಫೈಲ್ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+      "dropAudio": "ಆಡಿಯೋ ಫೈಲ್ ಎಳೆಯಿರಿ ಅಥವಾ ಕ್ಲಿಕ್ ಮಾಡಿ",
+      "invalidFormat": "ಅಮಾನ್ಯ ಆಡಿಯೋ ಫಾರ್ಮ್ಯಾಟ್.",
+      "fileTooLarge": "ಫೈಲ್ ತುಂಬಾ ದೊಡ್ಡದು. ಗರಿಷ್ಠ {max}MB.",
+      "transcriptionFailed": "ಲಿಪ್ಯಂತರಣ ವಿಫಲವಾಯಿತು. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+    },
+    "audio": {
+      "play": "ಚಾಲನೆ",
+      "pause": "ವಿರಾಮ",
+      "replay": "ಮತ್ತೆ ಚಾಲನೆ",
+      "speed": "ವೇಗ"
+    },
+    "input": {
+      "text": "ಪಠ್ಯ",
+      "voice": "ಧ್ವನಿ",
+      "upload": "ಅಪ್‌ಲೋಡ್",
+      "placeholder": "ಬೆಳೆಗಳು, ರೋಗಗಳು, ಹವಾಮಾನ ಬಗ್ಗೆ ಕೇಳಿ...",
+      "send": "ಸಂದೇಶ ಕಳುಹಿಸಿ",
+      "hint": "ಕಳುಹಿಸಲು Enter ಒತ್ತಿ",
+      "hideActions": "ಕ್ರಿಯೆಗಳು ಮರೆಮಾಡಿ",
+      "showActions": "ಕ್ರಿಯೆಗಳು ತೋರಿಸಿ"
+    },
+    "quickActions": {
+      "title": "ತ್ವರಿತ ಕ್ರಿಯೆಗಳು",
+      "whatToPlant": "ನಾನು ಏನು ನೆಡಬೇಕು?",
+      "diseaseRisk": "ರೋಗ ಅಪಾಯ ವಿಶ್ಲೇಷಣೆ",
+      "marketForecast": "ಮಾರುಕಟ್ಟೆ ಮುನ್ಸೂಚನೆ",
+      "farmPlan": "ಜಮೀನು ಯೋಜನೆ",
+      "waterRecommendation": "ನೀರಿನ ಶಿಫಾರಸು",
+      "govtSchemes": "ಸರ್ಕಾರಿ ಯೋಜನೆಗಳು"
+    },
+    "streaming": {
+      "generating": "ಪ್ರತಿಕ್ರಿಯೆ ರಚಿಸಲಾಗುತ್ತಿದೆ...",
+      "cancel": "ರದ್ದುಮಾಡಿ"
+    },
+    "welcome": {
+      "title": "ವಾಯುಕೃಷಿಯನ್ನು ಕೇಳಿ",
+      "subtitle": "ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಕೃಷಿ ಸಲಹೆಗಾರ ಸಿದ್ಧರಾಗಿದ್ದಾರೆ."
+    },
+    "widget": {
+      "title": "ವಾಯುಕೃಷಿ AI",
+      "askVayukrishi": "ವಾಯುಕೃಷಿಯನ್ನು ಕೇಳಿ",
+      "placeholder": "ನಿಮ್ಮ ಜಮೀನಿನ ಬಗ್ಗೆ ಕೇಳಿ...",
+      "openFull": "ಸಂಪೂರ್ಣ ತೆರೆಯಿರಿ",
+      "close": "ಸಹಾಯಕ ಮುಚ್ಚಿ"
+    },
+    "errors": {
+      "assistantTitle": "ಸಹಾಯಕ ಲಭ್ಯವಿಲ್ಲ",
+      "assistantDesc": "AI ಸಲಹೆಗಾರ ತಾತ್ಕಾಲಿಕವಾಗಿ ಲಭ್ಯವಿಲ್ಲ.",
+      "voiceTitle": "ಮೈಕ್ರೋಫೋನ್ ದೋಷ",
+      "voiceDesc": "ಮೈಕ್ರೋಫೋನ್ ಪ್ರವೇಶಿಸಲಾಗಲಿಲ್ಲ.",
+      "voicePermission": "ಮೈಕ್ರೋಫೋನ್ ಅನುಮತಿ ನಿರಾಕರಿಸಲಾಗಿದೆ.",
+      "transcriptionTitle": "ಲಿಪ್ಯಂತರಣ ವಿಫಲ",
+      "transcriptionDesc": "ಆಡಿಯೋ ಪರಿವರ್ತಿಸಲಾಗಲಿಲ್ಲ.",
+      "memoryTitle": "ಸ್ಮೃತಿ ಸಮಸ್ಯೆ",
+      "memoryDesc": "ಜಮೀನಿನ ಪ್ರೊಫೈಲ್ ಲೋಡ್ ಆಗಲಿಲ್ಲ.",
+      "retry": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ",
+      "reconnect": "ಮತ್ತೆ ಸಂಪರ್ಕಿಸಿ"
+    }
   }
 }

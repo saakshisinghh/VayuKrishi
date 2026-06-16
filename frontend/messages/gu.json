@@ -352,5 +352,109 @@
         "desc": "કનેક્શન તપાસો."
       }
     }
+  },
+  "assistant": {
+    "hero": {
+      "title": "વાયુકૃષિ AI સલાહકાર",
+      "subtitle": "પાક, રોગ, હવામાન, સિંચાઈ, બજાર અને ખેતી વિશે પ્રશ્નો પૂછો.",
+      "aiBadge": "AI સંચાલિત",
+      "memoryOn": "સ્મૃતિ સક્રિય",
+      "memoryOff": "સ્મૃતિ બંધ",
+      "online": "ઓનલાઇન",
+      "thinking": "વિચારી રહ્યો છે...",
+      "messages": "સંદેશાઓ",
+      "sessions": "સત્રો",
+      "crops": "પાક ટ્રૅક કર્યા"
+    },
+    "memory": {
+      "panelTitle": "ખેડૂત સ્મૃતિ",
+      "active": "સક્રિય",
+      "farmSize": "ખેતર કદ",
+      "soilType": "માટીનો પ્રકાર",
+      "currentCrop": "વર્તમાન પાક",
+      "language": "ભાષા",
+      "insights": "સ્મૃતિ આંતરદૃષ્ટિ",
+      "lastCrop": "છેલ્લો પાક",
+      "previousDisease": "અગાઉનો રોગ",
+      "lastRecommendation": "છેલ્લી ભલામણ",
+      "sessions": "{count} સત્રો",
+      "noMemory": "કોઈ સ્મૃતિ ડેટા મળ્યો નથી. વાર્તાલાપ શરૂ કરો."
+    },
+    "context": {
+      "usedFor": "આ આધારે સલાહ આપવામાં આવી:",
+      "farmLocation": "ખેતર સ્થાન",
+      "soilType": "માટીનો પ્રકાર",
+      "previousCrop": "અગાઉનો પાક",
+      "diseaseHistory": "રોગ ઇતિહાસ",
+      "weatherData": "હવામાન ડેટા",
+      "marketData": "બજાર ડેટા"
+    },
+    "voice": {
+      "startRecording": "રેકોર્ડિંગ શરૂ કરો",
+      "pauseRecording": "રેકોર્ડિંગ અટકાવો",
+      "resumeRecording": "રેકોર્ડિંગ ફરી શરૂ કરો",
+      "stopRecording": "રેકોર્ડિંગ બંધ કરો",
+      "recording": "રેકોર્ડ થઈ રહ્યું છે...",
+      "paused": "અટકાવ્યું",
+      "transcribing": "લિવ્યંતરણ...",
+      "uploadAudio": "ઓડિઓ ફાઇલ અપલોડ કરો",
+      "dropAudio": "ઓડિઓ ફાઇલ ખેંચો અથવા ક્લિક કરો",
+      "invalidFormat": "અમાન્ય ઓડિઓ ફોર્મેટ.",
+      "fileTooLarge": "ફાઇલ ઘણી મોટી છે. મહત્તમ {max}MB.",
+      "transcriptionFailed": "લિવ્યંતરણ નિષ્ફળ. ફરી પ્રયાસ કરો."
+    },
+    "audio": {
+      "play": "ચલાવો",
+      "pause": "અટકાવો",
+      "replay": "ફરી ચલાવો",
+      "speed": "ઝડપ"
+    },
+    "input": {
+      "text": "ટેક્સ્ટ",
+      "voice": "અવાજ",
+      "upload": "અપલોડ",
+      "placeholder": "પાક, રોગ, હવામાન, બજાર વિશે પૂછો...",
+      "send": "સંદેશ મોકલો",
+      "hint": "મોકલવા Enter દબાવો",
+      "hideActions": "ક્રિયાઓ છુપાવો",
+      "showActions": "ક્રિયાઓ બતાવો"
+    },
+    "quickActions": {
+      "title": "ઝડપી ક્રિયાઓ",
+      "whatToPlant": "મારે શું વાવવું?",
+      "diseaseRisk": "રોગ જોખમ વિશ્લેષણ",
+      "marketForecast": "બજાર અંદાજ",
+      "farmPlan": "ખેત યોજના",
+      "waterRecommendation": "પાણી ભલામણ",
+      "govtSchemes": "સરકારી યોજનાઓ"
+    },
+    "streaming": {
+      "generating": "જવાબ તૈયાર થઈ રહ્યો છે...",
+      "cancel": "રદ કરો"
+    },
+    "welcome": {
+      "title": "વાયુકૃષિને પૂછો",
+      "subtitle": "તમારો વ્યક્તિગત કૃષિ સલાહકાર તૈયાર છે."
+    },
+    "widget": {
+      "title": "વાયુકૃષિ AI",
+      "askVayukrishi": "વાયુકૃષિને પૂછો",
+      "placeholder": "તમારા ખેત વિશે પૂછો...",
+      "openFull": "સંપૂર્ણ ખોલો",
+      "close": "સહાયક બંધ કરો"
+    },
+    "errors": {
+      "assistantTitle": "સહાયક ઉપલબ્ધ નથી",
+      "assistantDesc": "AI સલાહકાર અસ્થાયી રૂપે ઉપલબ્ધ નથી.",
+      "voiceTitle": "માઇક્રોફોન ભૂલ",
+      "voiceDesc": "માઇક્રોફોન ઍક્સેસ કરી શકાઈ નહીં.",
+      "voicePermission": "માઇક્રોફોન પરવાનગી નકારી.",
+      "transcriptionTitle": "લિવ્યંતરણ નિષ્ફળ",
+      "transcriptionDesc": "ઓડિઓ લિવ્યંતરણ કરી શકાઈ નહીં.",
+      "memoryTitle": "સ્મૃતિ સમસ્યા",
+      "memoryDesc": "ખેત પ્રોફાઇલ લોડ થઈ શકી નહીં.",
+      "retry": "ફરી પ્રયાસ",
+      "reconnect": "ફરી જોડો"
+    }
   }
 }

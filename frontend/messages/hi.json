@@ -466,5 +466,109 @@
         "desc": "अपना इंटरनेट कनेक्शन जाँचें और पुनः प्रयास करें।"
       }
     }
+  },
+  "assistant": {
+    "hero": {
+      "title": "वायुकृषी AI सलाहकार",
+      "subtitle": "फसलों, रोगों, मौसम, सिंचाई, बाजार और खेती के बारे में प्रश्न पूछें।",
+      "aiBadge": "AI संचालित",
+      "memoryOn": "स्मृति सक्रिय",
+      "memoryOff": "स्मृति बंद",
+      "online": "ऑनलाइन",
+      "thinking": "सोच रहा है...",
+      "messages": "संदेश",
+      "sessions": "सत्र",
+      "crops": "फसलें ट्रैक की"
+    },
+    "memory": {
+      "panelTitle": "किसान स्मृति",
+      "active": "सक्रिय",
+      "farmSize": "खेत का आकार",
+      "soilType": "मिट्टी का प्रकार",
+      "currentCrop": "वर्तमान फसल",
+      "language": "भाषा",
+      "insights": "स्मृति अंतर्दृष्टि",
+      "lastCrop": "पिछली फसल",
+      "previousDisease": "पिछला रोग",
+      "lastRecommendation": "पिछली सिफारिश",
+      "sessions": "{count} सत्र",
+      "noMemory": "कोई स्मृति डेटा नहीं मिला। अपनी प्रोफ़ाइल बनाने के लिए बातचीत शुरू करें।"
+    },
+    "context": {
+      "usedFor": "सलाह इस आधार पर दी गई:",
+      "farmLocation": "खेत स्थान",
+      "soilType": "मिट्टी का प्रकार",
+      "previousCrop": "पिछली फसल",
+      "diseaseHistory": "रोग इतिहास",
+      "weatherData": "मौसम डेटा",
+      "marketData": "बाजार डेटा"
+    },
+    "voice": {
+      "startRecording": "रिकॉर्डिंग शुरू करें",
+      "pauseRecording": "रिकॉर्डिंग रोकें",
+      "resumeRecording": "रिकॉर्डिंग फिर शुरू करें",
+      "stopRecording": "रिकॉर्डिंग बंद करें",
+      "recording": "रिकॉर्डिंग हो रही है...",
+      "paused": "रोका गया",
+      "transcribing": "लिप्यंतरण हो रहा है...",
+      "uploadAudio": "ऑडियो फ़ाइल अपलोड करें",
+      "dropAudio": "ऑडियो फ़ाइल यहाँ छोड़ें या क्लिक करें",
+      "invalidFormat": "अवैध ऑडियो प्रारूप।",
+      "fileTooLarge": "फ़ाइल बहुत बड़ी है। अधिकतम आकार {max}MB है।",
+      "transcriptionFailed": "लिप्यंतरण विफल हुआ। कृपया पुनः प्रयास करें।"
+    },
+    "audio": {
+      "play": "चलाएं",
+      "pause": "रोकें",
+      "replay": "फिर चलाएं",
+      "speed": "प्लेबैक गति"
+    },
+    "input": {
+      "text": "टेक्स्ट",
+      "voice": "आवाज़",
+      "upload": "अपलोड",
+      "placeholder": "फसलों, रोगों, मौसम, बाजार के बारे में पूछें...",
+      "send": "संदेश भेजें",
+      "hint": "भेजने के लिए Enter दबाएं · नई पंक्ति के लिए Shift+Enter",
+      "hideActions": "क्रियाएं छुपाएं",
+      "showActions": "क्रियाएं दिखाएं"
+    },
+    "quickActions": {
+      "title": "त्वरित क्रियाएं",
+      "whatToPlant": "मुझे क्या लगाना चाहिए?",
+      "diseaseRisk": "रोग जोखिम विश्लेषण",
+      "marketForecast": "बाजार पूर्वानुमान",
+      "farmPlan": "फार्म योजना बनाएं",
+      "waterRecommendation": "पानी की सिफारिश",
+      "govtSchemes": "सरकारी योजनाएं"
+    },
+    "streaming": {
+      "generating": "उत्तर तैयार हो रहा है...",
+      "cancel": "रद्द करें"
+    },
+    "welcome": {
+      "title": "वायुकृषी से पूछें",
+      "subtitle": "आपका व्यक्तिगत कृषि सलाहकार तैयार है। अपने खेत, फसलों या बाजार के बारे में कुछ भी पूछें।"
+    },
+    "widget": {
+      "title": "वायुकृषी AI",
+      "askVayukrishi": "वायुकृषी से पूछें",
+      "placeholder": "अपने खेत के बारे में पूछें...",
+      "openFull": "पूरा खोलें",
+      "close": "सहायक बंद करें"
+    },
+    "errors": {
+      "assistantTitle": "सहायक उपलब्ध नहीं",
+      "assistantDesc": "AI सलाहकार अस्थायी रूप से उपलब्ध नहीं है।",
+      "voiceTitle": "माइक्रोफोन त्रुटि",
+      "voiceDesc": "माइक्रोफोन तक पहुंच नहीं हो सकी।",
+      "voicePermission": "माइक्रोफोन अनुमति अस्वीकार की गई।",
+      "transcriptionTitle": "लिप्यंतरण विफल",
+      "transcriptionDesc": "आपके ऑडियो का लिप्यंतरण नहीं हो सका।",
+      "memoryTitle": "स्मृति समन्वय समस्या",
+      "memoryDesc": "आपकी खेत प्रोफ़ाइल लोड नहीं हो सकी।",
+      "retry": "पुनः प्रयास करें",
+      "reconnect": "पुनः जोड़ें"
+    }
   }
 }

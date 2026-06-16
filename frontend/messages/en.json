@@ -749,5 +749,109 @@
         "desc": "Check your internet connection and retry."
       }
     }
+  },
+  "assistant": {
+    "hero": {
+      "title": "Vayukrishi AI Advisor",
+      "subtitle": "Ask questions about crops, diseases, weather, irrigation, markets, and farming practices.",
+      "aiBadge": "AI Powered",
+      "memoryOn": "Memory Active",
+      "memoryOff": "Memory Off",
+      "online": "Online",
+      "thinking": "Thinking...",
+      "messages": "Messages",
+      "sessions": "Sessions",
+      "crops": "Crops Tracked"
+    },
+    "memory": {
+      "panelTitle": "Farmer Memory",
+      "active": "Active",
+      "farmSize": "Farm Size",
+      "soilType": "Soil Type",
+      "currentCrop": "Current Crop",
+      "language": "Language",
+      "insights": "Memory Insights",
+      "lastCrop": "Last Crop",
+      "previousDisease": "Previous Disease",
+      "lastRecommendation": "Last Recommendation",
+      "sessions": "{count} sessions",
+      "noMemory": "No memory data found. Start a conversation to build your profile."
+    },
+    "context": {
+      "usedFor": "Advice generated using:",
+      "farmLocation": "Farm Location",
+      "soilType": "Soil Type",
+      "previousCrop": "Previous Crop",
+      "diseaseHistory": "Disease History",
+      "weatherData": "Weather Data",
+      "marketData": "Market Data"
+    },
+    "voice": {
+      "startRecording": "Start recording",
+      "pauseRecording": "Pause recording",
+      "resumeRecording": "Resume recording",
+      "stopRecording": "Stop recording",
+      "recording": "Recording...",
+      "paused": "Paused",
+      "transcribing": "Transcribing...",
+      "uploadAudio": "Upload audio file",
+      "dropAudio": "Drop audio file or click to upload",
+      "invalidFormat": "Invalid audio format. Please use MP3, WAV, OGG, or M4A.",
+      "fileTooLarge": "File too large. Maximum size is {max}MB.",
+      "transcriptionFailed": "Transcription failed. Please try again."
+    },
+    "audio": {
+      "play": "Play",
+      "pause": "Pause",
+      "replay": "Replay",
+      "speed": "Playback speed"
+    },
+    "input": {
+      "text": "Text",
+      "voice": "Voice",
+      "upload": "Upload",
+      "placeholder": "Ask about crops, diseases, weather, markets...",
+      "send": "Send message",
+      "hint": "Press Enter to send · Shift+Enter for new line",
+      "hideActions": "Hide actions",
+      "showActions": "Show actions"
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "whatToPlant": "What should I plant?",
+      "diseaseRisk": "Analyze disease risk",
+      "marketForecast": "Market forecast",
+      "farmPlan": "Generate farm plan",
+      "waterRecommendation": "Water recommendation",
+      "govtSchemes": "Government schemes"
+    },
+    "streaming": {
+      "generating": "Generating response...",
+      "cancel": "Cancel"
+    },
+    "welcome": {
+      "title": "Ask Vayukrishi",
+      "subtitle": "Your personal agricultural advisor is ready. Ask anything about your farm, crops, or market."
+    },
+    "widget": {
+      "title": "Vayukrishi AI",
+      "askVayukrishi": "Ask Vayukrishi",
+      "placeholder": "Ask about your farm...",
+      "openFull": "Open full",
+      "close": "Close assistant"
+    },
+    "errors": {
+      "assistantTitle": "Assistant Unavailable",
+      "assistantDesc": "The AI advisor is temporarily unavailable. Please try again in a moment.",
+      "voiceTitle": "Microphone Error",
+      "voiceDesc": "Unable to access microphone. Please check your browser settings.",
+      "voicePermission": "Microphone permission was denied. Please enable it in browser settings.",
+      "transcriptionTitle": "Transcription Failed",
+      "transcriptionDesc": "Could not transcribe your audio. Please try again or type your message.",
+      "memoryTitle": "Memory Sync Issue",
+      "memoryDesc": "Could not load your farm profile. Using default settings.",
+      "retry": "Try Again",
+      "reconnect": "Reconnect"
+    }
   }
 }
