@@ -150,5 +150,207 @@
       "listening": "ಆಲಿಸುತ್ತಿದ್ದೇನೆ…",
       "tap": "ಮಾತನಾಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ"
     }
+  },
+  "diseaseDetection": {
+    "hero": {
+      "badge": "AI-ಚಾಲಿತ ರೋಗ ಬುದ್ಧಿ",
+      "title": "ರೋಗ ಪತ್ತೆ ಬುದ್ಧಿ",
+      "subtitle": "ಬೆಳೆಯ ಚಿತ್ರ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ ಮತ್ತು AI-ಚಾಲಿತ ರೋಗ ರೋಗನಿರ್ಣಯ, ಚಿಕಿತ್ಸಾ ಶಿಫಾರಸುಗಳು ಮತ್ತು ತಡೆಗಟ್ಟುವ ಮಾರ್ಗದರ್ಶನ ಪಡೆಯಿರಿ.",
+      "stats": {
+        "accuracy": "ಮಾದರಿ ನಿಖರತೆ",
+        "accuracyLabel": "ಪತ್ತೆ ನಿಖರತೆ",
+        "modelUpdate": "ಕೊನೆಯ ಅಪ್‌ಡೇಟ್",
+        "modelUpdateLabel": "ಮಾದರಿ ತಾಜಾತನ",
+        "diseases": "ರೋಗಗಳು",
+        "diseasesLabel": "ಡೇಟಾಬೇಸ್‌ನಲ್ಲಿ"
+      }
+    },
+    "upload": {
+      "dragAndDrop": "ಇಲ್ಲಿ ನಿಮ್ಮ ಬೆಳೆ ಚಿತ್ರ ಎಳೆದು ಬಿಡಿ",
+      "dropHere": "ಚಿತ್ರ ಇಲ್ಲಿ ಬಿಡಿ",
+      "or": "ಅಥವಾ",
+      "browse": "ಫೈಲ್‌ಗಳನ್ನು ಬ್ರೌಸ್ ಮಾಡಿ",
+      "supportedFormats": "JPG, PNG, WebP",
+      "maxSize": "ಗರಿಷ್ಠ 10MB",
+      "orUse": "ಅಥವಾ ಬಳಸಿ",
+      "mobileCamera": "ಮೊಬೈಲ್ ಕ್ಯಾಮೆರಾ",
+      "camera": {
+        "open": "ಕ್ಯಾಮೆರಾ ತೆರೆಯಿರಿ",
+        "live": "ಲೈವ್",
+        "capture": "ಫೋಟೋ ತೆಗೆಯಿರಿ",
+        "cancel": "ರದ್ದುಮಾಡಿ",
+        "permissionDenied": "ಕ್ಯಾಮೆರಾ ಅನುಮತಿ ನಿರಾಕರಿಸಲಾಗಿದೆ."
+      },
+      "errors": {
+        "fileType": "ಫೈಲ್ ಪ್ರಕಾರ ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.",
+        "fileSize": "ಫೈಲ್ ತುಂಬಾ ದೊಡ್ಡದು. ಗರಿಷ್ಠ 10MB.",
+        "dimension": "ಚಿತ್ರದ ಆಯಾಮಗಳು ಅಮಾನ್ಯ.",
+        "tooSmall": "ಚಿತ್ರ ತುಂಬಾ ಚಿಕ್ಕದು.",
+        "tooBig": "ಚಿತ್ರ ತುಂಬಾ ದೊಡ್ಡದು.",
+        "corrupt": "ಚಿತ್ರ ಓದಲು ಆಗಲಿಲ್ಲ.",
+        "generic": "ಅಪ್‌ಲೋಡ್ ವಿಫಲವಾಗಿದೆ."
+      }
+    },
+    "preview": {
+      "title": "ಚಿತ್ರ ಪೂರ್ವವೀಕ್ಷಣೆ",
+      "altText": "ಬೆಳೆ ಚಿತ್ರ",
+      "zoomIn": "ಝೂಮ್ ಇನ್",
+      "zoomOut": "ಝೂಮ್ ಔಟ್",
+      "resetZoom": "ಝೂಮ್ ಮರುಹೊಂದಿಸಿ",
+      "fullscreen": "ಪೂರ್ಣ ಪರದೆ",
+      "replace": "ಬದಲಾಯಿಸಿ",
+      "remove": "ತೆಗೆದುಹಾಕಿ",
+      "retake": "ಮತ್ತೆ ತೆಗೆಯಿರಿ",
+      "analyzeNow": "ರೋಗ ವಿಶ್ಲೇಷಿಸಿ",
+      "analyzing": "ವಿಶ್ಲೇಷಿಸಲಾಗುತ್ತಿದೆ..."
+    },
+    "analysis": {
+      "pleaseWait": "AI ಚಿತ್ರವನ್ನು ವಿಶ್ಲೇಷಿಸುವಾಗ ದಯವಿಟ್ಟು ನಿರೀಕ್ಷಿಸಿ…",
+      "elapsed": "ಕಳೆದಿದೆ",
+      "steps": {
+        "upload": "ಸಸ್ಯ ಚಿತ್ರ ವಿಶ್ಲೇಷಣೆ...",
+        "symptoms": "ರೋಗಲಕ್ಷಣಗಳ ಪತ್ತೆ...",
+        "patterns": "ರೋಗ ಮಾದರಿ ಹೋಲಿಕೆ...",
+        "treatment": "ಚಿಕಿತ್ಸಾ ಯೋಜನೆ ರಚನೆ...",
+        "confidence": "ವಿಶ್ವಾಸ ಸ್ಕೋರ್ ಲೆಕ್ಕ..."
+      }
+    },
+    "result": {
+      "analysisComplete": "ವಿಶ್ಲೇಷಣೆ ಪೂರ್ಣ",
+      "processedIn": "{ms}ms ನಲ್ಲಿ ಪ್ರಕ್ರಿಯೆ"
+    },
+    "summary": {
+      "severity": "ತೀವ್ರತೆ",
+      "affectedParts": "ಬಾಧಿತ ಭಾಗಗಳು"
+    },
+    "severity": {
+      "low": "ಕಡಿಮೆ",
+      "moderate": "ಮಧ್ಯಮ",
+      "high": "ಹೆಚ್ಚು",
+      "critical": "ತೀವ್ರ"
+    },
+    "confidence": {
+      "title": "AI ವಿಶ್ವಾಸ ಸ್ಕೋರ್",
+      "confidence": "ವಿಶ್ವಾಸ",
+      "veryHigh": "ಅತ್ಯಂತ ಹೆಚ್ಚು",
+      "high": "ಹೆಚ್ಚು",
+      "moderate": "ಮಧ್ಯಮ",
+      "low": "ಕಡಿಮೆ"
+    },
+    "symptoms": {
+      "title": "ಪತ್ತೆಯಾದ ರೋಗಲಕ್ಷಣಗಳು",
+      "detected": "ಪತ್ತೆಯಾಗಿದೆ",
+      "confirmed": "ದೃಢಪಡಿಸಲಾಗಿದೆ"
+    },
+    "causes": {
+      "title": "ಕಾರಣ ವಿಶ್ಲೇಷಣೆ",
+      "subtitle": "ಈ ರೋಗಕ್ಕೆ ಕಾರಣವಾಗುವ ಅಂಶಗಳು"
+    },
+    "treatment": {
+      "title": "ಚಿಕಿತ್ಸಾ ಯೋಜನೆ",
+      "chemical": "ರಾಸಾಯನಿಕ",
+      "organic": "ಸಾವಯವ",
+      "method": "ಬಳಕೆ ವಿಧಾನ",
+      "dilution": "ದ್ರವೀಕರಣ",
+      "safetyInterval": "ಸುರಕ್ಷತಾ ಮಧ್ಯಂತರ",
+      "availableAt": "ಲಭ್ಯವಿರುವ ಸ್ಥಳ",
+      "safetyNotes": "ಸುರಕ್ಷತಾ ಟಿಪ್ಪಣಿಗಳು",
+      "expand": "ವಿವರಗಳನ್ನು ತೋರಿಸಿ",
+      "collapse": "ಮರೆಮಾಡಿ",
+      "effectiveness": "ಪರಿಣಾಮಕಾರಿ",
+      "urgency": {
+        "immediate": "ತಕ್ಷಣ ಕ್ರಮ",
+        "within24h": "24 ಗಂಟೆಯಲ್ಲಿ",
+        "withinWeek": "ಈ ವಾರ",
+        "monitor": "ಮೇಲ್ವಿಚಾರಣೆ"
+      }
+    },
+    "prevention": {
+      "title": "ತಡೆಗಟ್ಟುವ ಯೋಜನೆ",
+      "subtitle": "ಭವಿಷ್ಯದ ಪ್ರಕೋಪದಿಂದ ಬೆಳೆ ರಕ್ಷಿಸಿ",
+      "actions": "ತಡೆಗಟ್ಟುವ ಕ್ರಮಗಳು",
+      "checklist": "ಮೇಲ್ವಿಚಾರಣಾ ಪಟ್ಟಿ",
+      "riskReduction": "ಅಪಾಯ ಕಡಿತ ತಂತ್ರಗಳು",
+      "nextInspection": "ಮುಂದಿನ ಶಿಫಾರಸು ಪರೀಕ್ಷೆ",
+      "frequency": {
+        "daily": "ದೈನಂದಿನ",
+        "weekly": "ಸಾಪ್ತಾಹಿಕ",
+        "monthly": "ಮಾಸಿಕ"
+      }
+    },
+    "outbreak": {
+      "title": "ಹತ್ತಿರದ ರೋಗ ಪ್ರಕೋಪ ಅಪಾಯ",
+      "subtitle": "ನಿಮ್ಮ ಕೃಷಿ ಭೂಮಿ ಬಳಿ ವರದಿಯಾದ ಪ್ರಕೋಪಗಳು",
+      "alertActive": "ಎಚ್ಚರಿಕೆ ಸಕ್ರಿಯ",
+      "noneDetected": "ಯಾವುದೇ ಪ್ರಕೋಪ ಕಂಡುಬಂದಿಲ್ಲ",
+      "distance": "ದೂರ",
+      "cases": "ಪ್ರಕರಣಗಳು",
+      "crops": "ಬೆಳೆಗಳು",
+      "updated": "ಅಪ್‌ಡೇಟ್",
+      "viewMap": "ನಕ್ಷೆಯಲ್ಲಿ ನೋಡಿ",
+      "risk": {
+        "low": "ಕಡಿಮೆ ಅಪಾಯ",
+        "medium": "ಮಧ್ಯಮ ಅಪಾಯ",
+        "high": "ಹೆಚ್ಚು ಅಪಾಯ",
+        "critical": "ತೀವ್ರ"
+      }
+    },
+    "weather": {
+      "title": "ಹವಾಮಾನ ಪ್ರಭಾವ",
+      "temperature": "ತಾಪಮಾನ",
+      "humidity": "ತೇವಾಂಶ",
+      "rainfall": "ಮಳೆ",
+      "windSpeed": "ಗಾಳಿ ವೇಗ",
+      "spreadRisk": "ರೋಗ ಹರಡುವ ಅಪಾಯ",
+      "forecast7Day": "7-ದಿನ ತೇವಾಂಶ",
+      "humidityChart": "ತೇವಾಂಶ (%)",
+      "colorIndicatesRisk": "ಬಣ್ಣ = ಅಪಾಯ"
+    },
+    "timeline": {
+      "title": "ರೋಗ ಟೈಮ್‌ಲೈನ್",
+      "current": "ಈಗ",
+      "day": "ದಿನ",
+      "severity": "ತೀವ್ರತೆ",
+      "criticalDates": "ಮಹತ್ವದ ದಿನಾಂಕಗಳು"
+    },
+    "actions": {
+      "title": "ರೈತ ಕ್ರಿಯಾ ಕೇಂದ್ರ",
+      "subtitle": "ನಿಮ್ಮ ರೋಗನಿರ್ಣಯದ ಮೇಲೆ ಕ್ರಮ ತೆಗೆದುಕೊಳ್ಳಿ",
+      "download": "ವರದಿ ಡೌನ್‌ಲೋಡ್",
+      "downloadSub": "ಸಂಪೂರ್ಣ ರೋಗನಿರ್ಣಯ PDF",
+      "shareVia": "ಮೂಲಕ ಹಂಚಿಕೊಳ್ಳಿ",
+      "share": {
+        "whatsapp": "WhatsApp",
+        "sms": "SMS",
+        "email": "ಇಮೇಲ್"
+      },
+      "saveHistory": "ಕೃಷಿ ಇತಿಹಾಸದಲ್ಲಿ ಉಳಿಸಿ",
+      "saveHistorySub": "ಕಾಲಾನಂತರದಲ್ಲಿ ಟ್ರ್ಯಾಕ್ ಮಾಡಿ",
+      "saved": "ಉಳಿಸಲಾಗಿದೆ ✓",
+      "askAssistant": "AI ಸಹಾಯಕರನ್ನು ಕೇಳಿ",
+      "askAssistantSub": "ವ್ಯಕ್ತಿಗತ ಸಲಹೆ",
+      "generateFarmPlan": "ಕೃಷಿ ಯೋಜನೆ ರಚಿಸಿ",
+      "generateFarmPlanSub": "ಈ ರೋಗನಿರ್ಣಯದ ಆಧಾರದ ಮೇಲೆ"
+    },
+    "history": {
+      "title": "ರೋಗ ಇತಿಹಾಸ",
+      "viewAll": "ಎಲ್ಲವನ್ನೂ ನೋಡಿ",
+      "empty": "ಇನ್ನೂ ಯಾವುದೇ ರೋಗ ವರದಿಗಳಿಲ್ಲ."
+    },
+    "errors": {
+      "retry": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ",
+      "upload": {
+        "title": "ಅಪ್‌ಲೋಡ್ ವಿಫಲ",
+        "desc": "ಚಿತ್ರ ಅಪ್‌ಲೋಡ್ ಆಗಲಿಲ್ಲ."
+      },
+      "analysis": {
+        "title": "ವಿಶ್ಲೇಷಣೆ ವಿಫಲ",
+        "desc": "AI ವಿಶ್ಲೇಷಣೆ ಪೂರ್ಣಗೊಳ್ಳಲಿಲ್ಲ."
+      },
+      "network": {
+        "title": "ಸಂಪರ್ಕವಿಲ್ಲ",
+        "desc": "ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕ ಪರಿಶೀಲಿಸಿ."
+      }
+    }
   }
 }

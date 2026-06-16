@@ -547,5 +547,207 @@
     "water_availability_required": "Water availability is required",
     "season_required": "Select at least one season",
     "goals_required": "Select at least one goal"
+  },
+  "diseaseDetection": {
+    "hero": {
+      "badge": "AI-Powered Disease Intelligence",
+      "title": "Disease Detection Intelligence",
+      "subtitle": "Upload a crop image and receive AI-powered disease diagnosis, treatment recommendations, and prevention guidance.",
+      "stats": {
+        "accuracy": "Model Accuracy",
+        "accuracyLabel": "Detection Accuracy",
+        "modelUpdate": "Last Updated",
+        "modelUpdateLabel": "Model Freshness",
+        "diseases": "Diseases",
+        "diseasesLabel": "In Database"
+      }
+    },
+    "upload": {
+      "dragAndDrop": "Drag & drop your crop image here",
+      "dropHere": "Drop the image here",
+      "or": "or",
+      "browse": "browse files",
+      "supportedFormats": "JPG, PNG, WebP",
+      "maxSize": "Max 10MB",
+      "orUse": "or use",
+      "mobileCamera": "Mobile Camera",
+      "camera": {
+        "open": "Open Camera",
+        "live": "LIVE",
+        "capture": "Capture Photo",
+        "cancel": "Cancel",
+        "permissionDenied": "Camera access denied. Please allow camera permissions."
+      },
+      "errors": {
+        "fileType": "File type not supported. Please upload JPG, PNG or WebP.",
+        "fileSize": "File too large. Maximum size is 10MB.",
+        "dimension": "Image dimensions invalid.",
+        "tooSmall": "Image too small. Minimum 224×224 pixels.",
+        "tooBig": "Image too large. Maximum 4096×4096 pixels.",
+        "corrupt": "Could not read image. File may be corrupted.",
+        "generic": "Upload failed. Please try again."
+      }
+    },
+    "preview": {
+      "title": "Image Preview",
+      "altText": "Crop image",
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out",
+      "resetZoom": "Reset zoom",
+      "fullscreen": "Fullscreen",
+      "replace": "Replace",
+      "remove": "Remove",
+      "retake": "Retake",
+      "analyzeNow": "Analyze Disease",
+      "analyzing": "Analyzing..."
+    },
+    "analysis": {
+      "pleaseWait": "Please wait while AI analyzes the image…",
+      "elapsed": "elapsed",
+      "steps": {
+        "upload": "Analyzing Plant Image...",
+        "symptoms": "Detecting Symptoms...",
+        "patterns": "Comparing Disease Patterns...",
+        "treatment": "Generating Treatment Plan...",
+        "confidence": "Calculating Confidence Score..."
+      }
+    },
+    "result": {
+      "analysisComplete": "Analysis Complete",
+      "processedIn": "Processed in {ms}ms"
+    },
+    "summary": {
+      "severity": "Severity",
+      "affectedParts": "Affected Parts"
+    },
+    "severity": {
+      "low": "Low",
+      "moderate": "Moderate",
+      "high": "High",
+      "critical": "Critical"
+    },
+    "confidence": {
+      "title": "AI Confidence Score",
+      "confidence": "Confidence",
+      "veryHigh": "Very High Confidence",
+      "high": "High Confidence",
+      "moderate": "Moderate Confidence",
+      "low": "Low Confidence"
+    },
+    "symptoms": {
+      "title": "Detected Symptoms",
+      "detected": "detected",
+      "confirmed": "Confirmed"
+    },
+    "causes": {
+      "title": "Cause Analysis",
+      "subtitle": "Factors that may have caused this disease"
+    },
+    "treatment": {
+      "title": "Treatment Plan",
+      "chemical": "Chemical",
+      "organic": "Organic",
+      "method": "Application Method",
+      "dilution": "Dilution",
+      "safetyInterval": "Safety Interval",
+      "availableAt": "Available At",
+      "safetyNotes": "Safety Notes",
+      "expand": "Show details",
+      "collapse": "Hide details",
+      "effectiveness": "effective",
+      "urgency": {
+        "immediate": "Immediate Action Required",
+        "within24h": "Act Within 24 Hours",
+        "withinWeek": "Act Within This Week",
+        "monitor": "Monitor & Watch"
+      }
+    },
+    "prevention": {
+      "title": "Prevention Plan",
+      "subtitle": "Protect your crop from future outbreaks",
+      "actions": "Preventive Actions",
+      "checklist": "Monitoring Checklist",
+      "riskReduction": "Risk Reduction Strategies",
+      "nextInspection": "Next Recommended Inspection",
+      "frequency": {
+        "daily": "Daily",
+        "weekly": "Weekly",
+        "monthly": "Monthly"
+      }
+    },
+    "outbreak": {
+      "title": "Nearby Disease Outbreak Risk",
+      "subtitle": "Disease outbreaks reported near your farm",
+      "alertActive": "Alert Active",
+      "noneDetected": "No nearby outbreaks detected",
+      "distance": "Distance",
+      "cases": "Cases",
+      "crops": "Crops",
+      "updated": "Updated",
+      "viewMap": "View on Map",
+      "risk": {
+        "low": "Low Risk",
+        "medium": "Medium Risk",
+        "high": "High Risk",
+        "critical": "Critical"
+      }
+    },
+    "weather": {
+      "title": "Weather Impact",
+      "temperature": "Temperature",
+      "humidity": "Humidity",
+      "rainfall": "Rainfall",
+      "windSpeed": "Wind Speed",
+      "spreadRisk": "Disease Spread Risk",
+      "forecast7Day": "7-Day Humidity Forecast",
+      "humidityChart": "Humidity (%)",
+      "colorIndicatesRisk": "Color = risk level"
+    },
+    "timeline": {
+      "title": "Disease Timeline",
+      "current": "Now",
+      "day": "Day",
+      "severity": "severity",
+      "criticalDates": "Critical Dates"
+    },
+    "actions": {
+      "title": "Farmer Action Center",
+      "subtitle": "Take action on your diagnosis",
+      "download": "Download Report",
+      "downloadSub": "PDF with full diagnosis",
+      "shareVia": "Share Via",
+      "share": {
+        "whatsapp": "WhatsApp",
+        "sms": "SMS",
+        "email": "Email"
+      },
+      "saveHistory": "Save to Farm History",
+      "saveHistorySub": "Track disease over time",
+      "saved": "Saved ✓",
+      "askAssistant": "Ask AI Assistant",
+      "askAssistantSub": "Get personalized advice",
+      "generateFarmPlan": "Generate Farm Plan",
+      "generateFarmPlanSub": "Create an action plan based on this diagnosis"
+    },
+    "history": {
+      "title": "Disease History",
+      "viewAll": "View All",
+      "empty": "No disease reports yet. Analyze your first image above."
+    },
+    "errors": {
+      "retry": "Try Again",
+      "upload": {
+        "title": "Upload Failed",
+        "desc": "Could not upload your image. Check your connection and try again."
+      },
+      "analysis": {
+        "title": "Analysis Failed",
+        "desc": "AI analysis could not be completed. Please try again."
+      },
+      "network": {
+        "title": "No Connection",
+        "desc": "Check your internet connection and retry."
+      }
+    }
   }
 }

@@ -1,0 +1,22 @@
+{
+  "diseaseDetection": {
+    "hero": { "badge": "AI-સંચાલિત રોગ બુદ્ધિ", "title": "રોગ શોધ બુદ્ધિ", "subtitle": "પાકની તસ્વીર અપલોડ કરો અને AI-સંચાલિત રોગ નિદાન, સારવારની ભલામણો અને નિવારણ માર્ગદર્શન મેળવો.", "stats": { "accuracy": "મૉડેલ ચોકસાઈ", "accuracyLabel": "શોધ ચોકસાઈ", "modelUpdate": "છેલ્લું અપડેટ", "modelUpdateLabel": "મૉડેલ તાજગી", "diseases": "રોગ", "diseasesLabel": "ડેટાબેઝમાં" } },
+    "upload": { "dragAndDrop": "અહીં પાકની છબી ખેંચો અને છોડો", "dropHere": "છબી અહીં છોડો", "or": "અથવા", "browse": "ફાઇલો બ્રાઉઝ કરો", "supportedFormats": "JPG, PNG, WebP", "maxSize": "મહત્તમ 10MB", "orUse": "અથવા ઉપયોગ કરો", "mobileCamera": "મોબાઇલ કૅમેરા", "camera": { "open": "કૅમેરા ખોલો", "live": "લાઇવ", "capture": "ફોટો લો", "cancel": "રદ કરો", "permissionDenied": "કૅમેરા ઍક્સેસ નકારી." }, "errors": { "fileType": "ફાઇલ પ્રકાર સમર્થિત નથી.", "fileSize": "ફાઇલ ખૂબ મોટી. મહત્તમ 10MB.", "dimension": "છબીના પરિમાણ અમાન્ય.", "tooSmall": "છબી ખૂબ નાની. ન્યૂનતમ 224×224 px.", "tooBig": "છબી ખૂબ મોટી. મહત્તમ 4096×4096 px.", "corrupt": "છબી વાંચી શકાઈ નહીં.", "generic": "અપલોડ નિષ્ફળ. ફરી પ્રયાસ કરો." } },
+    "preview": { "title": "છબી પૂર્વાવલોકન", "altText": "પાકની છબી", "zoomIn": "ઝૂમ ઇન", "zoomOut": "ઝૂમ આઉટ", "resetZoom": "ઝૂમ રીસેટ", "fullscreen": "ફૂલ સ્ક્રીન", "replace": "બદલો", "remove": "દૂર કરો", "retake": "ફરી લો", "analyzeNow": "રોગ વિશ્લેષણ કરો", "analyzing": "વિશ્લેષણ..." },
+    "analysis": { "pleaseWait": "AI છબીનું વિશ્લેષણ કરે ત્યારે રાહ જુઓ…", "elapsed": "વીત્યું", "steps": { "upload": "છોડની છબીનું વિશ્લેષણ...", "symptoms": "લક્ષણો શોધી રહ્યા...", "patterns": "રોગ નમૂના સરખામણી...", "treatment": "સારવાર યોજના તૈયાર...", "confidence": "આત્મવિશ્વાસ સ્કોર ગણના..." } },
+    "result": { "analysisComplete": "વિશ્લેષણ પૂર્ણ", "processedIn": "{ms}ms માં પ્રોસેસ" },
+    "summary": { "severity": "ગંભીરતા", "affectedParts": "અસ્ત્ ભાગ" },
+    "severity": { "low": "ઓછી", "moderate": "મધ્યમ", "high": "ઉચ્ચ", "critical": "ગંભીર" },
+    "confidence": { "title": "AI આત્મવિશ્વાસ સ્કોર", "confidence": "આત્મવિશ્વાસ", "veryHigh": "ખૂબ ઊંચો", "high": "ઊંચો", "moderate": "મધ્યમ", "low": "ઓછો" },
+    "symptoms": { "title": "શોધાયેલ લક્ષણો", "detected": "શોધાયા", "confirmed": "પુષ્ટિ" },
+    "causes": { "title": "કારણ વિશ્લેષણ", "subtitle": "આ રોગ થવાના સંભવિત પરિબળો" },
+    "treatment": { "title": "સારવાર યોજના", "chemical": "રાસાયણિક", "organic": "જૈવિક", "method": "ઉપયોગ પદ્ધતિ", "dilution": "પ્રસારણ", "safetyInterval": "સલામતી અંતરાલ", "availableAt": "ઉપલબ્ધ સ્થળ", "safetyNotes": "સલામતી નોંધ", "expand": "વિગત બતાવો", "collapse": "વિગત છુપાવો", "effectiveness": "અસ્ ↑", "urgency": { "immediate": "તાત્કાલિક પગલાં", "within24h": "24 કલાકમાં", "withinWeek": "આ અઠવાડિયામાં", "monitor": "નિગ્રાની" } },
+    "prevention": { "title": "નિવારણ યોજના", "subtitle": "ભવિષ્યના ફાટી નીકળવાથી પાકને બચાવો", "actions": "નિવારક પ્રવૃત્તિઓ", "checklist": "નિગ્રાની સૂચિ", "riskReduction": "જોખમ ઘટાડવાની વ્યૂહ", "nextInspection": "આગામી તપાસ", "frequency": { "daily": "દૈનિક", "weekly": "સાપ્તાહિક", "monthly": "માસિક" } },
+    "outbreak": { "title": "નજીકનો ઉદ્રેક જોખ", "subtitle": "નજીકના ઉદ્રેક", "alertActive": "ચેતવણી સક્રિય", "noneDetected": "કોઈ ઉદ્રેક નોંધ્યો નથી", "distance": "અંતર", "cases": "કેસ", "crops": "પાક", "updated": "અપડેટ", "viewMap": "નકાશો", "risk": { "low": "ઓછો", "medium": "મધ્યમ", "high": "ઉચ્ચ", "critical": "ગંભીર" } },
+    "weather": { "title": "હવામાન પ્રભાવ", "temperature": "તાપમાન", "humidity": "ભેજ", "rainfall": "વરસાદ", "windSpeed": "પવન", "spreadRisk": "ફેલાવ જોખ", "forecast7Day": "7-દિવસ ભેજ", "humidityChart": "ભેજ (%)", "colorIndicatesRisk": "રંગ = જોખ" },
+    "timeline": { "title": "રોગ સમયરેખા", "current": "અત્યારે", "day": "દિવસ", "severity": "ગંભીરતા", "criticalDates": "મહત્ત્વની તારીખ" },
+    "actions": { "title": "ખેડૂત ક્રિયા કેન્દ્ર", "subtitle": "નિદાન પર કાર્ય કરો", "download": "રિપોર્ટ ડાઉનલોડ", "downloadSub": "PDF", "shareVia": "શૅર કરો", "share": { "whatsapp": "WhatsApp", "sms": "SMS", "email": "ઇમેઇલ" }, "saveHistory": "ઇતિહાસ સાચવો", "saveHistorySub": "ટ્રૅક", "saved": "સાચવ્યું ✓", "askAssistant": "AI સહાયક", "askAssistantSub": "સલાહ", "generateFarmPlan": "ખેત યોજના", "generateFarmPlanSub": "ક્રિયા યોજના" },
+    "history": { "title": "રોગ ઇતિહાસ", "viewAll": "બધું જુઓ", "empty": "કોઈ રિપોર્ટ નથી." },
+    "errors": { "retry": "ફરી પ્રયાસ", "upload": { "title": "અપલોડ નિષ્ફળ", "desc": "છબી અપલોડ ન થઈ." }, "analysis": { "title": "વિશ્લેષણ નિષ્ફળ", "desc": "AI વિશ્લેષણ ન થઈ શક્યું." }, "network": { "title": "ઇન્ટરનેટ નથી", "desc": "કનેક્શન તપાસો." } }
+  }
+}

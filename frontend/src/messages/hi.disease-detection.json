@@ -1,0 +1,204 @@
+{
+  "diseaseDetection": {
+    "hero": {
+      "badge": "AI-संचालित रोग बुद्धिमत्ता",
+      "title": "रोग पहचान बुद्धिमत्ता",
+      "subtitle": "फसल की तस्वीर अपलोड करें और AI-संचालित रोग निदान, उपचार अनुशंसाएँ, और रोकथाम मार्गदर्शन प्राप्त करें।",
+      "stats": {
+        "accuracy": "मॉडल सटीकता",
+        "accuracyLabel": "पहचान सटीकता",
+        "modelUpdate": "अंतिम अपडेट",
+        "modelUpdateLabel": "मॉडल ताजगी",
+        "diseases": "रोग",
+        "diseasesLabel": "डेटाबेस में"
+      }
+    },
+    "upload": {
+      "dragAndDrop": "यहाँ अपनी फसल की तस्वीर खींचें और छोड़ें",
+      "dropHere": "तस्वीर यहाँ छोड़ें",
+      "or": "या",
+      "browse": "फाइलें ब्राउज़ करें",
+      "supportedFormats": "JPG, PNG, WebP",
+      "maxSize": "अधिकतम 10MB",
+      "orUse": "या उपयोग करें",
+      "mobileCamera": "मोबाइल कैमरा",
+      "camera": {
+        "open": "कैमरा खोलें",
+        "live": "लाइव",
+        "capture": "फोटो लें",
+        "cancel": "रद्द करें",
+        "permissionDenied": "कैमरा एक्सेस अस्वीकृत। कृपया कैमरा अनुमति दें।"
+      },
+      "errors": {
+        "fileType": "फ़ाइल प्रकार समर्थित नहीं। JPG, PNG या WebP अपलोड करें।",
+        "fileSize": "फ़ाइल बहुत बड़ी। अधिकतम आकार 10MB है।",
+        "dimension": "छवि आयाम अमान्य।",
+        "tooSmall": "छवि बहुत छोटी। न्यूनतम 224×224 पिक्सेल।",
+        "tooBig": "छवि बहुत बड़ी। अधिकतम 4096×4096 पिक्सेल।",
+        "corrupt": "छवि पढ़ नहीं सकी। फ़ाइल दूषित हो सकती है।",
+        "generic": "अपलोड विफल। कृपया पुनः प्रयास करें।"
+      }
+    },
+    "preview": {
+      "title": "छवि पूर्वावलोकन",
+      "altText": "फसल की छवि",
+      "zoomIn": "ज़ूम इन",
+      "zoomOut": "ज़ूम आउट",
+      "resetZoom": "ज़ूम रीसेट",
+      "fullscreen": "पूर्णस्क्रीन",
+      "replace": "बदलें",
+      "remove": "हटाएं",
+      "retake": "पुनः लें",
+      "analyzeNow": "रोग विश्लेषण करें",
+      "analyzing": "विश्लेषण हो रहा है..."
+    },
+    "analysis": {
+      "pleaseWait": "कृपया प्रतीक्षा करें जबकि AI छवि का विश्लेषण करता है…",
+      "elapsed": "बीता",
+      "steps": {
+        "upload": "पौधे की छवि का विश्लेषण...",
+        "symptoms": "लक्षण पहचान...",
+        "patterns": "रोग पैटर्न तुलना...",
+        "treatment": "उपचार योजना तैयार...",
+        "confidence": "विश्वास स्कोर गणना..."
+      }
+    },
+    "result": {
+      "analysisComplete": "विश्लेषण पूर्ण",
+      "processedIn": "{ms}ms में संसाधित"
+    },
+    "summary": {
+      "severity": "गंभीरता",
+      "affectedParts": "प्रभावित हिस्से"
+    },
+    "severity": {
+      "low": "कम",
+      "moderate": "मध्यम",
+      "high": "उच्च",
+      "critical": "गंभीर"
+    },
+    "confidence": {
+      "title": "AI विश्वास स्कोर",
+      "confidence": "विश्वास",
+      "veryHigh": "बहुत उच्च विश्वास",
+      "high": "उच्च विश्वास",
+      "moderate": "मध्यम विश्वास",
+      "low": "कम विश्वास"
+    },
+    "symptoms": {
+      "title": "पहचाने गए लक्षण",
+      "detected": "पहचाने गए",
+      "confirmed": "पुष्टि"
+    },
+    "causes": {
+      "title": "कारण विश्लेषण",
+      "subtitle": "वे कारक जो इस रोग का कारण बन सकते हैं"
+    },
+    "treatment": {
+      "title": "उपचार योजना",
+      "chemical": "रासायनिक",
+      "organic": "जैविक",
+      "method": "प्रयोग विधि",
+      "dilution": "तनुकरण",
+      "safetyInterval": "सुरक्षा अंतराल",
+      "availableAt": "उपलब्ध स्थान",
+      "safetyNotes": "सुरक्षा नोट्स",
+      "expand": "विवरण दिखाएं",
+      "collapse": "विवरण छुपाएं",
+      "effectiveness": "प्रभावी",
+      "urgency": {
+        "immediate": "तत्काल कार्रवाई आवश्यक",
+        "within24h": "24 घंटे में कार्रवाई करें",
+        "withinWeek": "इस सप्ताह में कार्रवाई करें",
+        "monitor": "निगरानी करें"
+      }
+    },
+    "prevention": {
+      "title": "रोकथाम योजना",
+      "subtitle": "भविष्य के प्रकोप से अपनी फसल की रक्षा करें",
+      "actions": "निवारक कार्रवाई",
+      "checklist": "निगरानी सूची",
+      "riskReduction": "जोखिम कम करने की रणनीतियाँ",
+      "nextInspection": "अगली अनुशंसित जाँच",
+      "frequency": {
+        "daily": "दैनिक",
+        "weekly": "साप्ताहिक",
+        "monthly": "मासिक"
+      }
+    },
+    "outbreak": {
+      "title": "निकटवर्ती रोग प्रकोप जोखिम",
+      "subtitle": "आपके खेत के पास रिपोर्ट किए गए रोग प्रकोप",
+      "alertActive": "अलर्ट सक्रिय",
+      "noneDetected": "कोई निकटवर्ती प्रकोप नहीं",
+      "distance": "दूरी",
+      "cases": "मामले",
+      "crops": "फसलें",
+      "updated": "अपडेट",
+      "viewMap": "मानचित्र पर देखें",
+      "risk": {
+        "low": "कम जोखिम",
+        "medium": "मध्यम जोखिम",
+        "high": "उच्च जोखिम",
+        "critical": "गंभीर"
+      }
+    },
+    "weather": {
+      "title": "मौसम प्रभाव",
+      "temperature": "तापमान",
+      "humidity": "आर्द्रता",
+      "rainfall": "वर्षा",
+      "windSpeed": "हवा की गति",
+      "spreadRisk": "रोग फैलाव जोखिम",
+      "forecast7Day": "7-दिन आर्द्रता पूर्वानुमान",
+      "humidityChart": "आर्द्रता (%)",
+      "colorIndicatesRisk": "रंग = जोखिम स्तर"
+    },
+    "timeline": {
+      "title": "रोग समयरेखा",
+      "current": "अभी",
+      "day": "दिन",
+      "severity": "गंभीरता",
+      "criticalDates": "महत्वपूर्ण तिथियाँ"
+    },
+    "actions": {
+      "title": "किसान कार्य केंद्र",
+      "subtitle": "अपने निदान पर कार्रवाई करें",
+      "download": "रिपोर्ट डाउनलोड करें",
+      "downloadSub": "पूर्ण निदान PDF",
+      "shareVia": "इसके द्वारा साझा करें",
+      "share": {
+        "whatsapp": "WhatsApp",
+        "sms": "SMS",
+        "email": "ईमेल"
+      },
+      "saveHistory": "फार्म इतिहास में सहेजें",
+      "saveHistorySub": "समय के साथ रोग ट्रैक करें",
+      "saved": "सहेजा ✓",
+      "askAssistant": "AI सहायक से पूछें",
+      "askAssistantSub": "व्यक्तिगत सलाह प्राप्त करें",
+      "generateFarmPlan": "फार्म योजना बनाएं",
+      "generateFarmPlanSub": "इस निदान के आधार पर कार्य योजना बनाएं"
+    },
+    "history": {
+      "title": "रोग इतिहास",
+      "viewAll": "सभी देखें",
+      "empty": "अभी तक कोई रोग रिपोर्ट नहीं। ऊपर अपनी पहली छवि का विश्लेषण करें।"
+    },
+    "errors": {
+      "retry": "पुनः प्रयास करें",
+      "upload": {
+        "title": "अपलोड विफल",
+        "desc": "आपकी छवि अपलोड नहीं हो सकी। कनेक्शन जाँचें और पुनः प्रयास करें।"
+      },
+      "analysis": {
+        "title": "विश्लेषण विफल",
+        "desc": "AI विश्लेषण पूरा नहीं हो सका। कृपया पुनः प्रयास करें।"
+      },
+      "network": {
+        "title": "कोई कनेक्शन नहीं",
+        "desc": "अपना इंटरनेट कनेक्शन जाँचें और पुनः प्रयास करें।"
+      }
+    }
+  }
+}
