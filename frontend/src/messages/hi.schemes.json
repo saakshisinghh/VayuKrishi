@@ -1,0 +1,29 @@
+{
+  "schemes": {
+    "hero": {
+      "subtitle": "सरकारी योजनाएं",
+      "title": "योजना इंटेलिजेंस",
+      "description": "आपके खेत प्रोफ़ाइल के लिए AI-मिलान सरकारी योजनाएं, सब्सिडी और लाभ",
+      "eligibleSchemes": "पात्र योजनाएं",
+      "potentialBenefit": "संभावित लाभ",
+      "inProgress": "प्रगति में",
+      "approved": "स्वीकृत"
+    },
+    "eligibility": {
+      "title": "पात्रता स्कोर"
+    },
+    "recommendations": {
+      "title": "AI योजना सलाहकार",
+      "subtitle": "आपकी प्रोफ़ाइल के आधार पर व्यक्तिगत सुझाव"
+    },
+    "tracker": {
+      "title": "आवेदन ट्रैकर",
+      "noApplications": "अभी तक कोई आवेदन नहीं। पात्र योजनाओं में आवेदन शुरू करें।"
+    },
+    "benefits": {
+      "title": "लाभ सारांश",
+      "subtitle": "संभावित लाभ वितरण",
+      "totalPotential": "कुल संभावित लाभ"
+    }
+  }
+}

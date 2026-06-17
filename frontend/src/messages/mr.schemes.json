@@ -1,0 +1,29 @@
+{
+  "schemes": {
+    "hero": {
+      "subtitle": "सरकारी योजना",
+      "title": "योजना बुद्धिमत्ता",
+      "description": "तुमच्या शेत प्रोफाइलसाठी AI-जुळवलेल्या सरकारी योजना, अनुदान आणि लाभ",
+      "eligibleSchemes": "पात्र योजना",
+      "potentialBenefit": "संभाव्य लाभ",
+      "inProgress": "प्रगतीत",
+      "approved": "मंजूर"
+    },
+    "eligibility": {
+      "title": "पात्रता स्कोर"
+    },
+    "recommendations": {
+      "title": "AI योजना सल्लागार",
+      "subtitle": "तुमच्या प्रोफाइलवर आधारित वैयक्तिक शिफारसी"
+    },
+    "tracker": {
+      "title": "अर्ज ट्रॅकर",
+      "noApplications": "अद्याप कोणतेही अर्ज नाहीत. पात्र योजनांसाठी अर्ज करा."
+    },
+    "benefits": {
+      "title": "लाभ सारांश",
+      "subtitle": "संभाव्य लाभ वितरण",
+      "totalPotential": "एकूण संभाव्य लाभ"
+    }
+  }
+}

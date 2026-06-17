@@ -1,0 +1,43 @@
+{
+  "planner": {
+    "hero": {
+      "subtitle": "AI फार्म प्लानर",
+      "title": "मौसमी खेत योजनाकार",
+      "description": "AI-जनित कार्य, मौसमी समयरेखा और आपके खेत के लिए स्मार्ट सिफारिशें",
+      "completion": "सीजन प्रगति",
+      "upcomingTasks": "आगामी कार्य",
+      "aiSuggestions": "AI सुझाव",
+      "season": "वर्तमान मौसम"
+    },
+    "timeline": {
+      "title": "मौसमी समयरेखा"
+    },
+    "aiPlan": {
+      "title": "AI खेत योजना",
+      "subtitle": "इस मौसम के लिए स्मार्ट सिफारिशें",
+      "expectedOutcome": "अपेक्षित परिणाम",
+      "riskReduction": "जोखिम में कमी",
+      "profitImpact": "लाभ प्रभाव",
+      "recommendedActions": "अनुशंसित कार्य"
+    },
+    "calendar": {
+      "title": "खेत कैलेंडर"
+    },
+    "progress": {
+      "title": "कार्य प्रगति",
+      "completed": "पूर्ण",
+      "pending": "लंबित",
+      "overdue": "विलंबित",
+      "upcoming": "आगामी",
+      "byCategory": "श्रेणी अनुसार"
+    },
+    "tasks": {
+      "completed": "पूर्ण",
+      "noTasks": "इस महीने कोई कार्य नहीं",
+      "title": "सभी कार्य"
+    },
+    "taskList": {
+      "title": "सभी खेत कार्य"
+    }
+  }
+}

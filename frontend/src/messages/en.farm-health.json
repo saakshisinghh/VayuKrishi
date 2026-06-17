@@ -1,0 +1,67 @@
+{
+  "farmHealth": {
+    "hero": {
+      "subtitle": "Farm Intelligence",
+      "title": "Farm Health Center",
+      "description": "AI-powered analysis of your farm's overall health, risks, and improvement potential",
+      "trend": "Trend",
+      "thisMonth": "this month",
+      "riskLevel": "Risk",
+      "potential": "Potential",
+      "possibleGain": "possible gain",
+      "outOf100": "/ 100",
+      "farmHealthScore": "Farm Health Score",
+      "lastUpdated": "Updated",
+      "refreshAnalysis": "Refresh Analysis",
+      "analyzing": "Analyzing..."
+    },
+    "scoreCard": {
+      "title": "Health Score Breakdown",
+      "soilQuality": "Soil Quality",
+      "waterEfficiency": "Water Efficiency",
+      "diseaseRisk": "Disease Risk",
+      "marketPotential": "Market Potential",
+      "cropPerformance": "Crop Performance"
+    },
+    "soil": {
+      "title": "Soil Health Analysis",
+      "subtitle": "Nutrient & pH profile",
+      "ph": "pH Level",
+      "organicMatter": "Organic Matter",
+      "nitrogen": "Nitrogen (N)",
+      "phosphorus": "Phosphorus (P)",
+      "potassium": "Potassium (K)",
+      "nutrients": "Nutrient Levels",
+      "recommendations": "Soil Recommendations"
+    },
+    "water": {
+      "title": "Water Efficiency",
+      "subtitle": "Irrigation & usage analysis",
+      "usagePerAcre": "Usage / Acre",
+      "perAcre": "litres per acre",
+      "savingPotential": "Monthly Savings",
+      "perMonth": "potential / month",
+      "irrigationEfficiency": "Irrigation Efficiency",
+      "rainDependency": "Rain Dependency",
+      "risk": "Risk",
+      "recommendations": "Water Recommendations"
+    },
+    "disease": {
+      "title": "Disease Risk Monitor",
+      "subtitle": "Current threats & prevention",
+      "nearbyOutbreaks": "Nearby Outbreaks",
+      "weatherImpact": "Weather Impact",
+      "preventionActions": "Prevention Actions"
+    },
+    "improvements": {
+      "title": "Improvement Recommendations",
+      "subtitle": "AI-suggested actions ranked by impact",
+      "totalPotential": "Total Improvement Potential"
+    },
+    "trend": {
+      "title": "Health Trend (6 Months)",
+      "subtitle": "Overall, soil and water scores over time",
+      "chartDescription": "Line chart showing farm health trend over the past 6 months"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schemes": {
+    "hero": {
+      "subtitle": "Government Schemes",
+      "title": "Scheme Intelligence",
+      "description": "AI-matched government schemes, subsidies and benefits for your farm profile",
+      "eligibleSchemes": "Eligible Schemes",
+      "potentialBenefit": "Potential Benefit",
+      "inProgress": "In Progress",
+      "approved": "Approved"
+    },
+    "eligibility": {
+      "title": "Eligibility Score"
+    },
+    "recommendations": {
+      "title": "AI Scheme Advisor",
+      "subtitle": "Personalized recommendations based on your profile"
+    },
+    "tracker": {
+      "title": "Application Tracker",
+      "noApplications": "No applications yet. Start applying to eligible schemes."
+    },
+    "benefits": {
+      "title": "Benefits Summary",
+      "subtitle": "Potential benefit distribution",
+      "totalPotential": "Total Potential Benefit"
+    }
+  }
+}

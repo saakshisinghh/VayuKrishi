@@ -1,0 +1,43 @@
+{
+  "planner": {
+    "hero": {
+      "subtitle": "AI Farm Planner",
+      "title": "Seasonal Farm Planner",
+      "description": "AI-generated tasks, seasonal timeline and smart recommendations for your farm",
+      "completion": "Season Progress",
+      "upcomingTasks": "Upcoming Tasks",
+      "aiSuggestions": "AI Suggestions",
+      "season": "Current Season"
+    },
+    "timeline": {
+      "title": "Seasonal Timeline"
+    },
+    "aiPlan": {
+      "title": "AI Farm Plan",
+      "subtitle": "Smart recommendations for this season",
+      "expectedOutcome": "Expected Outcome",
+      "riskReduction": "Risk Reduction",
+      "profitImpact": "Profit Impact",
+      "recommendedActions": "Recommended Actions"
+    },
+    "calendar": {
+      "title": "Farm Calendar"
+    },
+    "progress": {
+      "title": "Task Progress",
+      "completed": "completed",
+      "pending": "Pending",
+      "overdue": "Overdue",
+      "upcoming": "Upcoming",
+      "byCategory": "By Category"
+    },
+    "tasks": {
+      "completed": "completed",
+      "noTasks": "No tasks for this month",
+      "title": "All Tasks"
+    },
+    "taskList": {
+      "title": "All Farm Tasks"
+    }
+  }
+}

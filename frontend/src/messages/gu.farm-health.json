@@ -1,0 +1,67 @@
+{
+  "farmHealth": {
+    "hero": {
+      "subtitle": "ખેત બુદ્ધિ",
+      "title": "ખેત આરોગ્ય કેન્દ્ર",
+      "description": "તમારા ખેતરના એકંદર સ્વાસ્થ્ય, જોખમ અને સુધારણા ક્ષમતાનું AI-સંચાલિત વિશ્લેષણ",
+      "trend": "વલણ",
+      "thisMonth": "આ મહિને",
+      "riskLevel": "જોખમ",
+      "potential": "સંભાવના",
+      "possibleGain": "સંભવિત ફાયદો",
+      "outOf100": "/ 100",
+      "farmHealthScore": "ખેત આરોગ્ય સ્કોર",
+      "lastUpdated": "અપડેટ",
+      "refreshAnalysis": "વિશ્લેષણ રિફ્રેશ કરો",
+      "analyzing": "વિશ્લેષણ થઈ રહ્યું છે..."
+    },
+    "scoreCard": {
+      "title": "આરોગ્ય સ્કોર વિગત",
+      "soilQuality": "જમીનની ગુણવત્તા",
+      "waterEfficiency": "પાણી કાર્યક્ષમતા",
+      "diseaseRisk": "રોગ જોખમ",
+      "marketPotential": "બજાર ક્ષમતા",
+      "cropPerformance": "પાક કામગીરી"
+    },
+    "soil": {
+      "title": "જમીન સ્વાસ્થ્ય વિશ્લેષણ",
+      "subtitle": "પોષક તત્વ અને pH પ્રોફાઇલ",
+      "ph": "pH સ્તર",
+      "organicMatter": "કાર્બનિક પદાર્થ",
+      "nitrogen": "નાઇટ્રોજન (N)",
+      "phosphorus": "ફોસ્ફોરસ (P)",
+      "potassium": "પોટેશિયમ (K)",
+      "nutrients": "પોષક તત્વ સ્તર",
+      "recommendations": "જમીન ભલામણો"
+    },
+    "water": {
+      "title": "પાણી કાર્યક્ષમતા",
+      "subtitle": "સિંચાઈ અને ઉપયોગ વિશ્લેષણ",
+      "usagePerAcre": "પ્રતિ એકર ઉપયોગ",
+      "perAcre": "લિટર પ્રતિ એકર",
+      "savingPotential": "માસિક બચત",
+      "perMonth": "સંભવિત / માસ",
+      "irrigationEfficiency": "સિંચાઈ કાર્યક્ષમતા",
+      "rainDependency": "વરસાદ નિર્ભરતા",
+      "risk": "જોખમ",
+      "recommendations": "પાણી ભલામણો"
+    },
+    "disease": {
+      "title": "રોગ જોખમ મોનિટર",
+      "subtitle": "વર્તમાન ધમકીઓ અને નિવારણ",
+      "nearbyOutbreaks": "નજીકના ફાટી નીકળ્યા",
+      "weatherImpact": "હવામાન અસર",
+      "preventionActions": "નિવારણ ક્રિયાઓ"
+    },
+    "improvements": {
+      "title": "સુધારણા ભલામણો",
+      "subtitle": "અસર દ્વારા ક્રમાંકિત AI સૂચનો",
+      "totalPotential": "કુલ સુધારણા ક્ષમતા"
+    },
+    "trend": {
+      "title": "આરોગ્ય વલણ (6 મહિના)",
+      "subtitle": "એકંદર, જમીન અને પાણી સ્કોર",
+      "chartDescription": "છેલ્લા 6 મહિનાના ખેત આરોગ્ય વલણનો ચાર્ટ"
+    }
+  }
+}

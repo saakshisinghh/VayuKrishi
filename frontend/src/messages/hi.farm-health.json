@@ -1,0 +1,67 @@
+{
+  "farmHealth": {
+    "hero": {
+      "subtitle": "खेत की बुद्धिमत्ता",
+      "title": "फार्म स्वास्थ्य केंद्र",
+      "description": "आपके खेत के समग्र स्वास्थ्य, जोखिम और सुधार क्षमता का AI-संचालित विश्लेषण",
+      "trend": "रुझान",
+      "thisMonth": "इस महीने",
+      "riskLevel": "जोखिम",
+      "potential": "संभावना",
+      "possibleGain": "संभावित लाभ",
+      "outOf100": "/ 100",
+      "farmHealthScore": "फार्म स्वास्थ्य स्कोर",
+      "lastUpdated": "अपडेट",
+      "refreshAnalysis": "विश्लेषण रीफ्रेश करें",
+      "analyzing": "विश्लेषण हो रहा है..."
+    },
+    "scoreCard": {
+      "title": "स्वास्थ्य स्कोर विवरण",
+      "soilQuality": "मिट्टी की गुणवत्ता",
+      "waterEfficiency": "जल दक्षता",
+      "diseaseRisk": "रोग जोखिम",
+      "marketPotential": "बाजार क्षमता",
+      "cropPerformance": "फसल प्रदर्शन"
+    },
+    "soil": {
+      "title": "मिट्टी स्वास्थ्य विश्लेषण",
+      "subtitle": "पोषक तत्व और pH प्रोफ़ाइल",
+      "ph": "pH स्तर",
+      "organicMatter": "जैविक पदार्थ",
+      "nitrogen": "नाइट्रोजन (N)",
+      "phosphorus": "फॉस्फोरस (P)",
+      "potassium": "पोटाशियम (K)",
+      "nutrients": "पोषक तत्व स्तर",
+      "recommendations": "मिट्टी सुझाव"
+    },
+    "water": {
+      "title": "जल दक्षता",
+      "subtitle": "सिंचाई और उपयोग विश्लेषण",
+      "usagePerAcre": "प्रति एकड़ उपयोग",
+      "perAcre": "लीटर प्रति एकड़",
+      "savingPotential": "मासिक बचत",
+      "perMonth": "संभावित / माह",
+      "irrigationEfficiency": "सिंचाई दक्षता",
+      "rainDependency": "वर्षा निर्भरता",
+      "risk": "जोखिम",
+      "recommendations": "जल सुझाव"
+    },
+    "disease": {
+      "title": "रोग जोखिम मॉनिटर",
+      "subtitle": "वर्तमान खतरे और रोकथाम",
+      "nearbyOutbreaks": "नजदीकी प्रकोप",
+      "weatherImpact": "मौसम प्रभाव",
+      "preventionActions": "रोकथाम उपाय"
+    },
+    "improvements": {
+      "title": "सुधार सुझाव",
+      "subtitle": "प्रभाव के अनुसार AI सुझाव",
+      "totalPotential": "कुल सुधार क्षमता"
+    },
+    "trend": {
+      "title": "स्वास्थ्य रुझान (6 महीने)",
+      "subtitle": "समग्र, मिट्टी और जल स्कोर",
+      "chartDescription": "पिछले 6 महीनों के फार्म स्वास्थ्य रुझान का चार्ट"
+    }
+  }
+}

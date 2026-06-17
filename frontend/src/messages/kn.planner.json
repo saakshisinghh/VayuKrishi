@@ -1,0 +1,43 @@
+{
+  "planner": {
+    "hero": {
+      "subtitle": "AI ಕ್ಷೇತ್ರ ಯೋಜಕ",
+      "title": "ಋತುಮಾನ ಕ್ಷೇತ್ರ ಯೋಜಕ",
+      "description": "AI-ರಚಿಸಿದ ಕಾರ್ಯಗಳು, ಋತುಮಾನ ಸಮಯರೇಖೆ ಮತ್ತು ನಿಮ್ಮ ಕ್ಷೇತ್ರಕ್ಕಾಗಿ ಸ್ಮಾರ್ಟ್ ಶಿಫಾರಸುಗಳು",
+      "completion": "ಸೀಸನ್ ಪ್ರಗತಿ",
+      "upcomingTasks": "ಮುಂಬರುವ ಕಾರ್ಯಗಳು",
+      "aiSuggestions": "AI ಸಲಹೆಗಳು",
+      "season": "ಪ್ರಸ್ತುತ ಋತು"
+    },
+    "timeline": {
+      "title": "ಋತುಮಾನ ಸಮಯರೇಖೆ"
+    },
+    "aiPlan": {
+      "title": "AI ಕ್ಷೇತ್ರ ಯೋಜನೆ",
+      "subtitle": "ಈ ಋತುವಿಗಾಗಿ ಸ್ಮಾರ್ಟ್ ಶಿಫಾರಸುಗಳು",
+      "expectedOutcome": "ನಿರೀಕ್ಷಿತ ಫಲಿತಾಂಶ",
+      "riskReduction": "ಅಪಾಯ ಕಡಿತ",
+      "profitImpact": "ಲಾಭ ಪ್ರಭಾವ",
+      "recommendedActions": "ಶಿಫಾರಸು ಮಾಡಿದ ಕ್ರಮಗಳು"
+    },
+    "calendar": {
+      "title": "ಕ್ಷೇತ್ರ ಕ್ಯಾಲೆಂಡರ್"
+    },
+    "progress": {
+      "title": "ಕಾರ್ಯ ಪ್ರಗತಿ",
+      "completed": "ಪೂರ್ಣ",
+      "pending": "ಬಾಕಿ",
+      "overdue": "ವಿಳಂಬ",
+      "upcoming": "ಮುಂಬರುವ",
+      "byCategory": "ವರ್ಗ ಮೂಲಕ"
+    },
+    "tasks": {
+      "completed": "ಪೂರ್ಣ",
+      "noTasks": "ಈ ತಿಂಗಳು ಕಾರ್ಯಗಳಿಲ್ಲ",
+      "title": "ಎಲ್ಲಾ ಕಾರ್ಯಗಳು"
+    },
+    "taskList": {
+      "title": "ಎಲ್ಲಾ ಕ್ಷೇತ್ರ ಕಾರ್ಯಗಳು"
+    }
+  }
+}

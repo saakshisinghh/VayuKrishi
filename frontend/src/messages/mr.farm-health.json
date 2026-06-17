@@ -1,0 +1,67 @@
+{
+  "farmHealth": {
+    "hero": {
+      "subtitle": "शेत बुद्धिमत्ता",
+      "title": "शेत आरोग्य केंद्र",
+      "description": "तुमच्या शेताच्या एकूण आरोग्य, धोके आणि सुधारणा क्षमतेचे AI-चालित विश्लेषण",
+      "trend": "कल",
+      "thisMonth": "या महिन्यात",
+      "riskLevel": "धोका",
+      "potential": "क्षमता",
+      "possibleGain": "संभाव्य फायदा",
+      "outOf100": "/ 100",
+      "farmHealthScore": "शेत आरोग्य स्कोर",
+      "lastUpdated": "अद्यतनित",
+      "refreshAnalysis": "विश्लेषण रीफ्रेश करा",
+      "analyzing": "विश्लेषण होत आहे..."
+    },
+    "scoreCard": {
+      "title": "आरोग्य स्कोर तपशील",
+      "soilQuality": "मातीची गुणवत्ता",
+      "waterEfficiency": "पाणी कार्यक्षमता",
+      "diseaseRisk": "रोग धोका",
+      "marketPotential": "बाजार क्षमता",
+      "cropPerformance": "पीक कामगिरी"
+    },
+    "soil": {
+      "title": "माती आरोग्य विश्लेषण",
+      "subtitle": "पोषक तत्व आणि pH प्रोफाइल",
+      "ph": "pH पातळी",
+      "organicMatter": "सेंद्रिय पदार्थ",
+      "nitrogen": "नायट्रोजन (N)",
+      "phosphorus": "फॉस्फरस (P)",
+      "potassium": "पोटॅशियम (K)",
+      "nutrients": "पोषक तत्व पातळी",
+      "recommendations": "माती शिफारसी"
+    },
+    "water": {
+      "title": "पाणी कार्यक्षमता",
+      "subtitle": "सिंचन आणि वापर विश्लेषण",
+      "usagePerAcre": "प्रति एकर वापर",
+      "perAcre": "लीटर प्रति एकर",
+      "savingPotential": "मासिक बचत",
+      "perMonth": "संभाव्य / महिना",
+      "irrigationEfficiency": "सिंचन कार्यक्षमता",
+      "rainDependency": "पावसावर अवलंबित्व",
+      "risk": "धोका",
+      "recommendations": "पाणी शिफारसी"
+    },
+    "disease": {
+      "title": "रोग धोका मॉनिटर",
+      "subtitle": "सध्याचे धोके आणि प्रतिबंध",
+      "nearbyOutbreaks": "जवळपासचे उद्रेक",
+      "weatherImpact": "हवामान प्रभाव",
+      "preventionActions": "प्रतिबंधात्मक उपाय"
+    },
+    "improvements": {
+      "title": "सुधारणा शिफारसी",
+      "subtitle": "प्रभावानुसार AI सुझाव",
+      "totalPotential": "एकूण सुधारणा क्षमता"
+    },
+    "trend": {
+      "title": "आरोग्य कल (6 महिने)",
+      "subtitle": "एकूण, माती आणि पाणी स्कोर",
+      "chartDescription": "मागील 6 महिन्यांच्या शेत आरोग्य कलाचा आलेख"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schemes": {
+    "hero": {
+      "subtitle": "સરકારી યોજનાઓ",
+      "title": "યોજના બુદ્ધિ",
+      "description": "તમારા ખેત પ્રોફાઇલ માટે AI-મેળ સરકારી યોજનાઓ, સબસિડી અને લાભ",
+      "eligibleSchemes": "પાત્ર યોજનાઓ",
+      "potentialBenefit": "સંભવિત લાભ",
+      "inProgress": "પ્રગતિમાં",
+      "approved": "મંજૂર"
+    },
+    "eligibility": {
+      "title": "પાત્રતા સ્કોર"
+    },
+    "recommendations": {
+      "title": "AI યોજના સલાહકાર",
+      "subtitle": "તમારી પ્રોફાઇલ પર આધારિત વ્યક્તિગત ભલામણો"
+    },
+    "tracker": {
+      "title": "અરજી ટ્રેકર",
+      "noApplications": "હજુ સુધી કોઈ અરજી નહીં. પાત્ર યોજનાઓ માટે અરજી કરો."
+    },
+    "benefits": {
+      "title": "લાભ સારાંશ",
+      "subtitle": "સંભવિત લાભ વિતરણ",
+      "totalPotential": "કુલ સંભવિત લાભ"
+    }
+  }
+}

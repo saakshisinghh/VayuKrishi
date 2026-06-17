@@ -1,0 +1,67 @@
+{
+  "farmHealth": {
+    "hero": {
+      "subtitle": "ಕೃಷಿ ಬುದ್ಧಿಮತ್ತೆ",
+      "title": "ಕ್ಷೇತ್ರ ಆರೋಗ್ಯ ಕೇಂದ್ರ",
+      "description": "ನಿಮ್ಮ ಕ್ಷೇತ್ರದ ಒಟ್ಟಾರೆ ಆರೋಗ್ಯ, ಅಪಾಯಗಳು ಮತ್ತು ಸುಧಾರಣಾ ಸಾಮರ್ಥ್ಯದ AI-ಚಾಲಿತ ವಿಶ್ಲೇಷಣೆ",
+      "trend": "ಪ್ರವೃತ್ತಿ",
+      "thisMonth": "ಈ ತಿಂಗಳು",
+      "riskLevel": "ಅಪಾಯ",
+      "potential": "ಸಾಮರ್ಥ್ಯ",
+      "possibleGain": "ಸಾಧ್ಯ ಲಾಭ",
+      "outOf100": "/ 100",
+      "farmHealthScore": "ಕ್ಷೇತ್ರ ಆರೋಗ್ಯ ಸ್ಕೋರ್",
+      "lastUpdated": "ನವೀಕರಿಸಲಾಗಿದೆ",
+      "refreshAnalysis": "ವಿಶ್ಲೇಷಣೆ ರಿಫ್ರೆಶ್ ಮಾಡಿ",
+      "analyzing": "ವಿಶ್ಲೇಷಿಸಲಾಗುತ್ತಿದೆ..."
+    },
+    "scoreCard": {
+      "title": "ಆರೋಗ್ಯ ಸ್ಕೋರ್ ವಿವರ",
+      "soilQuality": "ಮಣ್ಣಿನ ಗುಣಮಟ್ಟ",
+      "waterEfficiency": "ನೀರು ದಕ್ಷತೆ",
+      "diseaseRisk": "ರೋಗ ಅಪಾಯ",
+      "marketPotential": "ಮಾರುಕಟ್ಟೆ ಸಾಮರ್ಥ್ಯ",
+      "cropPerformance": "ಬೆಳೆ ಕಾರ್ಯಕ್ಷಮತೆ"
+    },
+    "soil": {
+      "title": "ಮಣ್ಣಿನ ಆರೋಗ್ಯ ವಿಶ್ಲೇಷಣೆ",
+      "subtitle": "ಪೋಷಕಾಂಶ ಮತ್ತು pH ಪ್ರೊಫೈಲ್",
+      "ph": "pH ಮಟ್ಟ",
+      "organicMatter": "ಸಾವಯವ ಪದಾರ್ಥ",
+      "nitrogen": "ಸಾರಜನಕ (N)",
+      "phosphorus": "ರಂಜಕ (P)",
+      "potassium": "ಪೊಟ್ಯಾಸಿಯಮ್ (K)",
+      "nutrients": "ಪೋಷಕಾಂಶ ಮಟ್ಟಗಳು",
+      "recommendations": "ಮಣ್ಣು ಶಿಫಾರಸುಗಳು"
+    },
+    "water": {
+      "title": "ನೀರು ದಕ್ಷತೆ",
+      "subtitle": "ನೀರಾವರಿ ಮತ್ತು ಬಳಕೆ ವಿಶ್ಲೇಷಣೆ",
+      "usagePerAcre": "ಪ್ರತಿ ಎಕರೆ ಬಳಕೆ",
+      "perAcre": "ಲೀಟರ್ ಪ್ರತಿ ಎಕರೆ",
+      "savingPotential": "ಮಾಸಿಕ ಉಳಿತಾಯ",
+      "perMonth": "ಸಾಧ್ಯ / ತಿಂಗಳು",
+      "irrigationEfficiency": "ನೀರಾವರಿ ದಕ್ಷತೆ",
+      "rainDependency": "ಮಳೆ ಅವಲಂಬನೆ",
+      "risk": "ಅಪಾಯ",
+      "recommendations": "ನೀರು ಶಿಫಾರಸುಗಳು"
+    },
+    "disease": {
+      "title": "ರೋಗ ಅಪಾಯ ಮಾನಿಟರ್",
+      "subtitle": "ಪ್ರಸ್ತುತ ಬೆದರಿಕೆಗಳು ಮತ್ತು ತಡೆಗಟ್ಟುವಿಕೆ",
+      "nearbyOutbreaks": "ಹತ್ತಿರದ ರೋಗ ಪ್ರಸರಣ",
+      "weatherImpact": "ಹವಾಮಾನ ಪ್ರಭಾವ",
+      "preventionActions": "ತಡೆಗಟ್ಟುವ ಕ್ರಮಗಳು"
+    },
+    "improvements": {
+      "title": "ಸುಧಾರಣಾ ಶಿಫಾರಸುಗಳು",
+      "subtitle": "ಪ್ರಭಾವದ ಮೂಲಕ ಶ್ರೇಣೀಕೃತ AI ಸಲಹೆಗಳು",
+      "totalPotential": "ಒಟ್ಟು ಸುಧಾರಣಾ ಸಾಮರ್ಥ್ಯ"
+    },
+    "trend": {
+      "title": "ಆರೋಗ್ಯ ಪ್ರವೃತ್ತಿ (6 ತಿಂಗಳು)",
+      "subtitle": "ಒಟ್ಟಾರೆ, ಮಣ್ಣು ಮತ್ತು ನೀರು ಸ್ಕೋರ್",
+      "chartDescription": "ಕಳೆದ 6 ತಿಂಗಳ ಕ್ಷೇತ್ರ ಆರೋಗ್ಯ ಪ್ರವೃತ್ತಿ ಚಾರ್ಟ್"
+    }
+  }
+}

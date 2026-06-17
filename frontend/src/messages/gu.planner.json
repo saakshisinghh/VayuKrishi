@@ -1,0 +1,43 @@
+{
+  "planner": {
+    "hero": {
+      "subtitle": "AI ખેત આયોજક",
+      "title": "મોસમી ખેત આયોજક",
+      "description": "AI-જનિત કાર્યો, મોસમી સમયરેખા અને તમારા ખેત માટે સ્માર્ટ ભલામણો",
+      "completion": "સીઝન પ્રગતિ",
+      "upcomingTasks": "આગામી કાર્યો",
+      "aiSuggestions": "AI સૂચનો",
+      "season": "વર્તમાન મોસમ"
+    },
+    "timeline": {
+      "title": "મોસમી સમયરેખા"
+    },
+    "aiPlan": {
+      "title": "AI ખેત યોજના",
+      "subtitle": "આ મોસમ માટે સ્માર્ટ ભલામણો",
+      "expectedOutcome": "અપેક્ષિત પરિણામ",
+      "riskReduction": "જોખમ ઘટાડો",
+      "profitImpact": "નફો અસર",
+      "recommendedActions": "ભલામણ કરેલ ક્રિયાઓ"
+    },
+    "calendar": {
+      "title": "ખેત કૅલેન્ડર"
+    },
+    "progress": {
+      "title": "કાર્ય પ્રગતિ",
+      "completed": "પૂર્ણ",
+      "pending": "બાકી",
+      "overdue": "વિલંબ",
+      "upcoming": "આગામી",
+      "byCategory": "શ્રેણી દ્વારા"
+    },
+    "tasks": {
+      "completed": "પૂર્ણ",
+      "noTasks": "આ મહિને કોઈ કાર્ય નહીં",
+      "title": "બધા કાર્યો"
+    },
+    "taskList": {
+      "title": "બધા ખેત કાર્યો"
+    }
+  }
+}

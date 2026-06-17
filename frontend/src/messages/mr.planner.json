@@ -1,0 +1,43 @@
+{
+  "planner": {
+    "hero": {
+      "subtitle": "AI शेत नियोजक",
+      "title": "हंगामी शेत नियोजक",
+      "description": "AI-निर्मित कार्ये, हंगामी वेळापत्रक आणि तुमच्या शेतासाठी स्मार्ट शिफारसी",
+      "completion": "हंगाम प्रगती",
+      "upcomingTasks": "येणारी कार्ये",
+      "aiSuggestions": "AI सूचना",
+      "season": "सध्याचा हंगाम"
+    },
+    "timeline": {
+      "title": "हंगामी वेळापत्रक"
+    },
+    "aiPlan": {
+      "title": "AI शेत योजना",
+      "subtitle": "या हंगामासाठी स्मार्ट शिफारसी",
+      "expectedOutcome": "अपेक्षित परिणाम",
+      "riskReduction": "धोका कमी",
+      "profitImpact": "नफा प्रभाव",
+      "recommendedActions": "शिफारस केलेली कार्ये"
+    },
+    "calendar": {
+      "title": "शेत दिनदर्शिका"
+    },
+    "progress": {
+      "title": "कार्य प्रगती",
+      "completed": "पूर्ण",
+      "pending": "प्रलंबित",
+      "overdue": "उशीर",
+      "upcoming": "येणारे",
+      "byCategory": "श्रेणीनुसार"
+    },
+    "tasks": {
+      "completed": "पूर्ण",
+      "noTasks": "या महिन्यात कोणतेही कार्य नाही",
+      "title": "सर्व कार्ये"
+    },
+    "taskList": {
+      "title": "सर्व शेत कार्ये"
+    }
+  }
+}
