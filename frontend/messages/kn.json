@@ -456,5 +456,176 @@
       "retry": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ",
       "reconnect": "ಮತ್ತೆ ಸಂಪರ್ಕಿಸಿ"
     }
+  },
+  "market": {
+    "meta": {
+      "title": "ಮಾರುಕಟ್ಟೆ ಮಾಹಿತಿ | ವಾಯುಕೃಷಿ",
+      "description": "AI-ಚಾಲಿತ ಬೆಳೆ ಬೆಲೆ ಮುನ್ಸೂಚನೆ ಮತ್ತು ಮಾರುಕಟ್ಟೆ ನಿರ್ಧಾರ ವ್ಯವಸ್ಥೆ"
+    },
+    "hero": {
+      "title": "ಮಾರುಕಟ್ಟೆ ಮಾಹಿತಿ ಕೇಂದ್ರ",
+      "subtitle": "ನಿಮ್ಮ ವ್ಯಕ್ತಿಗತ ಕೃಷಿ ಮಾರುಕಟ್ಟೆ ವಿಶ್ಲೇಷಕ — AI ಮೂಲಕ",
+      "topGainer": "ಅತಿ ಹೆಚ್ಚು ಏರಿಕೆ",
+      "topLoser": "ಅತಿ ಹೆಚ್ಚು ಕುಸಿತ",
+      "highestDemand": "ಅತಿ ಹೆಚ್ಚು ಬೇಡಿಕೆ",
+      "bestRegion": "ಅತ್ಯುತ್ತಮ ಮಾರಾಟ ಪ್ರದೇಶ",
+      "demandScore": "ಬೇಡಿಕೆ ಸ್ಕೋರ್",
+      "volume": "ಪ್ರಮಾಣ",
+      "gainers": "ಏರಿಕೆ",
+      "losers": "ಕುಸಿತ",
+      "demandIndex": "ಬೇಡಿಕೆ ಸೂಚ್ಯಂಕ",
+      "markets": "ಸಕ್ರಿಯ ಮಾರುಕಟ್ಟೆಗಳು",
+      "status": {
+        "open": "ಮಾರುಕಟ್ಟೆ ತೆರೆದಿದೆ",
+        "closed": "ಮಾರುಕಟ್ಟೆ ಮುಚ್ಚಿದೆ",
+        "pre-market": "ಪ್ರಿ-ಮಾರ್ಕೆಟ್"
+      }
+    },
+    "table": {
+      "title": "ನೇರ ಮಾರುಕಟ್ಟೆ ಬೆಲೆಗಳು",
+      "crop": "ಬೆಳೆ",
+      "currentPrice": "ಬೆಲೆ (₹/ಕಿ.ಗ್ರಾ)",
+      "prevPrice": "ಹಿಂದಿನ ಬೆಲೆ",
+      "change": "ಬದಲಾವಣೆ",
+      "market": "ಮಾರುಕಟ್ಟೆ",
+      "volume": "ಪ್ರಮಾಣ",
+      "searchPlaceholder": "ಬೆಳೆಗಳನ್ನು ಹುಡುಕಿ…",
+      "filterByState": "ರಾಜ್ಯದ ಮೂಲಕ ಫಿಲ್ಟರ್",
+      "allStates": "ಎಲ್ಲ ರಾಜ್ಯಗಳು",
+      "noResults": "ಫಲಿತಾಂಶ ಇಲ್ಲ",
+      "prevPage": "ಹಿಂದಿನ ಪುಟ",
+      "nextPage": "ಮುಂದಿನ ಪುಟ",
+      "showing": "{from}–{to} ತೋರಿಸಲಾಗುತ್ತಿದೆ, ಒಟ್ಟು {total}"
+    },
+    "forecast": {
+      "title": "AI ಬೆಲೆ ಮುನ್ಸೂಚನೆ ಇಂಜಿನ್",
+      "selectedCrop": "ಬೆಳೆ",
+      "period": {
+        "7d": "7 ದಿನ",
+        "30d": "30 ದಿನ"
+      },
+      "forecast7d": "7-ದಿನದ ಮುನ್ಸೂಚನೆ",
+      "forecast30d": "30-ದಿನದ ಮುನ್ಸೂಚನೆ",
+      "currentPrice": "ಪ್ರಸ್ತುತ ಬೆಲೆ",
+      "expectedPrice": "ನಿರೀಕ್ಷಿತ ಬೆಲೆ",
+      "range": "ವ್ಯಾಪ್ತಿ",
+      "confidence": "ವಿಶ್ವಾಸ",
+      "aiRecommendation": "AI ಶಿಫಾರಸು",
+      "holdFor": "{days} ದಿನ ಕಾಯಿರಿ",
+      "expectedGain": "ನಿರೀಕ್ಷಿತ ಲಾಭ",
+      "action": {
+        "sellNow": "ಈಗ ಮಾರಿ",
+        "hold7d": "7 ದಿನ ಕಾಯಿರಿ",
+        "hold30d": "30 ದಿನ ಕಾಯಿರಿ",
+        "sellPartial": "ಭಾಗಶಃ ಮಾರಿ"
+      },
+      "historical": "ಐತಿಹಾಸಿಕ",
+      "predicted": "ಅಂದಾಜು",
+      "upperBound": "ಮೇಲ್ ಮಿತಿ",
+      "lowerBound": "ಕೆಳ ಮಿತಿ",
+      "today": "ಇಂದು",
+      "confidenceBand": "ವಿಶ್ವಾಸ ಪಟ್ಟಿ",
+      "priceChart": "ಬೆಲೆ ನಕ್ಷೆ",
+      "chartAria": "ಬೆಲೆ ಮುನ್ಸೂಚನೆ ನಕ್ಷೆ"
+    },
+    "trend": {
+      "title": "ಟ್ರೆಂಡ್ ವಿಶ್ಲೇಷಣೆ",
+      "weekly": "ಸಾಪ್ತಾಹಿಕ",
+      "monthly": "ಮಾಸಿಕ",
+      "seasonal": "ಋತುಮಾನ",
+      "yearly": "ವಾರ್ಷಿಕ",
+      "trendTabs": "ಟ್ರೆಂಡ್ ಅವಧಿ ಆಯ್ಕೆ",
+      "seasonalTrend": "ಋತುಮಾನ ಟ್ರೆಂಡ್",
+      "avgPrice": "ಸರಾಸರಿ ಬೆಲೆ",
+      "demand": "ಬೇಡಿಕೆ",
+      "peakMonth": "ಉತ್ತುಂಗ ತಿಂಗಳು",
+      "lowMonth": "ಕನಿಷ್ಠ ತಿಂಗಳು",
+      "yearlyNote": "12 ತಿಂಗಳ ದತ್ತಾಂಶ ಆಧಾರಿತ",
+      "seasonalChartAria": "ಋತುಮಾನ ಟ್ರೆಂಡ್ ನಕ್ಷೆ"
+    },
+    "demand": {
+      "title": "ಮಾರುಕಟ್ಟೆ ಬೇಡಿಕೆ ಮಾಹಿತಿ",
+      "highDemand": "ಹೆಚ್ಚು ಬೇಡಿಕೆ",
+      "emerging": "ಉದಯೋನ್ಮುಖ ಬೆಳೆಗಳು",
+      "declining": "ಕಡಿಮೆಯಾಗುತ್ತಿರುವ ಬೆಳೆಗಳು",
+      "demandScore": "ಬೇಡಿಕೆ ಸ್ಕೋರ್",
+      "regionalDemand": "ಪ್ರಾದೇಶಿಕ ಬೇಡಿಕೆ ಹಾಟ್‌ಸ್ಪಾಟ್",
+      "weeklyDemandTrend": "ಸಾಪ್ತಾಹಿಕ ಬೇಡಿಕೆ ಟ್ರೆಂಡ್",
+      "demandChartAria": "ಬೇಡಿಕೆ ಟ್ರೆಂಡ್ ನಕ್ಷೆ"
+    },
+    "bestMarket": {
+      "title": "ಅತ್ಯುತ್ತಮ ಮಾರುಕಟ್ಟೆ ಶಿಫಾರಸು",
+      "forCrop": "ಬೆಳೆಗಾಗಿ",
+      "recommended": "ಶ್ರೇಷ್ಠ ಆಯ್ಕೆ",
+      "expectedPrice": "ನಿರೀಕ್ಷಿತ ಬೆಲೆ",
+      "transport": "ಸಾರಿಗೆ ವೆಚ್ಚ",
+      "netProfit": "ನಿವ್ವಳ ಲಾಭ",
+      "away": "ದೂರ"
+    },
+    "sellDecision": {
+      "title": "ಮಾರಿ ಅಥವಾ ಕಾಯಿರಿ ಶಿಫಾರಸು",
+      "sellNow": "ಈಗ ಮಾರಿ",
+      "hold7d": "7 ದಿನ ಕಾಯಿರಿ",
+      "hold30d": "30 ದಿನ ಕಾಯಿರಿ",
+      "recommended": "ಶಿಫಾರಸು",
+      "expectedPrice": "ನಿರೀಕ್ಷಿತ ಬೆಲೆ",
+      "profit": "ಲಾಭ/ನಷ್ಟ",
+      "risk": "ಅಪಾಯ ಸ್ಕೋರ್",
+      "probability": "ಸಂಭವನೀಯತೆ",
+      "profitDifference": "ಮುಖ್ಯ ಮಾಹಿತಿ",
+      "currentPrice": "ಪ್ರಸ್ತುತ ಬೆಲೆ",
+      "profitDiffNote": "{action} ಆಯ್ಕೆ ₹{amount}/ಕಿ.ಗ್ರಾ ಲಾಭ ವ್ಯತ್ಯಾಸ ಉಂಟುಮಾಡಬಹುದು"
+    },
+    "map": {
+      "title": "ಪ್ರಾದೇಶಿಕ ಮಾರುಕಟ್ಟೆ ನಕ್ಷೆ",
+      "selectRegion": "ಪ್ರದೇಶ ಆಯ್ಕೆ",
+      "apmc": "APMC ಮಾರುಕಟ್ಟೆ",
+      "wholesale": "ಸಗಟು ಮಾರುಕಟ್ಟೆ",
+      "retail": "ಚಿಲ್ಲರೆ ಮಾರುಕಟ್ಟೆ",
+      "export": "ರಫ್ತು ಕೇಂದ್ರ"
+    },
+    "comparison": {
+      "title": "ಬೆಳೆ ಹೋಲಿಕೆ ಸಾಧನ",
+      "currentPrice": "ಪ್ರಸ್ತುತ ಬೆಲೆ",
+      "forecast7d": "7 ದಿನ ಮುನ್ಸೂಚನೆ",
+      "demand": "ಬೇಡಿಕೆ",
+      "risk": "ಅಪಾಯ",
+      "lowRisk": "ಕಡಿಮೆ ಅಪಾಯ",
+      "profitPotential": "ಲಾಭ ಸಾಮರ್ಥ್ಯ",
+      "winner": "ಅತ್ಯುತ್ತಮ ಆಯ್ಕೆ",
+      "winnerIs": "ಶಿಫಾರಸು ಬೆಳೆ",
+      "radarTitle": "ಬಹು-ಮಾಪನ ಹೋಲಿಕೆ",
+      "rec": {
+        "buy": "ಖರೀದಿ ಸಂಕೇತ",
+        "sell": "ಮಾರಾಟ ಸಂಕೇತ",
+        "hold": "ಕಾಯಿರಿ"
+      }
+    },
+    "alerts": {
+      "title": "ಮಾರುಕಟ್ಟೆ ಎಚ್ಚರಿಕೆಗಳು",
+      "unreadCount": "{count} ಹೊಸ ಎಚ್ಚರಿಕೆಗಳು",
+      "noAlerts": "ಎಲ್ಲಾ ಸರಿ — ಯಾವ ಎಚ್ಚರಿಕೆಯೂ ಇಲ್ಲ",
+      "dismiss": "ಎಚ್ಚರಿಕೆ ತಳ್ಳಿ",
+      "severity": {
+        "info": "ಮಾಹಿತಿ",
+        "warning": "ಎಚ್ಚರಿಕೆ",
+        "critical": "ತೀವ್ರ"
+      }
+    },
+    "errors": {
+      "marketTitle": "ಮಾರುಕಟ್ಟೆ ಡೇಟಾ ಲೋಡ್ ವಿಫಲ",
+      "marketMessage": "ನೇರ ಬೆಲೆಗಳನ್ನು ಪಡೆಯಲಾಗಲಿಲ್ಲ.",
+      "forecastTitle": "ಮುನ್ಸೂಚನೆ ಲಭ್ಯವಿಲ್ಲ",
+      "forecastMessage": "AI ಮುನ್ಸೂಚನೆ ಲೋಡ್ ಆಗಲಿಲ್ಲ.",
+      "demandTitle": "ಬೇಡಿಕೆ ಡೇಟಾ ಲಭ್ಯವಿಲ್ಲ",
+      "demandMessage": "ಬೇಡಿಕೆ ಮಾಹಿತಿ ಲೋಡ್ ಆಗಲಿಲ್ಲ.",
+      "mapTitle": "ನಕ್ಷೆ ಲೋಡ್ ವಿಫಲ",
+      "mapMessage": "ಮಾರುಕಟ್ಟೆ ನಕ್ಷೆ ಡೇಟಾ ಸಿಗಲಿಲ್ಲ."
+    }
+  },
+  "common": {
+    "error": {
+      "retry": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
+    }
   }
 }

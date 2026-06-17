@@ -853,5 +853,176 @@
       "retry": "Try Again",
       "reconnect": "Reconnect"
     }
+  },
+  "market": {
+    "meta": {
+      "title": "Market Intelligence | Vayukrishi",
+      "description": "AI-powered crop price forecasting and market decision system"
+    },
+    "hero": {
+      "title": "Market Intelligence Center",
+      "subtitle": "Your personal agricultural market analyst — powered by AI",
+      "topGainer": "Top Gainer",
+      "topLoser": "Top Loser",
+      "highestDemand": "Highest Demand",
+      "bestRegion": "Best Selling Region",
+      "demandScore": "Demand Score",
+      "volume": "Volume",
+      "gainers": "Gainers",
+      "losers": "Losers",
+      "demandIndex": "Demand Index",
+      "markets": "Active Markets",
+      "status": {
+        "open": "Market Open",
+        "closed": "Market Closed",
+        "pre-market": "Pre-Market"
+      }
+    },
+    "table": {
+      "title": "Live Market Prices",
+      "crop": "Crop",
+      "currentPrice": "Price (₹/kg)",
+      "prevPrice": "Prev. Price",
+      "change": "Change",
+      "market": "Market",
+      "volume": "Volume",
+      "searchPlaceholder": "Search crops…",
+      "filterByState": "Filter by state",
+      "allStates": "All States",
+      "noResults": "No results found",
+      "prevPage": "Previous page",
+      "nextPage": "Next page",
+      "showing": "Showing {from}–{to} of {total}"
+    },
+    "forecast": {
+      "title": "AI Price Forecasting Engine",
+      "selectedCrop": "Crop",
+      "period": {
+        "7d": "7 Days",
+        "30d": "30 Days"
+      },
+      "forecast7d": "7-Day Forecast",
+      "forecast30d": "30-Day Forecast",
+      "currentPrice": "Current Price",
+      "expectedPrice": "Expected Price",
+      "range": "Range",
+      "confidence": "Confidence",
+      "aiRecommendation": "AI Recommendation",
+      "holdFor": "Hold for {days} days",
+      "expectedGain": "Expected Gain",
+      "action": {
+        "sellNow": "Sell Now",
+        "hold7d": "Hold 7 Days",
+        "hold30d": "Hold 30 Days",
+        "sellPartial": "Sell Partial"
+      },
+      "historical": "Historical",
+      "predicted": "Predicted",
+      "upperBound": "Upper Bound",
+      "lowerBound": "Lower Bound",
+      "today": "Today",
+      "confidenceBand": "Confidence Band",
+      "priceChart": "Price Chart",
+      "chartAria": "Price forecast chart"
+    },
+    "trend": {
+      "title": "Trend Analysis",
+      "weekly": "Weekly",
+      "monthly": "Monthly",
+      "seasonal": "Seasonal",
+      "yearly": "Yearly",
+      "trendTabs": "Trend period selector",
+      "seasonalTrend": "Seasonal Trend",
+      "avgPrice": "Avg Price",
+      "demand": "Demand",
+      "peakMonth": "Peak Month",
+      "lowMonth": "Low Month",
+      "yearlyNote": "Based on 12-month rolling data",
+      "seasonalChartAria": "Seasonal trend chart"
+    },
+    "demand": {
+      "title": "Market Demand Intelligence",
+      "highDemand": "High Demand",
+      "emerging": "Emerging Crops",
+      "declining": "Declining Crops",
+      "demandScore": "Demand Score",
+      "regionalDemand": "Regional Demand Hotspots",
+      "weeklyDemandTrend": "Weekly Demand Trend",
+      "demandChartAria": "Demand trend chart"
+    },
+    "bestMarket": {
+      "title": "Best Market Recommendation",
+      "forCrop": "For crop",
+      "recommended": "Best Choice",
+      "expectedPrice": "Expected Price",
+      "transport": "Transport Cost",
+      "netProfit": "Net Profit",
+      "away": "away"
+    },
+    "sellDecision": {
+      "title": "Sell vs Hold Recommendation",
+      "sellNow": "Sell Now",
+      "hold7d": "Hold 7 Days",
+      "hold30d": "Hold 30 Days",
+      "recommended": "Recommended",
+      "expectedPrice": "Expected Price",
+      "profit": "Profit/Loss",
+      "risk": "Risk Score",
+      "probability": "Probability",
+      "profitDifference": "Key Insight",
+      "currentPrice": "Current Price",
+      "profitDiffNote": "Choosing {action} could result in ₹{amount}/kg difference in profit"
+    },
+    "map": {
+      "title": "Regional Market Map",
+      "selectRegion": "Select region",
+      "apmc": "APMC Market",
+      "wholesale": "Wholesale Market",
+      "retail": "Retail Market",
+      "export": "Export Hub"
+    },
+    "comparison": {
+      "title": "Crop Comparison Tool",
+      "currentPrice": "Current Price",
+      "forecast7d": "7D Forecast",
+      "demand": "Demand",
+      "risk": "Risk",
+      "lowRisk": "Low Risk",
+      "profitPotential": "Profit Potential",
+      "winner": "Best Pick",
+      "winnerIs": "Recommended Crop",
+      "radarTitle": "Multi-metric Comparison",
+      "rec": {
+        "buy": "Buy Signal",
+        "sell": "Sell Signal",
+        "hold": "Hold"
+      }
+    },
+    "alerts": {
+      "title": "Market Alerts",
+      "unreadCount": "{count} new alerts",
+      "noAlerts": "All clear — no active alerts",
+      "dismiss": "Dismiss alert",
+      "severity": {
+        "info": "Info",
+        "warning": "Warning",
+        "critical": "Critical"
+      }
+    },
+    "errors": {
+      "marketTitle": "Failed to load market data",
+      "marketMessage": "Unable to fetch live prices. Please check your connection.",
+      "forecastTitle": "Forecast unavailable",
+      "forecastMessage": "AI forecast could not be loaded. Please try again.",
+      "demandTitle": "Demand data unavailable",
+      "demandMessage": "Unable to load demand insights.",
+      "mapTitle": "Map failed to load",
+      "mapMessage": "Market map data could not be fetched."
+    }
+  },
+  "common": {
+    "error": {
+      "retry": "Try Again"
+    }
   }
 }

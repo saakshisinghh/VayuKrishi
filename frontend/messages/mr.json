@@ -570,5 +570,176 @@
       "retry": "पुन्हा प्रयत्न करा",
       "reconnect": "पुन्हा जोडा"
     }
+  },
+  "market": {
+    "meta": {
+      "title": "बाजार माहिती | वायुकृषी",
+      "description": "AI-चालित पीक किंमत अंदाज आणि बाजार निर्णय प्रणाली"
+    },
+    "hero": {
+      "title": "बाजार माहिती केंद्र",
+      "subtitle": "तुमचा वैयक्तिक कृषी बाजार विश्लेषक — AI द्वारा संचालित",
+      "topGainer": "सर्वाधिक वाढ",
+      "topLoser": "सर्वाधिक घट",
+      "highestDemand": "सर्वाधिक मागणी",
+      "bestRegion": "सर्वोत्तम विक्री क्षेत्र",
+      "demandScore": "मागणी स्कोर",
+      "volume": "व्हॉल्यूम",
+      "gainers": "वाढणारे",
+      "losers": "घटणारे",
+      "demandIndex": "मागणी निर्देशांक",
+      "markets": "सक्रिय बाजार",
+      "status": {
+        "open": "बाजार उघडा",
+        "closed": "बाजार बंद",
+        "pre-market": "प्री-मार्केट"
+      }
+    },
+    "table": {
+      "title": "थेट बाजार किंमती",
+      "crop": "पीक",
+      "currentPrice": "किंमत (₹/किलो)",
+      "prevPrice": "मागील किंमत",
+      "change": "बदल",
+      "market": "बाजार",
+      "volume": "व्हॉल्यूम",
+      "searchPlaceholder": "पिके शोधा…",
+      "filterByState": "राज्यानुसार फिल्टर",
+      "allStates": "सर्व राज्ये",
+      "noResults": "कोणताही परिणाम नाही",
+      "prevPage": "मागील पृष्ठ",
+      "nextPage": "पुढील पृष्ठ",
+      "showing": "{from}–{to} दाखवत आहे, एकूण {total}"
+    },
+    "forecast": {
+      "title": "AI किंमत अंदाज इंजिन",
+      "selectedCrop": "पीक",
+      "period": {
+        "7d": "७ दिवस",
+        "30d": "३० दिवस"
+      },
+      "forecast7d": "७ दिवसांचा अंदाज",
+      "forecast30d": "३० दिवसांचा अंदाज",
+      "currentPrice": "सध्याची किंमत",
+      "expectedPrice": "अपेक्षित किंमत",
+      "range": "श्रेणी",
+      "confidence": "आत्मविश्वास",
+      "aiRecommendation": "AI शिफारस",
+      "holdFor": "{days} दिवस थांबा",
+      "expectedGain": "अपेक्षित नफा",
+      "action": {
+        "sellNow": "आता विका",
+        "hold7d": "७ दिवस थांबा",
+        "hold30d": "३० दिवस थांबा",
+        "sellPartial": "अंशतः विका"
+      },
+      "historical": "ऐतिहासिक",
+      "predicted": "अंदाजित",
+      "upperBound": "वरची मर्यादा",
+      "lowerBound": "खालची मर्यादा",
+      "today": "आज",
+      "confidenceBand": "विश्वास पट्टी",
+      "priceChart": "किंमत आलेख",
+      "chartAria": "किंमत अंदाज आलेख"
+    },
+    "trend": {
+      "title": "ट्रेंड विश्लेषण",
+      "weekly": "साप्ताहिक",
+      "monthly": "मासिक",
+      "seasonal": "हंगामी",
+      "yearly": "वार्षिक",
+      "trendTabs": "ट्रेंड कालावधी निवडक",
+      "seasonalTrend": "हंगामी ट्रेंड",
+      "avgPrice": "सरासरी किंमत",
+      "demand": "मागणी",
+      "peakMonth": "शिखर महिना",
+      "lowMonth": "कमी महिना",
+      "yearlyNote": "१२ महिन्यांच्या डेटावर आधारित",
+      "seasonalChartAria": "हंगामी ट्रेंड आलेख"
+    },
+    "demand": {
+      "title": "बाजार मागणी माहिती",
+      "highDemand": "जास्त मागणी",
+      "emerging": "उदयोन्मुख पिके",
+      "declining": "घसरण पिके",
+      "demandScore": "मागणी स्कोर",
+      "regionalDemand": "प्रादेशिक मागणी हॉटस्पॉट",
+      "weeklyDemandTrend": "साप्ताहिक मागणी ट्रेंड",
+      "demandChartAria": "मागणी ट्रेंड आलेख"
+    },
+    "bestMarket": {
+      "title": "सर्वोत्तम बाजार शिफारस",
+      "forCrop": "पिकासाठी",
+      "recommended": "सर्वोत्तम पर्याय",
+      "expectedPrice": "अपेक्षित किंमत",
+      "transport": "वाहतूक खर्च",
+      "netProfit": "निव्वळ नफा",
+      "away": "दूर"
+    },
+    "sellDecision": {
+      "title": "विका किंवा थांबा शिफारस",
+      "sellNow": "आता विका",
+      "hold7d": "७ दिवस थांबा",
+      "hold30d": "३० दिवस थांबा",
+      "recommended": "शिफारस केलेले",
+      "expectedPrice": "अपेक्षित किंमत",
+      "profit": "नफा/तोटा",
+      "risk": "जोखीम स्कोर",
+      "probability": "संभाव्यता",
+      "profitDifference": "मुख्य माहिती",
+      "currentPrice": "सध्याची किंमत",
+      "profitDiffNote": "{action} निवडल्यास ₹{amount}/किलो नफ्यात फरक होऊ शकतो"
+    },
+    "map": {
+      "title": "प्रादेशिक बाजार नकाशा",
+      "selectRegion": "प्रदेश निवडा",
+      "apmc": "APMC बाजार",
+      "wholesale": "घाऊक बाजार",
+      "retail": "किरकोळ बाजार",
+      "export": "निर्यात केंद्र"
+    },
+    "comparison": {
+      "title": "पीक तुलना साधन",
+      "currentPrice": "सध्याची किंमत",
+      "forecast7d": "७ दिवस अंदाज",
+      "demand": "मागणी",
+      "risk": "जोखीम",
+      "lowRisk": "कमी जोखीम",
+      "profitPotential": "नफ्याची क्षमता",
+      "winner": "सर्वोत्तम निवड",
+      "winnerIs": "शिफारस केलेले पीक",
+      "radarTitle": "बहु-मेट्रिक तुलना",
+      "rec": {
+        "buy": "खरेदी संकेत",
+        "sell": "विक्री संकेत",
+        "hold": "थांबा"
+      }
+    },
+    "alerts": {
+      "title": "बाजार सूचना",
+      "unreadCount": "{count} नवीन सूचना",
+      "noAlerts": "सर्व ठीक — कोणत्याही सूचना नाहीत",
+      "dismiss": "सूचना बंद करा",
+      "severity": {
+        "info": "माहिती",
+        "warning": "चेतावणी",
+        "critical": "गंभीर"
+      }
+    },
+    "errors": {
+      "marketTitle": "बाजार डेटा लोड अयशस्वी",
+      "marketMessage": "थेट किंमती मिळवता आल्या नाहीत.",
+      "forecastTitle": "अंदाज उपलब्ध नाही",
+      "forecastMessage": "AI अंदाज लोड होऊ शकला नाही.",
+      "demandTitle": "मागणी डेटा उपलब्ध नाही",
+      "demandMessage": "मागणी माहिती लोड होऊ शकली नाही.",
+      "mapTitle": "नकाशा लोड अयशस्वी",
+      "mapMessage": "बाजार नकाशा डेटा मिळवता आला नाही."
+    }
+  },
+  "common": {
+    "error": {
+      "retry": "पुन्हा प्रयत्न करा"
+    }
   }
 }
