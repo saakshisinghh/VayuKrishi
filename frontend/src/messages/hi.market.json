@@ -1,0 +1,173 @@
+{
+  "market": {
+    "meta": {
+      "title": "बाज़ार जानकारी | वायुकृषि",
+      "description": "AI-संचालित फसल मूल्य पूर्वानुमान और बाज़ार निर्णय प्रणाली"
+    },
+    "hero": {
+      "title": "बाज़ार जानकारी केंद्र",
+      "subtitle": "आपका व्यक्तिगत कृषि बाज़ार विश्लेषक — AI द्वारा संचालित",
+      "topGainer": "सर्वाधिक वृद्धि",
+      "topLoser": "सर्वाधिक गिरावट",
+      "highestDemand": "सर्वाधिक मांग",
+      "bestRegion": "सर्वश्रेष्ठ बिक्री क्षेत्र",
+      "demandScore": "मांग स्कोर",
+      "volume": "मात्रा",
+      "gainers": "बढ़ने वाले",
+      "losers": "घटने वाले",
+      "demandIndex": "मांग सूचकांक",
+      "markets": "सक्रिय बाज़ार",
+      "status": {
+        "open": "बाज़ार खुला",
+        "closed": "बाज़ार बंद",
+        "pre-market": "प्री-मार्केट"
+      }
+    },
+    "table": {
+      "title": "लाइव बाज़ार मूल्य",
+      "crop": "फसल",
+      "currentPrice": "मूल्य (₹/किलो)",
+      "prevPrice": "पिछला मूल्य",
+      "change": "बदलाव",
+      "market": "बाज़ार",
+      "volume": "मात्रा",
+      "searchPlaceholder": "फसल खोजें…",
+      "filterByState": "राज्य के अनुसार फ़िल्टर",
+      "allStates": "सभी राज्य",
+      "noResults": "कोई परिणाम नहीं मिला",
+      "prevPage": "पिछला पृष्ठ",
+      "nextPage": "अगला पृष्ठ",
+      "showing": "{from}–{to} दिखाया जा रहा है, कुल {total}"
+    },
+    "forecast": {
+      "title": "AI मूल्य पूर्वानुमान इंजन",
+      "selectedCrop": "फसल",
+      "period": {
+        "7d": "7 दिन",
+        "30d": "30 दिन"
+      },
+      "forecast7d": "7-दिन का पूर्वानुमान",
+      "forecast30d": "30-दिन का पूर्वानुमान",
+      "currentPrice": "वर्तमान मूल्य",
+      "expectedPrice": "अपेक्षित मूल्य",
+      "range": "दायरा",
+      "confidence": "विश्वास",
+      "aiRecommendation": "AI सिफारिश",
+      "holdFor": "{days} दिन रुकें",
+      "expectedGain": "अपेक्षित लाभ",
+      "action": {
+        "sellNow": "अभी बेचें",
+        "hold7d": "7 दिन रुकें",
+        "hold30d": "30 दिन रुकें",
+        "sellPartial": "आंशिक बेचें"
+      },
+      "historical": "ऐतिहासिक",
+      "predicted": "पूर्वानुमानित",
+      "upperBound": "ऊपरी सीमा",
+      "lowerBound": "निचली सीमा",
+      "today": "आज",
+      "confidenceBand": "विश्वास बैंड",
+      "priceChart": "मूल्य चार्ट",
+      "chartAria": "मूल्य पूर्वानुमान चार्ट"
+    },
+    "trend": {
+      "title": "ट्रेंड विश्लेषण",
+      "weekly": "साप्ताहिक",
+      "monthly": "मासिक",
+      "seasonal": "मौसमी",
+      "yearly": "वार्षिक",
+      "trendTabs": "ट्रेंड अवधि चयनकर्ता",
+      "seasonalTrend": "मौसमी ट्रेंड",
+      "avgPrice": "औसत मूल्य",
+      "demand": "मांग",
+      "peakMonth": "शिखर माह",
+      "lowMonth": "न्यूनतम माह",
+      "yearlyNote": "12 माह के रोलिंग डेटा पर आधारित",
+      "seasonalChartAria": "मौसमी ट्रेंड चार्ट"
+    },
+    "demand": {
+      "title": "बाज़ार मांग जानकारी",
+      "highDemand": "उच्च मांग",
+      "emerging": "उभरती फसलें",
+      "declining": "गिरावट वाली फसलें",
+      "demandScore": "मांग स्कोर",
+      "regionalDemand": "क्षेत्रीय मांग हॉटस्पॉट",
+      "weeklyDemandTrend": "साप्ताहिक मांग ट्रेंड",
+      "demandChartAria": "मांग ट्रेंड चार्ट"
+    },
+    "bestMarket": {
+      "title": "सर्वश्रेष्ठ बाज़ार सिफारिश",
+      "forCrop": "फसल के लिए",
+      "recommended": "सर्वश्रेष्ठ विकल्प",
+      "expectedPrice": "अपेक्षित मूल्य",
+      "transport": "परिवहन लागत",
+      "netProfit": "शुद्ध लाभ",
+      "away": "दूर"
+    },
+    "sellDecision": {
+      "title": "बेचें या रुकें सिफारिश",
+      "sellNow": "अभी बेचें",
+      "hold7d": "7 दिन रुकें",
+      "hold30d": "30 दिन रुकें",
+      "recommended": "सिफारिश की गई",
+      "expectedPrice": "अपेक्षित मूल्य",
+      "profit": "लाभ/हानि",
+      "risk": "जोखिम स्कोर",
+      "probability": "संभावना",
+      "profitDifference": "मुख्य जानकारी",
+      "currentPrice": "वर्तमान मूल्य",
+      "profitDiffNote": "{action} चुनने पर ₹{amount}/किलो लाभ में अंतर हो सकता है"
+    },
+    "map": {
+      "title": "क्षेत्रीय बाज़ार नक्शा",
+      "selectRegion": "क्षेत्र चुनें",
+      "apmc": "APMC बाज़ार",
+      "wholesale": "थोक बाज़ार",
+      "retail": "खुदरा बाज़ार",
+      "export": "निर्यात केंद्र"
+    },
+    "comparison": {
+      "title": "फसल तुलना उपकरण",
+      "currentPrice": "वर्तमान मूल्य",
+      "forecast7d": "7 दिन पूर्वानुमान",
+      "demand": "मांग",
+      "risk": "जोखिम",
+      "lowRisk": "कम जोखिम",
+      "profitPotential": "लाभ क्षमता",
+      "winner": "सर्वश्रेष्ठ चुनाव",
+      "winnerIs": "सिफारिश की गई फसल",
+      "radarTitle": "बहु-मीट्रिक तुलना",
+      "rec": {
+        "buy": "खरीद संकेत",
+        "sell": "बिक्री संकेत",
+        "hold": "रुकें"
+      }
+    },
+    "alerts": {
+      "title": "बाज़ार सूचनाएं",
+      "unreadCount": "{count} नई सूचनाएं",
+      "noAlerts": "सब ठीक है — कोई सक्रिय सूचना नहीं",
+      "dismiss": "सूचना बंद करें",
+      "severity": {
+        "info": "जानकारी",
+        "warning": "चेतावनी",
+        "critical": "गंभीर"
+      }
+    },
+    "errors": {
+      "marketTitle": "बाज़ार डेटा लोड विफल",
+      "marketMessage": "लाइव मूल्य प्राप्त नहीं किए जा सके।",
+      "forecastTitle": "पूर्वानुमान अनुपलब्ध",
+      "forecastMessage": "AI पूर्वानुमान लोड नहीं हो सका।",
+      "demandTitle": "मांग डेटा अनुपलब्ध",
+      "demandMessage": "मांग जानकारी लोड नहीं हो सकी।",
+      "mapTitle": "नक्शा लोड विफल",
+      "mapMessage": "बाज़ार नक्शा डेटा प्राप्त नहीं किया जा सका।"
+    }
+  },
+  "common": {
+    "error": {
+      "retry": "पुनः प्रयास करें"
+    }
+  }
+}

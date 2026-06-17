@@ -1,0 +1,173 @@
+{
+  "market": {
+    "meta": {
+      "title": "બજાર માહિતી | વાયુકૃષિ",
+      "description": "AI-સંચાલિત પાક ભાવ અનુમાન અને બજાર નિર્ણય પ્રણાલી"
+    },
+    "hero": {
+      "title": "બજાર માહિતી કેન્દ્ર",
+      "subtitle": "તમારો વ્યક્તિગત કૃષિ બજાર વિશ્લેષક — AI દ્વારા સંચાલિત",
+      "topGainer": "સૌથી વધુ વૃદ્ધિ",
+      "topLoser": "સૌથી વધુ ઘટાડો",
+      "highestDemand": "સૌથી વધુ માંગ",
+      "bestRegion": "શ્રેષ્ઠ વેચાણ ક્ષેત્ર",
+      "demandScore": "માંગ સ્કોર",
+      "volume": "જથ્થો",
+      "gainers": "વધનારા",
+      "losers": "ઘટનારા",
+      "demandIndex": "માંગ સૂચકાંક",
+      "markets": "સક્રિય બજારો",
+      "status": {
+        "open": "બજાર ખુલ્લું",
+        "closed": "બજાર બંધ",
+        "pre-market": "પ્રી-માર્કેટ"
+      }
+    },
+    "table": {
+      "title": "લાઇવ બજાર ભાવ",
+      "crop": "પાક",
+      "currentPrice": "ભાવ (₹/કિ.ગ્રા)",
+      "prevPrice": "પહેલાનો ભાવ",
+      "change": "ફેરફાર",
+      "market": "બજાર",
+      "volume": "જથ્થો",
+      "searchPlaceholder": "પાક શોધો…",
+      "filterByState": "રાજ્ય પ્રમાણે ફિલ્ટર",
+      "allStates": "તમામ રાજ્યો",
+      "noResults": "કોઈ પરિણામ નથી",
+      "prevPage": "પાછળ",
+      "nextPage": "આગળ",
+      "showing": "{from}–{to} બતાવ્યું, કુલ {total}"
+    },
+    "forecast": {
+      "title": "AI ભાવ અનુમાન એન્જિન",
+      "selectedCrop": "પાક",
+      "period": {
+        "7d": "7 દિવસ",
+        "30d": "30 દિવસ"
+      },
+      "forecast7d": "7-દિવસ અનુમાન",
+      "forecast30d": "30-દિવસ અનુમાન",
+      "currentPrice": "હાલનો ભાવ",
+      "expectedPrice": "અપેક્ષિત ભાવ",
+      "range": "શ્રેણી",
+      "confidence": "આત્મવિશ્વાસ",
+      "aiRecommendation": "AI ભલામણ",
+      "holdFor": "{days} દિવસ રાહ જુઓ",
+      "expectedGain": "અપેક્ષિત નફો",
+      "action": {
+        "sellNow": "અત્યારે વેચો",
+        "hold7d": "7 દિવસ રાહ જુઓ",
+        "hold30d": "30 દિવસ રાહ જુઓ",
+        "sellPartial": "આંશિક વેચો"
+      },
+      "historical": "ઐતિહાસિક",
+      "predicted": "અનુમાનિત",
+      "upperBound": "ઉચ્ચ સીમા",
+      "lowerBound": "નીચી સીમા",
+      "today": "આજ",
+      "confidenceBand": "વિશ્વાસ બેન્ડ",
+      "priceChart": "ભાવ ચાર્ટ",
+      "chartAria": "ભાવ અનુમાન ચાર્ટ"
+    },
+    "trend": {
+      "title": "ટ્રેન્ડ વિશ્લેષણ",
+      "weekly": "સાપ્તાહિક",
+      "monthly": "માસિક",
+      "seasonal": "મોસમી",
+      "yearly": "વાર્ષિક",
+      "trendTabs": "ટ્રેન્ડ સમય પસંદગી",
+      "seasonalTrend": "મોસમી ટ્રેન્ડ",
+      "avgPrice": "સરેરાશ ભાવ",
+      "demand": "માંગ",
+      "peakMonth": "શ્રેષ્ઠ મહિનો",
+      "lowMonth": "ન્યૂનતમ મહિનો",
+      "yearlyNote": "12 મહિનાના ડેટા પ્રમાણે",
+      "seasonalChartAria": "મોસમી ટ્રેન્ડ ચાર્ટ"
+    },
+    "demand": {
+      "title": "બજાર માંગ માહિતી",
+      "highDemand": "ઉચ્ચ માંગ",
+      "emerging": "ઉભરતા પાકો",
+      "declining": "ઘટતા પાકો",
+      "demandScore": "માંગ સ્કોર",
+      "regionalDemand": "પ્રાદેશિક માંગ હોટસ્પોટ",
+      "weeklyDemandTrend": "સાપ્તાહિક માંગ ટ્રેન્ડ",
+      "demandChartAria": "માંગ ટ્રેન્ડ ચાર્ટ"
+    },
+    "bestMarket": {
+      "title": "શ્રેષ્ઠ બજાર ભલામણ",
+      "forCrop": "પાક માટે",
+      "recommended": "શ્રેષ્ઠ પસંદ",
+      "expectedPrice": "અપેક્ષિત ભાવ",
+      "transport": "પરિવહન ખર્ચ",
+      "netProfit": "ચોખ્ખો નફો",
+      "away": "દૂર"
+    },
+    "sellDecision": {
+      "title": "વેચો અથવા રાહ જુઓ ભલામણ",
+      "sellNow": "અત્યારે વેચો",
+      "hold7d": "7 દિવસ રાહ જુઓ",
+      "hold30d": "30 દિવસ રાહ જુઓ",
+      "recommended": "ભલામણ",
+      "expectedPrice": "અપેક્ષિત ભાવ",
+      "profit": "નફો/ખોટ",
+      "risk": "જોખમ સ્કોર",
+      "probability": "સંભાવના",
+      "profitDifference": "મુખ્ય માહિતી",
+      "currentPrice": "હાલનો ભાવ",
+      "profitDiffNote": "{action} પસંદ કરવાથી ₹{amount}/કિ.ગ્રા નફામાં ફેર પડી શકે"
+    },
+    "map": {
+      "title": "પ્રાદેશિક બજાર નકશો",
+      "selectRegion": "પ્રદેશ પસંદ કરો",
+      "apmc": "APMC બજાર",
+      "wholesale": "જથ્થાબંધ બજાર",
+      "retail": "છૂટક બજાર",
+      "export": "નિકાસ કેન્દ્ર"
+    },
+    "comparison": {
+      "title": "પાક સરખામણી સાધન",
+      "currentPrice": "હાલનો ભાવ",
+      "forecast7d": "7 દિ. અનુમાન",
+      "demand": "માંગ",
+      "risk": "જોખમ",
+      "lowRisk": "ઓછું જોખમ",
+      "profitPotential": "નફાની ક્ષમતા",
+      "winner": "શ્રેષ્ઠ પસંદ",
+      "winnerIs": "ભલામણ કરેલ પાક",
+      "radarTitle": "બહુ-મેટ્રિક સરખામણી",
+      "rec": {
+        "buy": "ખરીદ સંકેત",
+        "sell": "વેચાણ સંકેત",
+        "hold": "રાહ જુઓ"
+      }
+    },
+    "alerts": {
+      "title": "બજાર સૂચનો",
+      "unreadCount": "{count} નવા સૂચનો",
+      "noAlerts": "બધું ઠીક — કોઈ સૂચના નથી",
+      "dismiss": "સૂચના બંધ કરો",
+      "severity": {
+        "info": "માહિતી",
+        "warning": "ચેતવણી",
+        "critical": "ગંભીર"
+      }
+    },
+    "errors": {
+      "marketTitle": "બજાર ડેટા લોડ નિષ્ફળ",
+      "marketMessage": "લાઇવ ભાવ મળ્યા નહીં.",
+      "forecastTitle": "અનુમાન અનુપલબ્ધ",
+      "forecastMessage": "AI અનુમાન લોડ ન થઈ શક્યું.",
+      "demandTitle": "માંગ ડેટા અનુપલબ્ધ",
+      "demandMessage": "માંગ માહિતી લોડ ન થઈ.",
+      "mapTitle": "નકશો લોડ નિષ્ફળ",
+      "mapMessage": "બજાર નકશો ડેટા મળ્યો નહીં."
+    }
+  },
+  "common": {
+    "error": {
+      "retry": "ફરી પ્રયાસ કરો"
+    }
+  }
+}
