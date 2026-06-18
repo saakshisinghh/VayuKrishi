@@ -1,0 +1,178 @@
+{
+  "analytics": {
+    "meta": {
+      "title": "Farm Analytics | Vayukrishi",
+      "description": "View revenue, yield, disease, market, water, and task analytics for your farm"
+    },
+    "hero": {
+      "title": "Farm Analytics",
+      "subtitle": "High-level intelligence across your entire farm operation",
+      "farmPerformance": "Farm Performance",
+      "productivityIndex": "Productivity Index",
+      "profitabilityScore": "Profitability Score",
+      "seasonOverview": "Current Season"
+    },
+    "kpi": {
+      "sectionTitle": "Key Performance Indicators",
+      "revenue": "Revenue",
+      "yield": "Total Yield",
+      "farmHealth": "Farm Health",
+      "diseaseIncidents": "Disease Incidents",
+      "waterSavings": "Water Savings",
+      "marketPerformance": "Market Score",
+      "vsLastSeason": "vs last season",
+      "vsLastMonth": "vs last month",
+      "vsBaseline": "vs baseline"
+    },
+    "charts": {
+      "profitTrend": {
+        "title": "Profit Trend",
+        "subtitle": "Historical and projected farm profitability",
+        "actual": "Actual",
+        "projected": "Projected",
+        "ariaLabel": "Line chart showing actual vs projected farm profit over time"
+      },
+      "yieldTrend": {
+        "title": "Yield by Crop",
+        "subtitle": "Quintal output per crop this season",
+        "yield": "Yield",
+        "ariaLabel": "Bar chart showing yield in quintals per crop"
+      }
+    },
+    "widgets": {
+      "disease": {
+        "title": "Disease Analytics",
+        "subtitle": "Weekly disease detection and treatment tracking",
+        "detected": "Detected",
+        "treated": "Treated",
+        "ariaLabel": "Line chart showing disease detection and treatment over weeks"
+      },
+      "market": {
+        "title": "Market Performance",
+        "subtitle": "Commodity sales volume and average price trends",
+        "sold": "Volume Sold (kg)",
+        "avgPrice": "Avg Price (₹/kg)",
+        "ariaLabel": "Combined bar and line chart showing market performance"
+      },
+      "water": {
+        "title": "Water Usage",
+        "subtitle": "Weekly irrigation water consumption in litres",
+        "used": "Litres Used",
+        "ariaLabel": "Area chart showing weekly water usage"
+      },
+      "tasks": {
+        "title": "Task Completion",
+        "subtitle": "Farm planning task progress this season",
+        "complete": "Complete",
+        "completed": "Completed",
+        "inProgress": "In Progress",
+        "pending": "Pending",
+        "ariaLabel": "Radial chart showing farm task completion rate"
+      }
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "drawerAriaLabel": "Notification panel",
+    "openAriaLabel": "Open notifications, {count} unread",
+    "close": "Close notifications",
+    "markAllRead": "Mark all read",
+    "clearAll": "Clear all",
+    "notificationList": "Notification list",
+    "empty": "You're all caught up! No notifications right now.",
+    "unread": "Unread notification",
+    "unreadCount": "{count} unread notifications",
+    "actions": "Notification actions",
+    "archive": "Archive notification",
+    "delete": "Delete notification"
+  },
+  "profile": {
+    "meta": {
+      "title": "My Profile | Vayukrishi",
+      "description": "Manage your personal details, farm information, and account preferences"
+    },
+    "personal": {
+      "title": "Personal Details",
+      "avatar": "Profile photo",
+      "changeAvatar": "Change profile photo",
+      "name": "Full Name",
+      "phone": "Mobile Number",
+      "email": "Email Address (optional)",
+      "village": "Village / Town",
+      "district": "District",
+      "state": "State",
+      "save": "Save Changes",
+      "saving": "Saving..."
+    },
+    "farm": {
+      "title": "Farm Profile",
+      "location": "Location",
+      "farmSize": "Farm Size",
+      "acres": "acres",
+      "soilType": "Soil Type",
+      "waterSource": "Water Source",
+      "currentCrops": "Current Crops"
+    },
+    "language": {
+      "title": "Language Preferences",
+      "selectLanguage": "Choose your preferred language for the app"
+    },
+    "notificationPrefs": {
+      "title": "Notification Preferences",
+      "configureInSettings": "Configure your notification preferences in Settings."
+    },
+    "security": {
+      "title": "Security",
+      "changePhone": "Change Mobile Number",
+      "manageDevices": "Manage Logged-in Devices",
+      "logoutAllDevices": "Log Out from All Devices"
+    }
+  },
+  "settings": {
+    "meta": {
+      "title": "Settings | Vayukrishi"
+    },
+    "general": {
+      "title": "General",
+      "theme": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System",
+      "timezone": "Timezone",
+      "language": "App Language"
+    },
+    "voice": {
+      "title": "Voice Settings",
+      "voiceLanguage": "Voice Language",
+      "speechSpeed": "Speech Speed",
+      "audioQuality": "Audio Quality",
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    },
+    "notifications": {
+      "title": "Notification Settings",
+      "weather": "Weather Alerts",
+      "weatherDesc": "Rainfall, frost, and extreme heat warnings",
+      "disease": "Disease Alerts",
+      "diseaseDesc": "Crop disease outbreak warnings in your region",
+      "market": "Market Alerts",
+      "marketDesc": "Price spikes and mandi opportunities",
+      "scheme": "Scheme Alerts",
+      "schemeDesc": "New government schemes you may be eligible for"
+    },
+    "privacy": {
+      "title": "Privacy Settings",
+      "dataSharing": "Data Sharing",
+      "dataSharingDesc": "Share anonymised farm data to improve recommendations",
+      "analytics": "Usage Analytics",
+      "analyticsDesc": "Help us improve the app by sharing usage patterns",
+      "accountVisibility": "Account Visibility",
+      "accountVisibilityDesc": "Allow other farmers in your village to find your profile"
+    }
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "closeDialog": "Close dialog"
+  }
+}

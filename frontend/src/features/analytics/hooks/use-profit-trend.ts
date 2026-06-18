@@ -1,0 +1,1 @@
+export { useProfitTrend } from "./index";

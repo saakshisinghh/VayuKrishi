@@ -1,8 +1,7 @@
-"use client";
-
+// src/hooks/use-mobile.ts
 import { useState, useEffect } from "react";
 
-export function useMobile(breakpoint = 768) {
+export function useIsMobile(breakpoint = 768): boolean {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {

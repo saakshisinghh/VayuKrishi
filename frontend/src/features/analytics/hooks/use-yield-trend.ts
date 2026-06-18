@@ -1,0 +1,1 @@
+export { useYieldTrend } from "./index";
