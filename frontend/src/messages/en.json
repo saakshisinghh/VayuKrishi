@@ -1,0 +1,96 @@
+{
+  "dashboard": {
+    "header": {
+      "goodMorning": "Good morning",
+      "goodAfternoon": "Good afternoon",
+      "goodEvening": "Good evening",
+      "refresh": "Refresh dashboard"
+    },
+    "weather": {
+      "humidity": "Humidity",
+      "wind": "Wind",
+      "rain": "Rain",
+      "visibility": "Visibility",
+      "feelsLike": "Feels like",
+      "sowingWindow": "Sowing Window",
+      "season": "Season",
+      "errorTitle": "Weather unavailable",
+      "errorDesc": "Could not load weather data for your location.",
+      "retry": "Retry"
+    },
+    "snapshot": {
+      "activeCrop": "Active Crop",
+      "projectedProfit": "Projected Profit",
+      "farmHealth": "Farm Health",
+      "diseaseRisk": "Disease Risk",
+      "thisSeasonEstimate": "This season estimate",
+      "overallScore": "Overall score"
+    },
+    "ai": {
+      "title": "AI Recommendations",
+      "aiPick": "AI Pick",
+      "demand": "demand",
+      "expectedProfit": "Expected profit",
+      "risk": "Risk",
+      "reasoning": "Why this crop",
+      "keyFactors": "Key factors",
+      "soilFit": "Soil fit",
+      "confidence": "Confidence",
+      "riskScore": "Risk score",
+      "noRecommendations": "No recommendations available. Complete your farm profile to get AI picks.",
+      "tapToExpand": "Tap to expand",
+      "recommendationFor": "Recommendation for"
+    },
+    "disease": {
+      "title": "Disease Alert Center",
+      "kmAway": "km away",
+      "kmRadius": "km radius",
+      "urgent": "urgent",
+      "allClear": "All Clear",
+      "allClearDesc": "No disease alerts in your area. Stay vigilant.",
+      "viewDetails": "View details"
+    },
+    "market": {
+      "title": "Market Intelligence",
+      "week": "7d",
+      "forecastTitle": "Price Forecast",
+      "thirtyDay": "30-day",
+      "sevenDayTrend": "7-day trend",
+      "historical": "Historical",
+      "forecast": "Forecast",
+      "error": "Market data unavailable",
+      "retry": "Retry"
+    },
+    "health": {
+      "title": "Farm Health",
+      "grade": "Grade",
+      "lastAssessed": "Assessed",
+      "nextDue": "Next due",
+      "recommendations": "Recommendations",
+      "soil": "Soil Quality",
+      "water": "Water Efficiency",
+      "disease": "Disease Risk",
+      "market": "Market Potential"
+    },
+    "schemes": {
+      "title": "Government Schemes",
+      "eligible": "Eligible",
+      "matchScore": "Match",
+      "noSchemes": "No matching schemes found.",
+      "viewAll": "View all schemes",
+      "viewScheme": "View scheme details"
+    },
+    "voice": {
+      "title": "Ask Vayukrishi",
+      "subtitle": "Voice-powered farm assistant",
+      "listening": "Listening...",
+      "tapToSpeak": "Tap mic to speak",
+      "startRecording": "Start voice input",
+      "stopRecording": "Stop voice input",
+      "whatToPlant": "What should I plant?",
+      "diseaseDetected": "Disease detected",
+      "weatherForecast": "Weather forecast",
+      "bestMarket": "Best market today"
+    }
+  }
+}

@@ -1,5 +1,5 @@
 // src/lib/api/analytics.ts
-import { api } from "./axios";
+import { apiClient as api } from "./axios";
 import type {
   AnalyticsSummary,
   KPIMetrics,

@@ -1,37 +1,95 @@
-import createMiddleware from "next-intl/middleware";
+// ─────────────────────────────────────────────────────────────────────────────
+// middleware.ts
+// Handles: Locale detection | Auth route protection | Public/protected routing
+// ─────────────────────────────────────────────────────────────────────────────
+
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { applySecureHeaders } from "@/lib/security";
+import createMiddleware from "next-intl/middleware";
+import { routing } from "@/lib/i18n/routing";
 
-const intlMiddleware = createMiddleware({
-  locales: ["en", "hi", "mr", "gu", "ta", "kn"],
-  defaultLocale: "hi",
-  localePrefix: "always",
-});
+// next-intl middleware handles locale prefix routing
+const intlMiddleware = createMiddleware(routing);
 
-export default function middleware(request: NextRequest): NextResponse {
-  // 1. Run i18n middleware
-  const response = intlMiddleware(request) as NextResponse;
+// ─── Route Classification ─────────────────────────────────────────────────────
 
-  // 2. Apply secure headers to all responses
-  applySecureHeaders(response);
+const PUBLIC_ROUTES = [
+  "/",
+  "/about",
+  "/contact",
+  "/pricing",
+];
 
-  // 3. Protected dashboard routes — verify auth cookie exists
+const AUTH_ROUTES = [
+  "/login",
+  "/register",
+  "/otp",
+  "/forgot-password",
+];
+
+/**
+ * Strip locale prefix from pathname
+ * e.g. /en/login → /login, /mr/overview → /overview
+ */
+function stripLocale(pathname: string, locales: string[]): string {
+  for (const locale of locales) {
+    if (pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`) {
+      return pathname.slice(locale.length + 1) || "/";
+    }
+  }
+  return pathname;
+}
+
+export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
-  const isDashboard = pathname.match(/\/[a-z]{2}\/(overview|crop|disease|assistant|market|farm|planner|schemes|analytics|profile|settings)/);
-  const hasAuth = request.cookies.has("vk_session");
+  const locales = routing.locales as unknown as string[];
 
-  if (isDashboard && !hasAuth) {
-    const loginUrl = new URL(`/${request.nextUrl.locale ?? "hi"}/login`, request.url);
+  const strippedPath = stripLocale(pathname, locales);
+
+  // ─── Static & API passthrough ─────────────────────────────────────────────
+  if (
+    pathname.startsWith("/_next") ||
+    pathname.startsWith("/api") ||
+    pathname.includes(".")
+  ) {
+    return NextResponse.next();
+  }
+
+  // ─── Check for refresh token cookie (presence = likely authenticated) ──────
+  // NOTE: We cannot verify JWT in edge middleware without the secret being
+  // edge-compatible. We use the cookie presence as a soft signal. The actual
+  // token validation happens in the AuthProvider client-side.
+  const hasRefreshToken = request.cookies.has("refresh_token");
+
+  // ─── Redirect unauthenticated users away from protected routes ────────────
+  const isPublic = PUBLIC_ROUTES.some(
+    (r) => strippedPath === r || strippedPath.startsWith(r + "/")
+  );
+  const isAuth = AUTH_ROUTES.some(
+    (r) => strippedPath === r || strippedPath.startsWith(r)
+  );
+
+  if (!isPublic && !isAuth && !hasRefreshToken) {
+    const locale = locales.find((l) => pathname.startsWith(`/${l}`)) ?? routing.defaultLocale;
+    const loginUrl = new URL(`/${locale}/login`, request.url);
     loginUrl.searchParams.set("redirect", pathname);
     return NextResponse.redirect(loginUrl);
   }
 
-  return response;
+  // ─── Redirect authenticated users away from auth pages ───────────────────
+  if (isAuth && hasRefreshToken) {
+    const locale =
+      locales.find((l) => pathname.startsWith(`/${l}`)) ?? routing.defaultLocale;
+    return NextResponse.redirect(new URL(`/${locale}/overview`, request.url));
+  }
+
+  // ─── Run next-intl middleware for locale handling ─────────────────────────
+  return intlMiddleware(request);
 }
 
 export const config = {
   matcher: [
-    "/((?!api|_next/static|_next/image|favicon.ico|icons|images|screenshots).*)",
+    // Match all paths except static files and Next internals
+    "/((?!_next/static|_next/image|favicon.ico|icons|images).*)",
   ],
 };

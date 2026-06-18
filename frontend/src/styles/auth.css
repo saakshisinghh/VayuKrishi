@@ -476,16 +476,6 @@
   padding-left: 3rem;
 }
 
-/* Hide icon when prefix is present */
-.auth-input-wrap:has(.auth-input-prefix) .auth-input-icon {
-  display: none;
-}
-
-/* Add padding for inputs with icon only (no prefix) */
-.auth-input-wrap:has(.auth-input-icon):not(:has(.auth-input-prefix)) .auth-input {
-  padding-left: 2.75rem;
-}
-
 .auth-input-suffix {
   position: absolute;
   right: 14px;
@@ -1140,10 +1130,8 @@
   }
 
   .auth-input {
-    width: 100%;
-  height: var(--auth-input-height);
-  padding: 0 1rem;
-
+    height: 56px;
+    font-size: 1.0625rem;
   }
 
   .otp-input {

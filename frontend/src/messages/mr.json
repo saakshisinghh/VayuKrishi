@@ -1,0 +1,96 @@
+{
+  "dashboard": {
+    "header": {
+      "goodMorning": "शुभ प्रभात",
+      "goodAfternoon": "नमस्कार",
+      "goodEvening": "शुभ सायंकाळ",
+      "refresh": "डॅशबोर्ड रिफ्रेश करा"
+    },
+    "weather": {
+      "humidity": "आर्द्रता",
+      "wind": "वारा",
+      "rain": "पाऊस",
+      "visibility": "दृश्यमानता",
+      "feelsLike": "जाणवते",
+      "sowingWindow": "पेरणी विंडो",
+      "season": "हंगाम",
+      "errorTitle": "हवामान उपलब्ध नाही",
+      "errorDesc": "तुमच्या ठिकाणाचा हवामान डेटा लोड होऊ शकला नाही.",
+      "retry": "पुन्हा प्रयत्न करा"
+    },
+    "snapshot": {
+      "activeCrop": "सक्रिय पीक",
+      "projectedProfit": "अंदाजित नफा",
+      "farmHealth": "शेत आरोग्य",
+      "diseaseRisk": "रोग धोका",
+      "thisSeasonEstimate": "या हंगामाचा अंदाज",
+      "overallScore": "एकूण गुण"
+    },
+    "ai": {
+      "title": "AI शिफारसी",
+      "aiPick": "AI निवड",
+      "demand": "मागणी",
+      "expectedProfit": "अपेक्षित नफा",
+      "risk": "धोका",
+      "reasoning": "हे पीक का",
+      "keyFactors": "प्रमुख घटक",
+      "soilFit": "माती योग्यता",
+      "confidence": "आत्मविश्वास",
+      "riskScore": "धोका गुण",
+      "noRecommendations": "कोणतीही शिफारस उपलब्ध नाही.",
+      "tapToExpand": "विस्तारासाठी टॅप करा",
+      "recommendationFor": "शिफारस"
+    },
+    "disease": {
+      "title": "रोग सतर्कता केंद्र",
+      "kmAway": "किमी दूर",
+      "kmRadius": "किमी परिसर",
+      "urgent": "तातडीचे",
+      "allClear": "सर्व ठीक आहे",
+      "allClearDesc": "तुमच्या परिसरात कोणतेही रोग अलर्ट नाहीत.",
+      "viewDetails": "तपशील पाहा"
+    },
+    "market": {
+      "title": "बाजार माहिती",
+      "week": "7 दिवस",
+      "forecastTitle": "किंमत अंदाज",
+      "thirtyDay": "30 दिवस",
+      "sevenDayTrend": "7 दिवसांचा कल",
+      "historical": "मागील",
+      "forecast": "अंदाज",
+      "error": "बाजार डेटा उपलब्ध नाही",
+      "retry": "पुन्हा प्रयत्न करा"
+    },
+    "health": {
+      "title": "शेत आरोग्य",
+      "grade": "श्रेणी",
+      "lastAssessed": "मूल्यांकन",
+      "nextDue": "पुढील",
+      "recommendations": "शिफारसी",
+      "soil": "माती गुणवत्ता",
+      "water": "जल कार्यक्षमता",
+      "disease": "रोग धोका",
+      "market": "बाजार क्षमता"
+    },
+    "schemes": {
+      "title": "सरकारी योजना",
+      "eligible": "पात्र",
+      "matchScore": "जुळणी",
+      "noSchemes": "कोणतीही जुळणारी योजना आढळली नाही.",
+      "viewAll": "सर्व योजना पाहा",
+      "viewScheme": "योजना तपशील"
+    },
+    "voice": {
+      "title": "वायुकृषीला विचारा",
+      "subtitle": "आवाज-चालित शेती सहाय्यक",
+      "listening": "ऐकत आहे...",
+      "tapToSpeak": "बोलण्यासाठी मायक टॅप करा",
+      "startRecording": "आवाज इनपुट सुरू करा",
+      "stopRecording": "आवाज इनपुट थांबवा",
+      "whatToPlant": "काय पेरावे?",
+      "diseaseDetected": "रोग आढळला",
+      "weatherForecast": "हवामान अंदाज",
+      "bestMarket": "आजचा सर्वोत्तम बाजार"
+    }
+  }
+}

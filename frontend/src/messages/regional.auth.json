@@ -1,0 +1,99 @@
+{
+  "_note": "Gujarati (gu), Tamil (ta), Kannada (kn) auth translation stubs — follow same structure as en.auth.json",
+  "gu": {
+    "auth": {
+      "login": {
+        "title": "પાછા સ્વાગત છે",
+        "subtitle": "તમારા ખેડૂત ડૅશબોર્ડમાં સાઇન ઇન કરો",
+        "submit": "સાઇન ઇન કરો",
+        "continue_with_otp": "OTP સાથે ચાલુ રાખો",
+        "forgot_password": "પાસવર્ડ ભૂલ્યા?",
+        "no_account": "ખાતું નથી?",
+        "register_link": "નોંધણી કરો",
+        "or": "અથવા"
+      },
+      "register": {
+        "step1_title": "શરૂ કરીએ",
+        "step2_title": "તમારું સ્થાન",
+        "step3_title": "તમારી ખેતી",
+        "step4_title": "ખાતું સુરક્ષિત કરો",
+        "next": "આગળ",
+        "back": "પાછળ",
+        "submit": "ખાતું બનાવો"
+      },
+      "otp": {
+        "title": "તમારો નંબર ચકાસો",
+        "resend": "કોડ ફરી મોકલો"
+      },
+      "forgot": {
+        "title": "પાસવર્ડ ભૂલ્યા?",
+        "send_otp": "રીસેટ કોડ મોકલો",
+        "reset_password": "પાસવર્ડ રીસેટ કરો"
+      }
+    }
+  },
+  "ta": {
+    "auth": {
+      "login": {
+        "title": "மீண்டும் வரவேற்கிறோம்",
+        "subtitle": "உங்கள் விவசாயி டாஷ்போர்டில் உள்நுழையுங்கள்",
+        "submit": "உள்நுழை",
+        "continue_with_otp": "OTP மூலம் தொடர",
+        "forgot_password": "கடவுச்சொல் மறந்தீர்களா?",
+        "no_account": "கணக்கு இல்லையா?",
+        "register_link": "பதிவு செய்யுங்கள்",
+        "or": "அல்லது"
+      },
+      "register": {
+        "step1_title": "தொடங்குவோம்",
+        "step2_title": "உங்கள் இடம்",
+        "step3_title": "உங்கள் பண்ணை",
+        "step4_title": "கணக்கை பாதுகாக்கவும்",
+        "next": "தொடர",
+        "back": "பின்",
+        "submit": "கணக்கு உருவாக்கு"
+      },
+      "otp": {
+        "title": "உங்கள் எண்ணை சரிபார்க்கவும்",
+        "resend": "குறியீட்டை மீண்டும் அனுப்பு"
+      },
+      "forgot": {
+        "title": "கடவுச்சொல் மறந்தீர்களா?",
+        "send_otp": "மீட்டமைப்பு குறியீடு அனுப்பு",
+        "reset_password": "கடவுச்சொல் மீட்டமை"
+      }
+    }
+  },
+  "kn": {
+    "auth": {
+      "login": {
+        "title": "ಮತ್ತೆ ಸ್ವಾಗತ",
+        "subtitle": "ನಿಮ್ಮ ರೈತ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿ",
+        "submit": "ಸೈನ್ ಇನ್ ಮಾಡಿ",
+        "continue_with_otp": "OTP ಮೂಲಕ ಮುಂದುವರಿಯಿರಿ",
+        "forgot_password": "ಪಾಸ್‌ವರ್ಡ್ ಮರೆತಿರಾ?",
+        "no_account": "ಖಾತೆ ಇಲ್ಲವೇ?",
+        "register_link": "ನೋಂದಣಿ ಮಾಡಿ",
+        "or": "ಅಥವಾ"
+      },
+      "register": {
+        "step1_title": "ಪ್ರಾರಂಭಿಸೋಣ",
+        "step2_title": "ನಿಮ್ಮ ಸ್ಥಳ",
+        "step3_title": "ನಿಮ್ಮ ಕೃಷಿ",
+        "step4_title": "ಖಾತೆ ಸುರಕ್ಷಿತಪಡಿಸಿ",
+        "next": "ಮುಂದೆ",
+        "back": "ಹಿಂದೆ",
+        "submit": "ಖಾತೆ ರಚಿಸಿ"
+      },
+      "otp": {
+        "title": "ನಿಮ್ಮ ಸಂಖ್ಯೆ ಪರಿಶೀಲಿಸಿ",
+        "resend": "ಕೋಡ್ ಮತ್ತೆ ಕಳುಹಿಸಿ"
+      },
+      "forgot": {
+        "title": "ಪಾಸ್‌ವರ್ಡ್ ಮರೆತಿರಾ?",
+        "send_otp": "ರೀಸೆಟ್ ಕೋಡ್ ಕಳುಹಿಸಿ",
+        "reset_password": "ಪಾಸ್‌ವರ್ಡ್ ರೀಸೆಟ್ ಮಾಡಿ"
+      }
+    }
+  }
+}

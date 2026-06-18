@@ -1,5 +1,5 @@
 // src/lib/api/profile.ts
-import { api } from "./axios";
+import { apiClient as api } from "./axios";
 
 export interface ProfileData {
   id: string;
