@@ -1,0 +1,271 @@
+{
+  "cropRecommendation": {
+    "meta": {
+      "title": "Crop Recommendation — Vayukrishi",
+      "description": "AI-powered crop recommendations tailored to your farm profile."
+    },
+    "hero": {
+      "aiBadge": "AI Powered",
+      "aiBadgeLabel": "AI Powered recommendation engine",
+      "title": "Smart Crop Recommendations",
+      "subtitle": "Get personalised crop suggestions based on your soil, water, season, and market conditions.",
+      "lastUpdated": "Last Updated",
+      "accuracy": "Accuracy"
+    },
+    "wizard": {
+      "steps": {
+        "location": "Location",
+        "land": "Land",
+        "soil": "Soil",
+        "water": "Water",
+        "season": "Season",
+        "goals": "Goals"
+      },
+      "location": {
+        "title": "Farm Location",
+        "description": "Tell us where your farm is located.",
+        "state": "State",
+        "statePlaceholder": "Select your state",
+        "district": "District",
+        "districtPlaceholder": "e.g. Nashik",
+        "village": "Village",
+        "villagePlaceholder": "e.g. Ozar",
+        "pincode": "Pincode"
+      },
+      "land": {
+        "title": "Land Details",
+        "description": "Enter details about your land.",
+        "size": "Land Size",
+        "unit": "Unit",
+        "units": {
+          "acres": "Acres",
+          "hectares": "Hectares",
+          "bigha": "Bigha",
+          "guntha": "Guntha"
+        },
+        "ownership": "Ownership Type",
+        "ownershipTypes": {
+          "owned": "Owned",
+          "leased": "Leased",
+          "shared": "Shared"
+        }
+      },
+      "soil": {
+        "title": "Soil Information",
+        "description": "Help us understand your soil conditions.",
+        "type": "Soil Type",
+        "types": {
+          "black": "Black",
+          "red": "Red",
+          "alluvial": "Alluvial",
+          "sandy": "Sandy",
+          "loamy": "Loamy",
+          "clay": "Clay",
+          "laterite": "Laterite"
+        },
+        "ph": "Soil pH",
+        "phLabels": {
+          "acidic": "Acidic",
+          "neutral": "Neutral",
+          "alkaline": "Alkaline"
+        },
+        "organicMatter": "Organic Matter",
+        "organicLevels": {
+          "low": "Low",
+          "medium": "Medium",
+          "high": "High"
+        }
+      },
+      "water": {
+        "title": "Water Availability",
+        "description": "Tell us about your irrigation setup.",
+        "irrigationSource": "Irrigation Source",
+        "sources": {
+          "canal": "Canal",
+          "borewell": "Borewell",
+          "rainwater": "Rainwater",
+          "river": "River",
+          "tank": "Tank",
+          "drip": "Drip"
+        },
+        "availability": "Water Availability",
+        "availabilityLevels": {
+          "abundant": "Abundant",
+          "moderate": "Moderate",
+          "scarce": "Scarce"
+        },
+        "rainDependency": "Dependent on rainfall",
+        "rainDependencyHint": "Check if your farm relies primarily on monsoon rain."
+      },
+      "season": {
+        "title": "Season Preference",
+        "description": "Which cropping seasons do you want to plan for?",
+        "kharifMonths": "June – October",
+        "rabiMonths": "November – March",
+        "zaidMonths": "March – June",
+        "seasons": {
+          "kharif": "Kharif",
+          "rabi": "Rabi",
+          "zaid": "Zaid"
+        }
+      },
+      "goals": {
+        "title": "Farming Goals",
+        "description": "What matters most to you this season?",
+        "goals": {
+          "maximumProfit": "Maximum Profit",
+          "lowRisk": "Low Risk",
+          "waterSaving": "Water Saving",
+          "organicFarming": "Organic Farming"
+        },
+        "hints": {
+          "maximumProfit": "Prioritise crops with highest expected returns.",
+          "lowRisk": "Choose crops with stable MSP and low failure rate.",
+          "waterSaving": "Prefer drought-tolerant and low-irrigation crops.",
+          "organicFarming": "Focus on crops suited for organic methods."
+        }
+      },
+      "back": "Back",
+      "next": "Next",
+      "stepOf": "Step {current} of {total}",
+      "getRecommendations": "Get Recommendations",
+      "analyzing": "Analysing…"
+    },
+    "validation": {
+      "state_required": "Please select a state",
+      "district_required": "District is required",
+      "village_required": "Village is required",
+      "pincode_invalid": "Enter a valid 6-digit pincode",
+      "size_required": "Land size is required",
+      "size_positive": "Land size must be greater than 0",
+      "size_max": "Land size cannot exceed 10,000",
+      "unit_required": "Please select a unit",
+      "ownership_required": "Please select ownership type",
+      "soil_type_required": "Please select a soil type",
+      "ph_required": "pH value is required",
+      "ph_min": "pH must be at least 0",
+      "ph_max": "pH cannot exceed 14",
+      "organic_matter_required": "Please select organic matter level",
+      "irrigation_required": "Please select an irrigation source",
+      "water_availability_required": "Please select water availability",
+      "season_required": "Please select at least one season",
+      "goals_required": "Please select at least one goal"
+    },
+    "loading": {
+      "ariaLabel": "Analysing your farm profile",
+      "title": "Analysing Your Farm",
+      "subtitle": "Our AI is crunching soil, weather, and market data…",
+      "stages": {
+        "analyzing_soil": "Analysing soil data",
+        "checking_weather": "Checking weather patterns",
+        "analyzing_market": "Analysing market trends",
+        "calculating_risks": "Calculating risks",
+        "generating_recommendations": "Generating recommendations"
+      }
+    },
+    "results": {
+      "title": "Your Crop Recommendations",
+      "subtitle": "{count} crops recommended for your farm",
+      "recommendedCrops": "Recommended Crops",
+      "aiReasoning": "AI Reasoning",
+      "profitSimulator": "Profit Simulator",
+      "riskAnalysis": "Risk Analysis",
+      "farmPlan": "Farm Plan",
+      "marketInsight": "Market Insight",
+      "startOver": "Start Over"
+    },
+    "card": {
+      "topPick": "Top Pick",
+      "yield": "Yield",
+      "perAcre": "acre",
+      "revenue": "Revenue",
+      "estimatedProfit": "Estimated Profit",
+      "marketTrend": {
+        "up": "Trending Up",
+        "down": "Trending Down",
+        "stable": "Stable"
+      }
+    },
+    "risk": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    },
+    "reasoning": {
+      "ariaLabel": "AI reasoning for {cropName}",
+      "title": "Why This Crop?",
+      "subtitle": "Factors driving the recommendation for {cropName}",
+      "categories": {
+        "soil": "Soil",
+        "weather": "Weather",
+        "market": "Market",
+        "regional": "Regional",
+        "water": "Water",
+        "goal": "Goal"
+      }
+    },
+    "profitSimulator": {
+      "ariaLabel": "Profit comparison table",
+      "title": "Profit Simulator",
+      "subtitle": "Compare estimated costs, revenue, and profit per crop",
+      "bestChoice": "Best Choice",
+      "error": "Could not load profit simulation.",
+      "retry": "Retry",
+      "viewToggle": "Toggle chart or table view",
+      "chartAriaLabel": "Bar chart comparing crop profitability",
+      "headers": {
+        "metric": "Metric"
+      },
+      "rows": {
+        "cost": "Input Cost",
+        "revenue": "Revenue",
+        "profit": "Profit",
+        "roi": "ROI",
+        "risk": "Risk"
+      },
+      "views": {
+        "chart": "Chart",
+        "table": "Table"
+      }
+    },
+    "riskAnalysis": {
+      "ariaLabel": "Risk analysis for {cropName}",
+      "title": "Risk Analysis",
+      "subtitle": "Key risk factors for {cropName}",
+      "types": {
+        "weather": "Weather Risk",
+        "disease": "Disease Risk",
+        "market": "Market Risk",
+        "water": "Water Risk"
+      },
+      "levels": {
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High"
+      },
+      "overallNote": "Overall risk for {cropName} is {level}. Plan accordingly."
+    },
+    "farmPlan": {
+      "ariaLabel": "Farm plan for {cropName}",
+      "title": "Monthly Farm Plan",
+      "subtitle": "{cropName} · {months}-month plan",
+      "tasks": "{count} tasks",
+      "totalCost": "estimated total cost",
+      "months": "months",
+      "error": "Could not load farm plan.",
+      "retry": "Retry"
+    },
+    "marketInsight": {
+      "ariaLabel": "Market insights for recommended crops",
+      "title": "Market Insights",
+      "subtitle": "Live price trends and demand scores",
+      "perQuintal": "per quintal",
+      "currentPrice": "Current",
+      "weekForecast": "7-day Forecast",
+      "demandScore": "Demand Score",
+      "sevenDayChart": "7-day price trend",
+      "weekLabel": "this week",
+      "price": "Price"
+    }
+  }
+}
