@@ -224,7 +224,7 @@ export function DiseaseUploadCard({
                   <Badge
                     key={fmt}
                     variant="outline"
-                    className="border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-400"
+                    className="border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-800 dark:bg-emerald-950/40 "
                   >
                     {fmt}
                   </Badge>

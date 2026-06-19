@@ -1,10 +1,8 @@
 "use client";
-
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Brain, Sparkles, ShieldCheck, Clock } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-
 const stats = [
   {
     icon: Brain,
@@ -25,76 +23,66 @@ const stats = [
     subKey: "hero.stats.diseasesLabel",
   },
 ];
-
 export function DiseaseDetectionHero() {
   const t = useTranslations("diseaseDetection");
-
   return (
     <section className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-950 via-emerald-900 to-teal-900 px-6 py-10 md:px-10 md:py-14">
       {/* Background grid */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-10"
+        className="pointer-events-none absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0)",
-          backgroundSize: "32px 32px",
+            "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E\")",
         }}
       />
+      {/* Decorative circles */}
+      <div className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-emerald-500/10 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-8 left-1/3 h-48 w-48 rounded-full bg-teal-400/10 blur-2xl" />
 
-      {/* Glow */}
-      <div className="pointer-events-none absolute -right-20 -top-20 h-80 w-80 rounded-full bg-emerald-400/20 blur-3xl" />
-      <div className="pointer-events-none absolute -bottom-20 -left-20 h-80 w-80 rounded-full bg-teal-400/20 blur-3xl" />
-
-      <div className="relative z-10 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+      <div className="relative z-10 flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
         {/* Text */}
-        <div className="max-w-xl">
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="flex flex-col gap-3"
+        >
+          <Badge
+            variant="outline"
+            className="w-fit border-emerald-400/40 bg-emerald-400/10 text-emerald-300 backdrop-blur-sm"
           >
-            <Badge className="mb-3 gap-1.5 border-emerald-400/30 bg-emerald-400/10 text-emerald-300 hover:bg-emerald-400/20">
-              <Sparkles className="h-3 w-3" />
-              {t("hero.badge")}
-            </Badge>
-          </motion.div>
+            <Sparkles className="mr-1.5 h-3 w-3" aria-hidden />
+            {t("hero.badge")}
+          </Badge>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.1 }}
-            className="text-3xl font-bold tracking-tight text-white md:text-4xl"
-          >
+          <h1 className="text-2xl font-bold tracking-tight text-white md:text-3xl lg:text-4xl">
             {t("hero.title")}
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.2 }}
-            className="mt-3 text-base leading-relaxed text-emerald-200/80"
-          >
+          <p className="max-w-xl text-sm leading-relaxed text-emerald-200/80 md:text-base">
             {t("hero.subtitle")}
-          </motion.p>
-        </div>
+          </p>
+        </motion.div>
 
         {/* Stats */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.4, delay: 0.3 }}
-          className="flex flex-wrap gap-4"
+          initial={{ opacity: 0, x: 16 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.15, ease: "easeOut" }}
+          className="flex flex-wrap gap-4 md:flex-col md:items-end"
         >
           {stats.map(({ icon: Icon, value, labelKey, subKey }) => (
             <div
               key={labelKey}
-              className="flex min-w-[120px] flex-col items-center rounded-xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur-sm"
+              className="flex items-center gap-2 rounded-xl border border-emerald-400/20 bg-white/5 px-4 py-2.5 backdrop-blur-sm"
             >
-              <Icon className="mb-1 h-5 w-5 text-emerald-400" />
-              <span className="text-xl font-bold text-white">{value}</span>
-              <span className="mt-0.5 text-center text-xs text-emerald-300/70">
-                {t(subKey)}
-              </span>
+              <Icon className="h-4 w-4 text-emerald-400" aria-hidden />
+              <div>
+                <p className="text-[10px] uppercase tracking-widest text-emerald-400/70">
+                  {t(subKey)}
+                </p>
+                <p className="text-sm font-medium text-white">{value}</p>
+              </div>
             </div>
           ))}
         </motion.div>
