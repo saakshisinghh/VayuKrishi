@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "dashboard": "ઝાંખી",
+    "cropRecommendation": "પાક ભલામણ",
+    "diseaseDetection": "રોગ શોધ",
+    "assistant": "સહાયક",
+    "market": "બજાર",
+    "farmHealth": "ખેત આરોગ્ય",
+    "planner": "આયોજક",
+    "schemes": "યોજનાઓ",
+    "analytics": "વિશ્લેષણ",
+    "settings": "સેટિંગ્સ",
+    "profile": "પ્રોફાઇલ",
+    "logout": "લૉગ આઉટ"
+  }
+}
+

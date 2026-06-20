@@ -1,6 +1,9 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import Providers from "@/providers/providers";
+import { ThemeProvider } from "@/providers/theme-provider";
+import { AuthProvider } from "@/providers/auth-provider";
+import { Toaster } from "@/components/ui/sonner";
 
 export default async function LocaleLayout({
   children,
@@ -12,9 +15,12 @@ export default async function LocaleLayout({
   const messages = await getMessages();
   return (
     <NextIntlClientProvider messages={messages}>
-      <Providers>
-        {children}
-      </Providers>
+      <ThemeProvider>
+        <Providers>
+          <AuthProvider>{children}</AuthProvider>
+          <Toaster />
+        </Providers>
+      </ThemeProvider>
     </NextIntlClientProvider>
   );
 }

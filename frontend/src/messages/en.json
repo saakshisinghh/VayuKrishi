@@ -1,4 +1,18 @@
 {
+  "nav": {
+    "dashboard": "Overview",
+    "cropRecommendation": "Crop Recommendation",
+    "diseaseDetection": "Disease Detection",
+    "assistant": "Assistant",
+    "market": "Market",
+    "farmHealth": "Farm Health",
+    "planner": "Planner",
+    "schemes": "Schemes",
+    "analytics": "Analytics",
+    "settings": "Settings",
+    "profile": "Profile",
+    "logout": "Log out"
+  },
   "dashboard": {
     "header": {
       "goodMorning": "Good morning",
@@ -94,3 +108,4 @@
     }
   }
 }
+

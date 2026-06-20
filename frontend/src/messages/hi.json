@@ -1,4 +1,18 @@
 {
+  "nav": {
+    "dashboard": "अवलोकन",
+    "cropRecommendation": "फसल सिफारिश",
+    "diseaseDetection": "रोग पहचान",
+    "assistant": "सहायक",
+    "market": "बाज़ार",
+    "farmHealth": "खेत स्वास्थ्य",
+    "planner": "योजनाकार",
+    "schemes": "योजनाएं",
+    "analytics": "विश्लेषण",
+    "settings": "सेटिंग्स",
+    "profile": "प्रोफ़ाइल",
+    "logout": "लॉग आउट"
+  },
   "dashboard": {
     "header": {
       "goodMorning": "सुप्रभात",
@@ -94,3 +108,4 @@
     }
   }
 }
+

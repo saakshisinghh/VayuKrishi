@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "dashboard": "ಅವಲೋಕನ",
+    "cropRecommendation": "ಬೆಳೆ ಶಿಫಾರಸು",
+    "diseaseDetection": "ರೋಗ ಪತ್ತೆ",
+    "assistant": "ಸಹಾಯಕ",
+    "market": "ಮಾರುಕಟ್ಟೆ",
+    "farmHealth": "ಕೃಷಿ ಆರೋಗ್ಯ",
+    "planner": "ಯೋಜಕ",
+    "schemes": "ಯೋಜನೆಗಳು",
+    "analytics": "ವಿಶ್ಲೇಷಣೆ",
+    "settings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+    "profile": "ಪ್ರೊಫೈಲ್",
+    "logout": "ಲಾಗ್ ಔಟ್"
+  }
+}
+

@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "dashboard": "கண்ணோட்டம்",
+    "cropRecommendation": "பயிர் பரிந்துரை",
+    "diseaseDetection": "நோய் கண்டறிதல்",
+    "assistant": "உதவியாளர்",
+    "market": "சந்தை",
+    "farmHealth": "பண்ணை ஆரோக்கியம்",
+    "planner": "திட்டமிடுபவர்",
+    "schemes": "திட்டங்கள்",
+    "analytics": "பகுப்பாய்வு",
+    "settings": "அமைப்புகள்",
+    "profile": "சுயவிவரம்",
+    "logout": "வெளியேறு"
+  }
+}
+
