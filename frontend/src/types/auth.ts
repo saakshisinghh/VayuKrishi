@@ -26,7 +26,7 @@ export type SoilType =
   | "saline"
   | "peaty";
 
-// ─── User ────────────────────────────────────────────────────────────────────
+// ─── User ─────────────────────────────────────────────────────────────────
 
 export interface User {
   id: string;
@@ -51,6 +51,33 @@ export interface UserProfile {
   primaryCrops?: string[];
 }
 
+// ─── API envelope ─────────────────────────────────────────────────────────────
+// IMPORTANT: every backend response is wrapped by a controller/middleware
+// layer in this exact shape — confirmed directly from the network tab:
+//
+//   {
+//     "success": true,
+//     "data": { ...the actual payload... },
+//     "message": "...",
+//     "timestamp": "..."
+//   }
+//
+// `apiClient` (src/lib/api/axios.ts) does NOT unwrap this — its response
+// interceptor returns `response` as-is, so `response.data` (axios's own
+// `.data` field) is this WHOLE envelope, not the inner payload. Each
+// `*Api()` function in src/lib/api/auth.ts then returns `response.data`,
+// meaning callers receive the envelope and must read `.data.<field>`
+// themselves. Define each endpoint's response type as the inner payload
+// shape, and reference it through `ApiEnvelope<T>` so this is explicit
+// and TypeScript catches it if it's ever wrong again.
+
+export interface ApiEnvelope<T> {
+  success: boolean;
+  data: T;
+  message: string;
+  timestamp: string;
+}
+
 // ─── Auth Tokens ─────────────────────────────────────────────────────────────
 
 export interface AuthTokens {
@@ -63,18 +90,21 @@ export interface RefreshTokenResponse {
   expiresIn: number;
 }
 
-// ─── API Request / Response Types ────────────────────────────────────────────
+// ─── API Request / Response Types ─────────────────────────────────────────────
+// These describe the INNER payload (the `data` field of ApiEnvelope<T>),
+// matching the backend's auth.service.ts return values exactly.
 
 export interface LoginRequest {
   mobile: string;
   password: string;
 }
 
-export interface LoginResponse {
+export interface LoginResponseData {
   user: User;
   accessToken: string;
   expiresIn: number;
 }
+export type LoginResponse = LoginResponseData;
 
 export interface RegisterRequest {
   name: string;
@@ -88,11 +118,12 @@ export interface RegisterRequest {
   password: string;
 }
 
-export interface RegisterResponse {
+export interface RegisterResponseData {
   message: string;
   mobile: string;
   otpExpiresIn: number;
 }
+export type RegisterResponse = RegisterResponseData;
 
 export interface OTPVerifyRequest {
   mobile: string;
@@ -100,22 +131,26 @@ export interface OTPVerifyRequest {
   purpose: OTPPurpose;
 }
 
-export interface OTPVerifyResponse {
-  user?: User;
-  accessToken?: string;
-  expiresIn?: number;
+export interface OTPVerifyResponseData {
   message: string;
+  result?: {
+    user: User;
+    accessToken: string;
+    expiresIn: number;
+  };
 }
+export type OTPVerifyResponse = OTPVerifyResponseData;
 
 export interface OTPSendRequest {
   mobile: string;
   purpose: OTPPurpose;
 }
 
-export interface OTPSendResponse {
+export interface OTPSendResponseData {
   message: string;
   otpExpiresIn: number; // seconds
 }
+export type OTPSendResponse = OTPSendResponseData;
 
 export interface ForgotPasswordRequest {
   mobile: string;
@@ -127,9 +162,10 @@ export interface ResetPasswordRequest {
   newPassword: string;
 }
 
-export interface ResetPasswordResponse {
+export interface ResetPasswordResponseData {
   message: string;
 }
+export type ResetPasswordResponse = ResetPasswordResponseData;
 
 // ─── Auth Store State ─────────────────────────────────────────────────────────
 

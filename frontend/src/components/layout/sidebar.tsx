@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import { MAIN_NAV_ITEMS, BOTTOM_NAV_ITEMS, type NavItem } from "@/config/navigation";
 import { useAuthStore } from "@/store/auth-store";
+import { useLogout } from "@/lib/queries/auth";
 import { cn } from "@/lib/utils";
 
 /**
@@ -69,11 +70,18 @@ export function Sidebar() {
   const pathname = usePathname();
   const locale = useLocale();
   const t = useTranslations("nav");
-  const { user, logout } = useAuthStore();
+  const { user } = useAuthStore();
+  const logoutMutation = useLogout();
 
+  // useLogout() (lib/queries/auth.ts) calls the backend /auth/logout
+  // endpoint — which clears the httpOnly refreshToken cookie server-side —
+  // AND clears local Zustand state, then redirects. Calling
+  // useAuthStore().logout() directly here would only wipe local memory;
+  // the refreshToken cookie would survive, and AuthProvider's automatic
+  // refreshSession() on the next page load would silently log the user
+  // back in, making "Log out" appear to do nothing.
   const handleLogout = () => {
-    logout();
-    window.location.href = `/${locale}/login`;
+    logoutMutation.mutate();
   };
 
   return (
@@ -115,7 +123,8 @@ export function Sidebar() {
         <button
           type="button"
           onClick={handleLogout}
-          className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-white/40 transition-colors hover:bg-red-500/10 hover:text-red-400"
+          disabled={logoutMutation.isPending}
+          className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-white/40 transition-colors hover:bg-red-500/10 hover:text-red-400 disabled:opacity-50"
         >
           <LogOut className="h-[18px] w-[18px] flex-shrink-0" />
           <span>{t("logout")}</span>
@@ -124,4 +133,3 @@ export function Sidebar() {
     </aside>
   );
 }
-

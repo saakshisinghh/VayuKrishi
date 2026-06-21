@@ -456,15 +456,21 @@
 .auth-input-icon {
   position: absolute;
   left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
   color: var(--auth-neutral-400);
   pointer-events: none;
   display: flex;
   align-items: center;
 }
 
+.auth-input--with-icon {
+  padding-left: 3rem;
+}
+
 .auth-input-prefix {
   position: absolute;
-  left: 14px;
+  left: 40px;
   font-size: 0.9375rem;
   font-weight: 600;
   color: var(--auth-neutral-500);
@@ -473,7 +479,7 @@
 }
 
 .auth-input--with-prefix {
-  padding-left: 3rem;
+  padding-left: 4.5rem;
 }
 
 .auth-input-suffix {
@@ -1231,3 +1237,4 @@
     border-color: var(--auth-neutral-700);
   }
 }
+

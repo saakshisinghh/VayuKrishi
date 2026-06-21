@@ -6,7 +6,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import createMiddleware from "next-intl/middleware";
-import { routing } from "@/lib/i18n/routing";
+import { routing } from "@/lib/i18n/locale";
 
 // next-intl middleware handles locale prefix routing
 const intlMiddleware = createMiddleware(routing);
@@ -59,7 +59,7 @@ export default function middleware(request: NextRequest) {
   // NOTE: We cannot verify JWT in edge middleware without the secret being
   // edge-compatible. We use the cookie presence as a soft signal. The actual
   // token validation happens in the AuthProvider client-side.
-  const hasRefreshToken = request.cookies.has("refresh_token");
+  const hasRefreshToken = request.cookies.has("refreshToken");
 
   // ─── Redirect unauthenticated users away from protected routes ────────────
   const isPublic = PUBLIC_ROUTES.some(

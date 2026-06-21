@@ -40,6 +40,9 @@ export function useLogin() {
   return useMutation({
     mutationFn: (data: LoginRequest) => loginApi(data),
     onSuccess: (response) => {
+      // loginApi() already unwraps the backend's { success, data, ... }
+      // envelope (see lib/api/auth.ts), so `response` here is the clean
+      // { user, accessToken, expiresIn } payload.
       login(response.user, response.accessToken);
       router.push(`/${locale}/overview`);
     },
@@ -73,16 +76,36 @@ export function useVerifyOTP() {
   return useMutation({
     mutationFn: (data: OTPVerifyRequest) => verifyOtpApi(data),
     onSuccess: (response, variables) => {
-      if (response.user && response.accessToken) {
-        // Login / register OTP verified
-        login(response.user, response.accessToken);
+      // ── Registration: OTP just confirms the mobile number.
+      //    User must sign in manually afterwards — do NOT auto-login,
+      //    even if the API happens to return a session.
+      if (variables.purpose === "register") {
+        router.push(`/${locale}/login?registered=success`);
+        return;
+      }
+
+      // ── Login / generic: session returned, log the user in.
+      // verifyOtpApi() already unwraps the envelope, so `response` is
+      // the clean { message, result? } payload.
+      const result = response.result;
+      if (result?.user && result?.accessToken) {
+        login(result.user, result.accessToken);
         router.push(`/${locale}/overview`);
-      } else if (variables.purpose === "forgot_password") {
-        // OTP step done, now reset password
+        return;
+      }
+
+      // ── Forgot password: OTP step done, move to password reset step.
+      if (variables.purpose === "forgot_password") {
         router.push(
           `/${locale}/forgot-password?step=reset&mobile=${encodeURIComponent(variables.mobile)}`
         );
+        return;
       }
+
+      // ── Safety net: never leave the user stuck on "Verified…" with
+      //    no navigation. If we get here, the response shape didn't
+      //    match any known purpose — fall back to login.
+      router.push(`/${locale}/login`);
     },
   });
 }

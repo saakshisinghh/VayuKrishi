@@ -54,7 +54,10 @@ export function LoginForm() {
   const onSendOTP = async () => {
     const mobile = getValues("mobile");
     if (!mobile || !/^[6-9]\d{9}$/.test(mobile)) {
-      setError("mobile", { message: t("validation.mobile_invalid") });
+      // Store the translation KEY here, not the resolved string.
+      // The JSX below calls t(errors.mobile.message) once — translating
+      // here too would cause a double-translation MISSING_MESSAGE error.
+      setError("mobile", { message: "validation.mobile_invalid" });
       return;
     }
     try {
@@ -153,7 +156,9 @@ export function LoginForm() {
                   errors.password ? "login-password-error" : undefined
                 }
                 aria-invalid={!!errors.password}
-                className={`auth-input ${errors.password ? "auth-input--error" : ""}`}
+                className={`auth-input auth-input--with-icon ${
+                  errors.password ? "auth-input--error" : ""
+                }`}
                 {...register("password")}
               />
               <button
