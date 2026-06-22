@@ -66,24 +66,28 @@ export function RegisterForm() {
   const step1 = useForm<RegisterStep1Values>({
     resolver: zodResolver(registerStep1Schema),
     defaultValues: formData as RegisterStep1Values,
+    mode: "onChange",
   });
 
   // ─── Step 2 Form ───────────────────────────────────────────────────────────
   const step2 = useForm<RegisterStep2Values>({
     resolver: zodResolver(registerStep2Schema),
     defaultValues: formData as RegisterStep2Values,
+    mode: "onChange",
   });
 
   // ─── Step 3 Form ───────────────────────────────────────────────────────────
   const step3 = useForm<RegisterStep3Values>({
     resolver: zodResolver(registerStep3Schema),
     defaultValues: formData as RegisterStep3Values,
+    mode: "onChange",
   });
 
   // ─── Step 4 Form ───────────────────────────────────────────────────────────
   const step4 = useForm<RegisterStep4Values>({
     resolver: zodResolver(registerStep4Schema),
     defaultValues: formData as RegisterStep4Values,
+    mode: "onChange",
   });
 
   const advanceTo = (next: number, data: Partial<AllFormData>) => {

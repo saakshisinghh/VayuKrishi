@@ -6,6 +6,7 @@
 "use client";
 
 import { type ReactNode } from "react";
+import { LogoMark } from "@/components/brand/logo-mark";
 
 interface AuthCardProps {
   children: ReactNode;
@@ -19,7 +20,7 @@ export function AuthCard({ children, title, subtitle, footer }: AuthCardProps) {
     <div className="auth-card">
       <div className="auth-card__header">
         <div className="auth-card__logo">
-          <span className="auth-card__logo-icon">🌾</span>
+          <LogoMark size={32} />
           <span className="auth-card__logo-text">Vayukrishi</span>
         </div>
         <h1 className="auth-card__title">{title}</h1>

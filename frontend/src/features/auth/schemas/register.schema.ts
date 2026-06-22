@@ -18,10 +18,10 @@ export const registerStep1Schema = z.object({
     .max(10, "validation.mobile_max")
     .regex(/^[6-9]\d{9}$/, "validation.mobile_invalid"),
   language: z.enum(["en", "mr", "hi", "gu", "ta", "kn"], {
-    errorMap: () => ({ message: "validation.language_required" }),
+    message: "validation.language_required",
   }),
   role: z.enum(["farmer", "consultant", "fpo_manager"], {
-    errorMap: () => ({ message: "validation.role_required" }),
+    message: "validation.role_required",
   }),
 });
 
@@ -40,7 +40,7 @@ export const registerStep2Schema = z.object({
 // Step 3 – Farm Info
 export const registerStep3Schema = z.object({
   landSizeAcres: z
-    .number({ invalid_type_error: "validation.land_size_number" })
+    .number({ message: "validation.land_size_number" })
     .min(0.1, "validation.land_size_min")
     .max(10000, "validation.land_size_max")
     .optional(),
