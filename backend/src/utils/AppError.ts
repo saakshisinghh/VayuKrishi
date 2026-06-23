@@ -18,3 +18,25 @@ export class AppError extends Error {
     Error.captureStackTrace(this, this.constructor);
   }
 }
+
+export class FileSizeError extends AppError {
+  constructor(message: string) { super(message, 413); }
+}
+export class FileTypeError extends AppError {
+  constructor(message: string) { super(message, 415); }
+}
+export class AuthenticationError extends AppError {
+  constructor(message: string = 'Authentication required') { super(message, 401); }
+}
+
+
+export class NotFoundError extends AppError {
+  constructor(message: string = 'Resource not found') { super(message, 404); }
+}
+export class AuthorizationError extends AppError {
+  constructor(message: string = 'You are not authorized') { super(message, 403); }
+}
+export class ValidationError extends AppError {
+  constructor(message: string) { super(message, 400); }
+}
+

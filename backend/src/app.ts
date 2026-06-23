@@ -24,6 +24,9 @@ import { generalLimiter } from './middleware/rate-limit.middleware';
 import { notFoundHandler, errorMiddleware } from './middleware/error.middleware';
 import { sendSuccess } from './shared/utils/api-response';
 import routes from './routes';
+import { initCloudinary } from './config/cloudinary';
+
+initCloudinary();
 
 export function createApp(): Application {
   const app = express();
