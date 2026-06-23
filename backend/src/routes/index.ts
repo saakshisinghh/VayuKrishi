@@ -11,10 +11,12 @@
 import { Router } from 'express';
 import authRoutes from '../modules/auth/routes/auth.routes';
 import userRoutes from '../modules/users/routes/user.routes';
+import farmRoutes from '../modules/farms/routes/farm.routes';
 
 const router = Router();
 
 router.use('/auth', authRoutes);
 router.use('/users', userRoutes);
+router.use('/farms', farmRoutes);  
 
 export default router;
