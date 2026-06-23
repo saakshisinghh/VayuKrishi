@@ -13,6 +13,7 @@ import authRoutes from '../modules/auth/routes/auth.routes';
 import userRoutes from '../modules/users/routes/user.routes';
 import farmRoutes from '../modules/farms/routes/farm.routes';
 import uploadRoutes from '../modules/uploads/routes/upload.routes'; 
+import cropRoutes from '../modules/crop-recommendation/routes/recommendation.routes';
 
 const router = Router();
 
@@ -20,6 +21,6 @@ router.use('/auth', authRoutes);
 router.use('/users', userRoutes);
 router.use('/farms', farmRoutes);
 router.use('/uploads', uploadRoutes);
-
+router.use('/crop', cropRoutes);
 
 export default router;
