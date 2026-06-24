@@ -15,6 +15,7 @@ import farmRoutes from '../modules/farms/routes/farm.routes';
 import uploadRoutes from '../modules/uploads/routes/upload.routes'; 
 import cropRoutes from '../modules/crop-recommendation/routes/recommendation.routes';
 import diseaseRoutes from '../modules/disease-detection/routes/disease.routes';
+import marketRoutes from "../modules/market/routes/market.routes";
 
 const router = Router();
 
@@ -24,5 +25,6 @@ router.use('/farms', farmRoutes);
 router.use('/uploads', uploadRoutes);
 router.use('/crop', cropRoutes);
 router.use('/disease', diseaseRoutes);
+router.use('/market', marketRoutes);
 
 export default router;

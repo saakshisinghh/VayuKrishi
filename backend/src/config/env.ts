@@ -39,6 +39,7 @@ const envSchema = z.object({
   RATE_LIMIT_MAX_REQUESTS: z.coerce.number().int().positive().default(100),
 
   LOG_LEVEL: z.string().default('info'),
+  MARKET_CACHE_TTL_SECONDS: z.coerce.number().int().positive().default(900),
 });
 
 type Env = z.infer<typeof envSchema>;

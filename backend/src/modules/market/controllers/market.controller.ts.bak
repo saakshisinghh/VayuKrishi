@@ -1,0 +1,94 @@
+import { Request, Response } from "express";
+import { marketService } from "../services/market.service";
+import { sendSuccess } from "../../../utils/apiResponse";
+import {
+  GetHistoryQuery,
+  GetPricesQuery,
+  GetTrendingQuery,
+  SyncMarketBody,
+} from "../validators/market.validator";
+
+export class MarketController {
+  /**
+   * GET /api/v1/market/prices
+   */
+  async getPrices(req: Request, res: Response): Promise<void> {
+    const { page, limit, commodity, state, district, market } =
+      req.query as unknown as GetPricesQuery;
+
+    const { records, meta } = await marketService.getPrices(
+      { commodity, state, district, market },
+      page,
+      limit
+    );
+
+    sendSuccess(res, 200, "Market prices fetched successfully", { records, meta });
+  }
+
+  /**
+   * GET /api/v1/market/prices/:id
+   */
+  async getPriceById(req: Request, res: Response): Promise<void> {
+    const { id } = req.params;
+    const record = await marketService.getPriceById(id);
+    sendSuccess(res, 200, "Market price record fetched successfully", record);
+  }
+
+  /**
+   * GET /api/v1/market/commodity/:name
+   */
+  async getCommodityData(req: Request, res: Response): Promise<void> {
+    const { name } = req.params;
+    const data = await marketService.getCommodityData(name);
+    sendSuccess(
+      res,
+      200,
+      `Market data for ${name} fetched successfully`,
+      data
+    );
+  }
+
+  /**
+   * GET /api/v1/market/history
+   */
+  async getPriceHistory(req: Request, res: Response): Promise<void> {
+    const { page, limit, commodity, state, district, startDate, endDate } =
+      req.query as unknown as GetHistoryQuery;
+
+    const { records, meta } = await marketService.getPriceHistory(
+      { commodity, state, district },
+      {
+        startDate: startDate ? new Date(startDate) : undefined,
+        endDate: endDate ? new Date(endDate) : undefined,
+      },
+      page,
+      limit
+    );
+
+    sendSuccess(res, 200, "Price history fetched successfully", { records, meta });
+  }
+
+  /**
+   * GET /api/v1/market/trending
+   */
+  async getTrending(req: Request, res: Response): Promise<void> {
+    const { limit, windowDays } = req.query as unknown as GetTrendingQuery;
+    const trending = await marketService.getTrendingCommodities(
+      limit,
+      windowDays
+    );
+    sendSuccess(res, 200, "Trending commodities fetched successfully", trending);
+  }
+
+  /**
+   * POST /api/v1/market/sync (admin only)
+   */
+  async syncMarketData(req: Request, res: Response): Promise<void> {
+    const { commodities, recordCount } = req.body as SyncMarketBody;
+    const result = await marketService.syncMarketData(commodities, recordCount);
+    sendSuccess(res, 201, "Market data synchronized successfully", result);
+  }
+}
+
+export const marketController = new MarketController();
+

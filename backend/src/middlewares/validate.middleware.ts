@@ -1,50 +1,31 @@
-import { Request, Response, NextFunction } from 'express';
-import { AnyZodObject, ZodError } from 'zod';
-import { sendError } from '../utils/response';
-import { HTTP_STATUS } from '../constants/httpStatus';
+import { Request, Response, NextFunction } from "express";
+import { ZodSchema, ZodError } from "zod";
 
-/**
- * Generic Zod validation middleware.
- *
- * Validates req.body, req.params, and req.query against the provided schema.
- * On failure it returns a 422 with the Zod error details.
- *
- * Usage:
- *   router.post('/', validate(createFarmSchema), controller.create)
- */
-export const validate =
-  (schema: AnyZodObject) =>
-  async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+type RequestPart = "body" | "query" | "params";
+
+export function validate(schema: ZodSchema, part: RequestPart = "body") {
+  return (req: Request, res: Response, next: NextFunction): void => {
     try {
-      const parsed = await schema.parseAsync({
-        body: req.body,
-        params: req.params,
-        query: req.query,
-      });
-
-      // Replace with parsed (and potentially transformed) values
-      req.body = parsed.body ?? req.body;
-      req.params = parsed.params ?? req.params;
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (req as any).query = parsed.query ?? req.query;
-
+      const parsed = schema.parse(req[part]);
+      (req as unknown as Record<RequestPart, unknown>)[part] = parsed;
       next();
     } catch (err) {
       if (err instanceof ZodError) {
-        const errors = err.errors.map((e) => ({
-          field: e.path.join('.'),
-          message: e.message,
-        }));
-
-        sendError(
-          res,
-          HTTP_STATUS.UNPROCESSABLE_ENTITY,
-          'Validation failed',
-          errors
-        );
+        const errors: Record<string, string[]> = {};
+        err.errors.forEach((e) => {
+          const key = e.path.join(".") || "value";
+          if (!errors[key]) errors[key] = [];
+          errors[key].push(e.message);
+        });
+        res.status(400).json({
+          success: false,
+          message: "Validation failed",
+          error: errors,
+          timestamp: new Date().toISOString(),
+        });
         return;
       }
-
       next(err);
     }
   };
+}
