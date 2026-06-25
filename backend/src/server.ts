@@ -14,11 +14,13 @@ import { logger } from './config/logger';
 import { connectDatabase, disconnectDatabase } from './config/database';
 import { connectRedis, disconnectRedis } from './config/redis';
 import { createApp } from './app';
+import { initializeJobs, shutdownJobs } from "./jobs";
 
 async function bootstrap(): Promise<void> {
   await connectDatabase();
   await connectRedis();
-
+ await initializeJobs();
+ 
   const app = createApp();
   const server = http.createServer(app);
 
@@ -35,6 +37,7 @@ async function bootstrap(): Promise<void> {
       logger.info('HTTP server closed');
 
       try {
+        await shutdownJobs();
         await disconnectDatabase();
         await disconnectRedis();
         process.exit(0);

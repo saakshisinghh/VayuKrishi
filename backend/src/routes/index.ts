@@ -17,6 +17,7 @@ import cropRoutes from '../modules/crop-recommendation/routes/recommendation.rou
 import diseaseRoutes from '../modules/disease-detection/routes/disease.routes';
 import marketRoutes from "../modules/market/routes/market.routes";
 import schemeRoutes from '../modules/schemes/routes/scheme.routes';
+import notificationRoutes from "../modules/notifications/routes/notification.routes";
 
 const router = Router();
 
@@ -28,5 +29,6 @@ router.use('/crop', cropRoutes);
 router.use('/disease', diseaseRoutes);
 router.use('/market', marketRoutes);
 router.use('/schemes', schemeRoutes);
+router.use('/notifications', notificationRoutes);
 
 export default router;
