@@ -53,7 +53,7 @@ export default async function OverviewPage() {
 
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24">
         {/* Page header */}
-        <DashboardHeader farmerName="Rajesh" />
+        <DashboardHeader  />
 
         {/* Dashboard content grid */}
         <Suspense fallback={<DashboardSkeleton />}>
