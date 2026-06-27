@@ -18,6 +18,8 @@ import diseaseRoutes from '../modules/disease-detection/routes/disease.routes';
 import marketRoutes from "../modules/market/routes/market.routes";
 import schemeRoutes from '../modules/schemes/routes/scheme.routes';
 import notificationRoutes from "../modules/notifications/routes/notification.routes";
+import analyticsRoutes from '../modules/analytics/routes/analytics.routes';
+ 
 
 const router = Router();
 
@@ -30,5 +32,6 @@ router.use('/disease', diseaseRoutes);
 router.use('/market', marketRoutes);
 router.use('/schemes', schemeRoutes);
 router.use('/notifications', notificationRoutes);
+router.use('/analytics', analyticsRoutes);
 
 export default router;
