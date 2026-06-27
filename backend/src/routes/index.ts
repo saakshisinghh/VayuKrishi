@@ -32,6 +32,6 @@ router.use('/disease', diseaseRoutes);
 router.use('/market', marketRoutes);
 router.use('/schemes', schemeRoutes);
 router.use('/notifications', notificationRoutes);
-router.use('/analytics', analyticsRoutes);
+router.use('/analytics/admin', analyticsRoutes);
 
 export default router;

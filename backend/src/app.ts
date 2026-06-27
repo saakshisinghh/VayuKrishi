@@ -26,6 +26,7 @@ import { sendSuccess } from './shared/utils/api-response';
 import routes from './routes';
 import { initCloudinary } from './config/cloudinary';
 import { analyticsRouter } from "./modules/analytics";
+import personalAnalyticsRoutes from "./modules/personal-analytics/routes/personal-analytics.routes";
 
 initCloudinary();
 
@@ -65,7 +66,8 @@ export function createApp(): Application {
 
   // ---------- Versioned API routes ----------
   app.use(env.API_PREFIX, routes);
-  app.use(`${env.API_PREFIX}/analytics`, analyticsRouter);
+  app.use(`${env.API_PREFIX}/analytics/admin`, analyticsRouter);
+  app.use(`${env.API_PREFIX}/analytics`, personalAnalyticsRoutes);
 
   // ---------- 404 + centralized error handling (must be last) ----------
   app.use(notFoundHandler);
