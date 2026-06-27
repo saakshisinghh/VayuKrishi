@@ -1,0 +1,106 @@
+{
+  "assistant": {
+    "hero": {
+      "title": "AI Farm Assistant",
+      "subtitle": "Ask anything about your farm, crops, or the market",
+      "aiBadge": "AI-Powered",
+      "memoryOn": "Memory On",
+      "memoryOff": "Memory Off",
+      "online": "Online",
+      "thinking": "Thinking...",
+      "messages": "Messages",
+      "sessions": "Sessions",
+      "crops": "Crops tracked"
+    },
+    "welcome": {
+      "title": "How can I help you today?",
+      "subtitle": "Ask me about crops, diseases, market prices, or government schemes"
+    },
+    "quickActions": {
+      "title": "Quick actions",
+      "whatToPlant": "What should I plant?",
+      "diseaseRisk": "Check disease risk",
+      "marketForecast": "Market forecast",
+      "farmPlan": "Generate farm plan",
+      "waterRecommendation": "Water recommendation",
+      "govtSchemes": "Government schemes"
+    },
+    "input": {
+      "text": "Text",
+      "voice": "Voice",
+      "upload": "Upload",
+      "placeholder": "Type your question...",
+      "hint": "Press Enter to send",
+      "send": "Send message",
+      "showActions": "Show quick actions",
+      "hideActions": "Hide quick actions"
+    },
+    "memory": {
+      "panelTitle": "Farmer Memory",
+      "active": "Active",
+      "farmSize": "Farm Size",
+      "soilType": "Soil Type",
+      "currentCrop": "Current Crop",
+      "language": "Language",
+      "insights": "Insights",
+      "sessions": "{count} sessions",
+      "noMemory": "No memory data available yet",
+      "lastCrop": "Last Crop",
+      "previousDisease": "Previous Disease",
+      "lastRecommendation": "Last Recommendation"
+    },
+    "context": {
+      "usedFor": "Context used for this response",
+      "farmLocation": "Farm location",
+      "soilType": "Soil type",
+      "previousCrop": "Previous crop",
+      "diseaseHistory": "Disease history",
+      "weatherData": "Weather data",
+      "marketData": "Market data"
+    },
+    "voice": {
+      "startRecording": "Start recording",
+      "stopRecording": "Stop recording",
+      "pauseRecording": "Pause recording",
+      "resumeRecording": "Resume recording",
+      "recording": "Recording...",
+      "paused": "Paused",
+      "transcribing": "Transcribing...",
+      "transcriptionFailed": "Transcription failed",
+      "uploadAudio": "Upload audio",
+      "dropAudio": "Drop audio file here",
+      "fileTooLarge": "File is too large. Maximum size is {max}MB",
+      "invalidFormat": "Invalid audio format"
+    },
+    "audio": {
+      "play": "Play",
+      "pause": "Pause",
+      "replay": "Replay",
+      "speed": "Playback speed"
+    },
+    "streaming": {
+      "generating": "Generating response...",
+      "cancel": "Cancel"
+    },
+    "errors": {
+      "assistantTitle": "Assistant unavailable",
+      "assistantDesc": "Something went wrong connecting to the assistant.",
+      "retry": "Retry",
+      "reconnect": "Reconnect",
+      "voiceTitle": "Voice input unavailable",
+      "voiceDesc": "We couldn't access your microphone.",
+      "voicePermission": "Microphone permission denied. Please allow access in your browser settings.",
+      "transcriptionTitle": "Transcription failed",
+      "transcriptionDesc": "We couldn't transcribe your audio. Please try again.",
+      "memoryTitle": "Memory unavailable",
+      "memoryDesc": "We couldn't load your farm memory right now."
+    },
+    "widget": {
+      "title": "Vayukrishi Assistant",
+      "askVayukrishi": "Ask Vayukrishi",
+      "openFull": "Open full assistant",
+      "close": "Close",
+      "placeholder": "Ask a quick question..."
+    }
+  }
+}
