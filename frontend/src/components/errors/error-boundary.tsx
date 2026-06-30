@@ -1,4 +1,5 @@
 "use client";
+import { FeatureError } from "@/components/errors/error-ui";
 
 import React, { Component, type ErrorInfo } from "react";
 import { logger } from "@/lib/monitoring/logger";

@@ -195,6 +195,53 @@ export class DiseaseService {
 
     await diseaseRepository.softDelete(id);
   }
+
+  // ─── GET /history/:id/download ───────────────────────────────────────────
+
+  async generateReportText(id: string, user: AuthUser): Promise<string> {
+    const report = await this.getDiseaseReportById(id, user);
+
+    const lines: string[] = [
+      'VAYUKRISHI — DISEASE DETECTION REPORT',
+      '======================================',
+      `Crop: ${report.cropName}`,
+      `Status: ${report.status}`,
+      `Date: ${report.createdAt.toISOString()}`,
+      '',
+    ];
+
+    if (report.analysis) {
+      lines.push(
+        `Disease: ${report.analysis.diseaseName}`,
+        `Confidence: ${report.analysis.confidence}%`,
+        `Severity: ${report.analysis.severity}`,
+        `Affected Area: ${report.analysis.affectedArea}%`,
+        `Cause: ${report.analysis.cause}`,
+        '',
+        'Treatment Plan:',
+        ...report.analysis.treatmentPlan.map(
+          (t) => `  ${t.step}. ${t.action} — ${t.product} (${t.quantity})`
+        ),
+        '',
+        'Preventive Measures:',
+        ...report.analysis.preventiveMeasures.map((p) => `  - ${p}`)
+      );
+    } else {
+      lines.push('Analysis not available.');
+    }
+
+    return lines.join('\n');
+  }
+
+  // ─── POST /history/:id/share ──────────────────────────────────────────────
+
+  async generateShareUrl(id: string, user: AuthUser): Promise<string> {
+    // Confirms access (throws NotFoundError/ForbiddenError if not owner/admin)
+    await this.getDiseaseReportById(id, user);
+
+    const clientUrl = process.env.CLIENT_URL ?? 'http://localhost:3000';
+    return `${clientUrl}/disease-detection/report/${id}`;
+  }
 }
 
 export const diseaseService = new DiseaseService();

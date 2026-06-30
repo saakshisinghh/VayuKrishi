@@ -60,4 +60,20 @@ router.delete(
   diseaseController.deleteReport.bind(diseaseController),
 );
 
+// GET    /history/:id/download — Download report as text file
+router.get(
+  '/history/:id/download',
+  authenticate,
+  validate(reportIdParamSchema),
+  diseaseController.download.bind(diseaseController),
+);
+
+// POST   /history/:id/share   — Generate shareable link
+router.post(
+  '/history/:id/share',
+  authenticate,
+  validate(reportIdParamSchema),
+  diseaseController.share.bind(diseaseController),
+);
+
 export default router;

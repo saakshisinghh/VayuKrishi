@@ -6,7 +6,6 @@ import {
   useQueryClient,
 } from "@tanstack/react-query";
 import { diseaseDetectionService } from "../services/disease-detection.service";
-import type { SaveReportRequest } from "../services/disease-detection.service";
 
 export const DISEASE_QUERY_KEYS = {
   all: ["disease-detection"] as const,
@@ -17,28 +16,34 @@ export const DISEASE_QUERY_KEYS = {
 
 // ─── Upload + Analyze (combined mutation) ───────────────────────────────────
 export function useDiseaseDetection() {
+  const queryClient = useQueryClient();
+
   const uploadMutation = useMutation({
-    mutationFn: (file: File) => diseaseDetectionService.uploadImage(file),
+    mutationFn: ({ file, farmId }: { file: File; farmId: string }) =>
+      diseaseDetectionService.uploadImage(file, farmId),
   });
 
   const analyzeMutation = useMutation({
     mutationFn: ({
-      uploadId,
-      options,
+      farmId,
+      mediaId,
+      cropName,
     }: {
-      uploadId: string;
-      options?: { cropType?: string; lat?: number; lng?: number };
-    }) => diseaseDetectionService.analyzeDisease(uploadId, options),
+      farmId: string;
+      mediaId: string;
+      cropName: string;
+    }) => diseaseDetectionService.analyzeDisease(farmId, mediaId, cropName),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: DISEASE_QUERY_KEYS.history() });
+    },
   });
 
-  const analyze = async (
-    file: File,
-    options?: { cropType?: string; lat?: number; lng?: number }
-  ) => {
-    const upload = await uploadMutation.mutateAsync(file);
+  const analyze = async (file: File, farmId: string, cropName: string) => {
+    const upload = await uploadMutation.mutateAsync({ file, farmId });
     const result = await analyzeMutation.mutateAsync({
-      uploadId: upload.uploadId,
-      options,
+      farmId,
+      mediaId: upload.mediaId,
+      cropName,
     });
     return { upload, result };
   };
@@ -61,7 +66,7 @@ export function useDiseaseDetection() {
 export function useDiseaseHistory(params?: {
   page?: number;
   limit?: number;
-  cropType?: string;
+  cropName?: string;
 }) {
   return useQuery({
     queryKey: DISEASE_QUERY_KEYS.history(params),
@@ -80,19 +85,6 @@ export function useDiseaseReport(reportId: string) {
   });
 }
 
-// ─── Save Report ─────────────────────────────────────────────────────────────
-export function useSaveDiseaseReport() {
-  const queryClient = useQueryClient();
-
-  return useMutation({
-    mutationFn: (payload: SaveReportRequest) =>
-      diseaseDetectionService.saveDiseaseReport(payload),
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: DISEASE_QUERY_KEYS.history() });
-    },
-  });
-}
-
 // ─── Download Report ─────────────────────────────────────────────────────────
 export function useDownloadReport() {
   return useMutation({
@@ -102,7 +94,7 @@ export function useDownloadReport() {
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
-      a.download = `disease-report-${reportId}.pdf`;
+      a.download = `disease-report-${reportId}.txt`;
       a.click();
       URL.revokeObjectURL(url);
     },
@@ -112,12 +104,7 @@ export function useDownloadReport() {
 // ─── Share Report ─────────────────────────────────────────────────────────────
 export function useShareReport() {
   return useMutation({
-    mutationFn: ({
-      reportId,
-      method,
-    }: {
-      reportId: string;
-      method: "whatsapp" | "sms" | "email";
-    }) => diseaseDetectionService.shareReport(reportId, method),
+    mutationFn: (reportId: string) =>
+      diseaseDetectionService.shareReport(reportId),
   });
 }

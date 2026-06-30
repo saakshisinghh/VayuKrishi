@@ -17,7 +17,6 @@ import { Button } from "@/components/ui/button";
 import {
   useDownloadReport,
   useShareReport,
-  useSaveDiseaseReport,
 } from "../queries/disease-detection.queries";
 import { useDiseaseDetectionStore } from "../store/disease-detection.store";
 
@@ -33,16 +32,15 @@ export function FarmerActionCenter({ reportId }: FarmerActionCenterProps) {
 
   const download = useDownloadReport();
   const share = useShareReport();
-  const save = useSaveDiseaseReport();
 
-  const handleSave = async () => {
-    if (savedToHistory) return;
-    await save.mutateAsync({ reportId });
+  const handleSave = () => {
+    // /disease/detect already saves the report on creation — there's no
+    // separate save step on the backend. This just reflects that state.
     setSaved(true);
   };
 
   const handleShare = async (method: "whatsapp" | "sms" | "email") => {
-    const res = await share.mutateAsync({ reportId, method });
+    const res = await share.mutateAsync(reportId);
     if (res.shareUrl) window.open(res.shareUrl, "_blank");
   };
 
@@ -102,11 +100,9 @@ export function FarmerActionCenter({ reportId }: FarmerActionCenterProps) {
             variant="outline"
             className="h-auto flex-col gap-2 py-4"
             onClick={handleSave}
-            disabled={save.isPending || savedToHistory}
+            disabled={savedToHistory}
           >
-            {save.isPending ? (
-              <Loader2 className="h-5 w-5 animate-spin" />
-            ) : savedToHistory ? (
+            {savedToHistory ? (
               <Check className="h-5 w-5 text-emerald-500" />
             ) : (
               <BookmarkPlus className="h-5 w-5 text-purple-600" />

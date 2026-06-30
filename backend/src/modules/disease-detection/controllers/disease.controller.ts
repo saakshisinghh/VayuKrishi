@@ -117,6 +117,38 @@ export class DiseaseController {
       errorResponse(res, message, detail, status);
     }
   }
+
+  // GET /api/v1/disease/history/:id/download
+  async download(req: Request, res: Response, _next: NextFunction): Promise<void> {
+    try {
+      const { id } = req.params;
+      const user = { ...req.user, _id: req.user?.userId, userId: req.user?.userId } as unknown as AuthUser;
+
+      const text = await diseaseService.generateReportText(id, user);
+
+      res.setHeader('Content-Type', 'text/plain');
+      res.setHeader('Content-Disposition', `attachment; filename="disease-report-${id}.txt"`);
+      res.send(text);
+    } catch (err) {
+      const { message, detail, status } = mapError(err);
+      errorResponse(res, message, detail, status);
+    }
+  }
+
+  // POST /api/v1/disease/history/:id/share
+  async share(req: Request, res: Response, _next: NextFunction): Promise<void> {
+    try {
+      const { id } = req.params;
+      const user = { ...req.user, _id: req.user?.userId, userId: req.user?.userId } as unknown as AuthUser;
+
+      const shareUrl = await diseaseService.generateShareUrl(id, user);
+
+      success(res, { shareUrl }, 'Share link generated successfully.');
+    } catch (err) {
+      const { message, detail, status } = mapError(err);
+      errorResponse(res, message, detail, status);
+    }
+  }
 }
 
 export const diseaseController = new DiseaseController();

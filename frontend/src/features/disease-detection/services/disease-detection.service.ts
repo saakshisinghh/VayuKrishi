@@ -1,81 +1,92 @@
 import { apiClient } from "@/lib/api/axios";
-import type { AnalysisResponse } from "../types/analysis.types";
 import type { DiseaseReport, DiseaseHistoryItem } from "../types/disease.types";
 
 export interface UploadImageResponse {
-  uploadId: string;
-  imageUrl: string;
-  thumbnailUrl: string;
-}
-
-export interface SaveReportRequest {
-  reportId: string;
-  notes?: string;
-  treated?: boolean;
+  mediaId: string;
+  url: string;
 }
 
 export const diseaseDetectionService = {
-  async uploadImage(file: File): Promise<UploadImageResponse> {
+  /**
+   * POST /uploads/image
+   * Generic media upload — used for disease photos, profile pics, etc.
+   * Returns the saved media document's _id (used as mediaId in detect()).
+   */
+  async uploadImage(file: File, farmId: string): Promise<UploadImageResponse> {
     const formData = new FormData();
     formData.append("image", file);
-    const { data } = await apiClient.post<UploadImageResponse>(
-      "/disease-detection/upload",
-      formData,
-      { headers: { "Content-Type": "multipart/form-data" } }
-    );
-    return data;
+    formData.append("farmId", farmId);
+    const { data } = await apiClient.post("/uploads/image", formData, {
+      headers: { "Content-Type": "multipart/form-data" },
+    });
+    return { mediaId: data.data._id, url: data.data.url };
   },
 
+  /**
+   * POST /disease/detect
+   * Single combined call: runs AI analysis on an already-uploaded image
+   * AND saves the resulting report — there is no separate save step.
+   */
   async analyzeDisease(
-    uploadId: string,
-    options?: { cropType?: string; lat?: number; lng?: number }
-  ): Promise<AnalysisResponse> {
-    const { data } = await apiClient.post<AnalysisResponse>(
-      "/disease-detection/analyze",
-      { uploadId, ...options }
-    );
-    return data;
+    farmId: string,
+    mediaId: string,
+    cropName: string
+  ): Promise<DiseaseReport> {
+    const { data } = await apiClient.post("/disease/detect", {
+      farmId,
+      mediaId,
+      cropName,
+    });
+    return data.data;
   },
 
+  /**
+   * GET /disease/history
+   */
   async getDiseaseHistory(params?: {
     page?: number;
     limit?: number;
-    cropType?: string;
+    cropName?: string;
   }): Promise<{ items: DiseaseHistoryItem[]; total: number; page: number }> {
-    const { data } = await apiClient.get("/disease-detection/history", { params });
-    return data;
+    const { data } = await apiClient.get("/disease/history", { params });
+    // Backend's PaginatedResult shape is { data: T[], meta: { total, page, ... } }
+    const result = data.data;
+    return {
+      items: result.data,
+      total: result.meta.total,
+      page: result.meta.page,
+    };
   },
 
+  /**
+   * GET /disease/history/:id
+   */
   async getDiseaseReport(reportId: string): Promise<DiseaseReport> {
-    const { data } = await apiClient.get<DiseaseReport>(
-      `/disease-detection/reports/${reportId}`
-    );
-    return data;
+    const { data } = await apiClient.get(`/disease/history/${reportId}`);
+    return data.data;
   },
 
-  async saveDiseaseReport(
-    payload: SaveReportRequest
-  ): Promise<{ success: boolean; savedId: string }> {
-    const { data } = await apiClient.post("/disease-detection/reports/save", payload);
-    return data;
-  },
-
+  /**
+   * GET /disease/history/:id/download
+   * Returns a plain-text report file (no PDF generation on the backend yet).
+   */
   async downloadReport(reportId: string): Promise<Blob> {
     const { data } = await apiClient.get(
-      `/disease-detection/reports/${reportId}/download`,
+      `/disease/history/${reportId}/download`,
       { responseType: "blob" }
     );
     return data;
   },
 
-  async shareReport(
-    reportId: string,
-    method: "whatsapp" | "sms" | "email"
-  ): Promise<{ shareUrl: string }> {
+  /**
+   * POST /disease/history/:id/share
+   * Returns a shareable link only — does not send via WhatsApp/SMS/email
+   * (no messaging integration on the backend yet).
+   */
+  async shareReport(reportId: string): Promise<{ shareUrl: string }> {
     const { data } = await apiClient.post(
-      `/disease-detection/reports/${reportId}/share`,
-      { method }
+      `/disease/history/${reportId}/share`
     );
-    return data;
+    return data.data;
   },
 };
