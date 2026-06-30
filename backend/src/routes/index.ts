@@ -19,7 +19,7 @@ import marketRoutes from "../modules/market/routes/market.routes";
 import schemeRoutes from '../modules/schemes/routes/scheme.routes';
 import notificationRoutes from "../modules/notifications/routes/notification.routes";
 import analyticsRoutes from '../modules/analytics/routes/analytics.routes';
- 
+import realtimeRoutes from '../modules/realtime/routes/realtime.routes';
 
 const router = Router();
 
@@ -33,5 +33,5 @@ router.use('/market', marketRoutes);
 router.use('/schemes', schemeRoutes);
 router.use('/notifications', notificationRoutes);
 router.use('/analytics/admin', analyticsRoutes);
-
+router.use('/realtime', realtimeRoutes);
 export default router;

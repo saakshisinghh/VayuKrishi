@@ -28,6 +28,7 @@ import { initCloudinary } from './config/cloudinary';
 import { analyticsRouter } from "./modules/analytics";
 import personalAnalyticsRoutes from "./modules/personal-analytics/routes/personal-analytics.routes";
 
+
 initCloudinary();
 
 export function createApp(): Application {

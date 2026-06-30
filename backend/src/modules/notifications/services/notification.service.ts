@@ -5,6 +5,7 @@ import { getChannelProvider } from "./channelProviders";
 import { notificationQueue } from "../../../jobs/queue";
 import { cacheClient, UNREAD_COUNT_PREFIX } from "../../../config/redis";
 import { ApiError } from "../../../shared/utils/api-error";
+import { emitNotificationCreated } from "../../../sockets/integrations/phase9-integration";
 import {
   CreateNotificationInput,
   NotificationFilters,
@@ -18,6 +19,36 @@ import {
 } from "../types/notification.types";
 import { NotificationDocument } from "../notification.model";
 import { PreferenceDocument } from "../preference.model";
+
+const VALID_SOCKET_TYPES = [
+  "info",
+  "warning",
+  "alert",
+  "disease_alert",
+  "market_update",
+  "scheme_alert",
+  "job_status",
+] as const;
+
+type SocketNotificationType = (typeof VALID_SOCKET_TYPES)[number];
+
+// Real mapping from Phase 9's NotificationType enum to Phase 11's socket
+// type strings — replaces the earlier "fallback to info" stopgap now that
+// the actual enum values are known.
+const NOTIFICATION_TYPE_TO_SOCKET_TYPE: Record<NotificationType, SocketNotificationType> = {
+  [NotificationType.MARKET_ALERT]: "market_update",
+  [NotificationType.DISEASE_ALERT]: "disease_alert",
+  [NotificationType.SCHEME_ALERT]: "scheme_alert",
+  [NotificationType.WEATHER_ALERT]: "warning",
+  [NotificationType.FARM_REMINDER]: "info",
+  [NotificationType.SYSTEM]: "info",
+};
+
+function toSocketNotificationType(
+  type: NotificationType
+): SocketNotificationType {
+  return NOTIFICATION_TYPE_TO_SOCKET_TYPE[type] ?? "info";
+}
 
 export class NotificationService {
   /**
@@ -151,6 +182,15 @@ export class NotificationService {
         status: NotificationStatus.DELIVERED,
         "metadata.deliveryAttempts": attempts,
       });
+
+      await emitNotificationCreated(notification.userId.toString(), {
+        _id: notification._id.toString(),
+        title: notification.title,
+        message: notification.message,
+        type: toSocketNotificationType(notification.type),
+        priority: notification.priority,
+      });
+
       return;
     }
 

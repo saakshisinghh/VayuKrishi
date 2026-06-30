@@ -8,6 +8,7 @@ import {
   NotificationPriority,
   NotificationChannel,
 } from "../modules/notifications/types/notification.types";
+import { emitMarketPriceUpdate } from "../sockets/integrations/phase9-integration";
 
 /**
  * market-sync.job.ts — runs every 6 hours (see JOB_SCHEDULES.MARKET_SYNC).
@@ -154,6 +155,17 @@ export const runMarketSync = async (): Promise<{
 
   for (const pair of pairs) {
     const change = percentChange(pair.previousPrice, pair.currentPrice);
+
+    // Live price tick — sent for every commodity+market pair regardless
+    // of whether it crosses the alert threshold below. Subscribers in
+    // commodity:{name} rooms get this on every sync run.
+    emitMarketPriceUpdate({
+      commodity: pair.commodity,
+      state: pair.state,
+      market: pair.market,
+      pricePerQuintal: pair.currentPrice,
+      previousPrice: pair.previousPrice,
+    });
 
     if (Math.abs(change) < SIGNIFICANT_CHANGE_THRESHOLD_PERCENT) continue;
 

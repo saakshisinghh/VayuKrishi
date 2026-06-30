@@ -15,6 +15,8 @@ import { connectDatabase, disconnectDatabase } from './config/database';
 import { connectRedis, disconnectRedis } from './config/redis';
 import { createApp } from './app';
 import { initializeJobs, shutdownJobs } from "./jobs";
+import { initializeSocketServer } from './sockets';
+import { realtimeRouter } from './modules/realtime';
 
 async function bootstrap(): Promise<void> {
   await connectDatabase();
@@ -23,6 +25,8 @@ async function bootstrap(): Promise<void> {
  
   const app = createApp();
   const server = http.createServer(app);
+  await initializeSocketServer(server);
+app.use(`${env.API_PREFIX}/realtime`, realtimeRouter);
 
   server.listen(env.PORT, () => {
     logger.info(`🚀 Vayukrishi API running on port ${env.PORT} [${env.NODE_ENV}]`);

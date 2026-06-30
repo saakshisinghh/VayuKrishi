@@ -8,6 +8,7 @@ import {
   NotificationPriority,
   NotificationChannel,
 } from "../modules/notifications/types/notification.types";
+import { emitDiseaseAlert } from "../sockets/integrations/phase9-integration";
 
 /**
  * disease-risk.job.ts — runs daily (see JOB_SCHEDULES.DISEASE_RISK).
@@ -27,15 +28,21 @@ import {
  * IMPORTANT — schema note:
  * The real DiseaseReport schema (Phase 6) does NOT store district or
  * diseaseName directly:
- *  - district lives on the related Farm document (location.district),
- *    reached via DiseaseReport.farmId — so this job joins through farmId.
+ *  - district/state live on the related Farm document
+ *    (location.district / location.state), reached via
+ *    DiseaseReport.farmId — so this job joins through farmId.
  *  - diseaseName lives nested under `analysis.diseaseName`, and
  *    `analysis` is null until the AI pipeline finishes (status must be
  *    "completed"); reports without a finished analysis are skipped.
  *  - cropName *is* a direct field on DiseaseReport, so that part of the
  *    original assumption was correct.
  * Farm (Phase 3) tracks the crop as `currentCrop`, not `cropName`, and
- * district under `location.district`, not a top-level field.
+ * district/state under `location.district` / `location.state`, not
+ * top-level fields. Confirmed: Farm.location.state exists.
+ *
+ * PHASE 11 NOTE: emitDiseaseAlert() broadcasts to a `state:{name}`
+ * socket room, so clusters now track state (joined from Farm) alongside
+ * district for the per-user notification copy.
  */
 
 const DISEASE_REPORT_MODEL_NAME = "DiseaseReport";
@@ -58,7 +65,7 @@ interface FarmShape {
   _id: Types.ObjectId;
   userId: Types.ObjectId;
   currentCrop: string;
-  location: { district: string };
+  location: { district: string; state: string };
 }
 
 const getDiseaseReportModel = (): Model<DiseaseReportShape> => {
@@ -85,6 +92,7 @@ const getFarmModel = (): Model<FarmShape> => {
 
 interface Cluster {
   district: string;
+  state: string;
   cropName: string;
   diseaseName: string;
   reportCount: number;
@@ -109,12 +117,12 @@ export const runDiseaseRiskAnalysis = async (): Promise<{
     .lean<DiseaseReportShape[]>()
     .exec();
 
-  // district lives on Farm, not DiseaseReport — join through farmId.
+  // district/state live on Farm, not DiseaseReport — join through farmId.
   const farmIds = [...new Set(reports.map((r) => r.farmId.toString()))];
   const farmsById = new Map<string, FarmShape>();
   if (farmIds.length > 0) {
     const farmDocs = await Farm.find({ _id: { $in: farmIds } })
-      .select("userId currentCrop location.district")
+      .select("userId currentCrop location.district location.state")
       .lean<FarmShape[]>()
       .exec();
     for (const farm of farmDocs) {
@@ -122,30 +130,36 @@ export const runDiseaseRiskAnalysis = async (): Promise<{
     }
   }
 
-  // Group by (district, cropName, diseaseName)
-  const groups = new Map<string, DiseaseReportShape[]>();
+  // Group by (district, cropName, diseaseName) — state is carried along
+  // since it's 1:1 with district for any given farm in this dataset.
+  const groups = new Map<
+    string,
+    { reports: DiseaseReportShape[]; state: string }
+  >();
   for (const report of reports) {
     const farm = farmsById.get(report.farmId.toString());
     const district = farm?.location?.district;
+    const state = farm?.location?.state;
     const diseaseName = report.analysis?.diseaseName;
 
-    if (!district || !diseaseName) continue; // can't place this report geographically
+    if (!district || !state || !diseaseName) continue; // can't place this report geographically
 
     const key = `${district}::${report.cropName}::${diseaseName}`;
-    const bucket = groups.get(key) ?? [];
-    bucket.push(report);
+    const bucket = groups.get(key) ?? { reports: [], state };
+    bucket.reports.push(report);
     groups.set(key, bucket);
   }
 
   const clusters: Cluster[] = [];
   for (const [key, bucket] of groups.entries()) {
-    if (bucket.length < CLUSTER_THRESHOLD) continue;
+    if (bucket.reports.length < CLUSTER_THRESHOLD) continue;
     const [district, cropName, diseaseName] = key.split("::");
     clusters.push({
       district,
+      state: bucket.state,
       cropName,
       diseaseName,
-      reportCount: bucket.length,
+      reportCount: bucket.reports.length,
     });
   }
 
@@ -171,6 +185,17 @@ export const runDiseaseRiskAnalysis = async (): Promise<{
     const riskLevel =
       cluster.reportCount >= CLUSTER_THRESHOLD * 2 ? "high" : "elevated";
 
+    // Broadcast to the state room and role:admin, regardless of whether
+    // any individual farmer matched above — this is the live/admin
+    // visibility alert, separate from the per-user notification below.
+    emitDiseaseAlert({
+      state: cluster.state,
+      diseaseName: cluster.diseaseName,
+      affectedCrops: [cluster.cropName],
+      riskLevel: riskLevel === "high" ? "high" : "medium",
+      message: `${cluster.reportCount} cases of ${cluster.diseaseName} reported on ${cluster.cropName} crops near ${cluster.district} in the last ${LOOKBACK_DAYS} days.`,
+    });
+
     const inputs = uniqueUserIds.map((userId) => ({
       userId,
       title: `Disease risk warning: ${cluster.diseaseName} in ${cluster.district}`,
@@ -185,6 +210,7 @@ export const runDiseaseRiskAnalysis = async (): Promise<{
         diseaseName: cluster.diseaseName,
         cropName: cluster.cropName,
         district: cluster.district,
+        state: cluster.state,
         affectedRadius: CLUSTER_RADIUS_LABEL_KM,
         riskLevel,
       },

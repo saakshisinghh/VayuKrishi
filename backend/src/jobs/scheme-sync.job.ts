@@ -8,6 +8,7 @@ import {
   NotificationPriority,
   NotificationChannel,
 } from "../modules/notifications/types/notification.types";
+import { emitSchemeAlert } from "../sockets/integrations/phase9-integration";
 
 /**
  * scheme-sync.job.ts — runs daily (see JOB_SCHEDULES.SCHEME_SYNC).
@@ -40,6 +41,12 @@ import {
  * are intentionally NOT checked here — Farm has no farmer-profile data
  * to evaluate them against. Matching is limited to state, crop type,
  * and land size, which Farm can actually answer.
+ *
+ * PHASE 11 NOTE: emitSchemeAlert() broadcasts to a `state:{name}` socket
+ * room. A scheme can target multiple states (eligibilityCriteria.states)
+ * or "All" — the broadcast loop below fires once per resolved state so
+ * each relevant room gets the alert, rather than trying to cram multiple
+ * states into a single emit call.
  */
 
 const SCHEME_MODEL_NAME = "Scheme";
@@ -199,6 +206,25 @@ export const runSchemeSync = async (): Promise<{
     const uniqueUserIds = [
       ...new Set(eligibleFarms.map((f) => f.userId.toString())),
     ];
+
+    // Broadcast to every state room this scheme targets, regardless of
+    // whether any Farm record currently matches above — this is the
+    // live/state-wide visibility alert, separate from the per-user
+    // notification created below for confirmed-eligible farmers.
+    const broadcastStates =
+      allowedStates.length > 0 ? allowedStates : ["all"];
+    for (const state of broadcastStates) {
+      emitSchemeAlert({
+        state,
+        schemeTitle: scheme.schemeName,
+        schemeId: scheme._id.toString(),
+        message: scheme.endDate
+          ? `New scheme "${scheme.schemeName}" available. Apply before ${new Date(
+              scheme.endDate
+            ).toLocaleDateString("en-IN")}.`
+          : `New scheme "${scheme.schemeName}" available. Check the scheme page for details.`,
+      });
+    }
 
     if (uniqueUserIds.length > 0) {
       const inputs = uniqueUserIds.map((userId) => ({

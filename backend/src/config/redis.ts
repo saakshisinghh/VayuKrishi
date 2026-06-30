@@ -10,6 +10,11 @@ import { logger } from './logger';
  *  - Refresh token storage / session management (Phase 2)
  *  - BullMQ queues / workers + notification caching (Phase 9)
  *  - Future rate-limiting / pub-sub use cases
+ *  - Phase 11 real-time layer (presence tracking + socket.io Redis adapter),
+ *    which use the `redis` package (not ioredis) and expect a connection
+ *    URL string rather than discrete host/port/password options — hence
+ *    buildRedisUrl() below, which derives that URL from the same env vars
+ *    everything else in this file already uses.
  *
  * NOTE ON TLS:
  * Whether a managed Redis host needs TLS depends entirely on the provider
@@ -33,6 +38,20 @@ const baseRedisOptions = {
   password: env.REDIS_PASSWORD || undefined,
   db: env.REDIS_DB,
   ...(useTLS ? { tls: { servername: env.REDIS_HOST } } : {}),
+};
+
+/**
+ * Builds a redis:// or rediss:// connection URL from the same
+ * REDIS_HOST / REDIS_PORT / REDIS_PASSWORD / REDIS_TLS env vars used
+ * everywhere else in this file. Used by Phase 11's presence tracking
+ * (connection.service.ts) and the socket.io Redis adapter
+ * (socket-server.ts), both of which use the `redis` package's
+ * createClient({ url }) API instead of ioredis's discrete options.
+ */
+export const buildRedisUrl = (): string => {
+  const protocol = useTLS ? 'rediss' : 'redis';
+  const auth = env.REDIS_PASSWORD ? `:${env.REDIS_PASSWORD}@` : '';
+  return `${protocol}://${auth}${env.REDIS_HOST}:${env.REDIS_PORT}`;
 };
 
 // ─── App-wide client (caching, sessions, rate limiting) ───────────────────────
