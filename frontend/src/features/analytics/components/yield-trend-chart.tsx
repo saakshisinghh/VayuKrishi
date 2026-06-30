@@ -53,7 +53,14 @@ function YieldTrendChartBase() {
           />
           <Tooltip
             cursor={{ fill: "hsl(var(--muted)/0.3)" }}
-            formatter={(value: number) => [`${value} quintals`, t("yield")]}
+          formatter={(value): [string, string] => {
+  const num = Number(value);
+
+  return [
+    Number.isFinite(num) ? `${num} quintals` : "-",
+    t("yield"),
+  ];
+}}
             contentStyle={{
               background: "hsl(var(--card))",
               border: "1px solid hsl(var(--border))",

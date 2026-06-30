@@ -89,14 +89,16 @@ export function PriceForecastChart({ forecast, period }: PriceForecastChartProps
               borderRadius: "8px",
               fontSize: 12,
             }}
-            formatter={(value: number, name: string) => {
+            formatter={(value, name): [string, string] => {
+              const num = Number(value);
               const labels: Record<string, string> = {
                 historicalPrice: t("historical"),
                 predictedPrice: t("predicted"),
                 upperBound: t("upperBound"),
                 lowerBound: t("lowerBound"),
               };
-              return [`₹${value?.toFixed(2)}`, labels[name] ?? name];
+              const key = String(name);
+              return [Number.isFinite(num) ? `₹${num.toFixed(2)}` : "-", labels[key] ?? key];
             }}
           />
           <ReferenceLine x={format(parseISO(today), "dd MMM")} stroke="#f59e0b" strokeDasharray="4 2" label={{ value: t("today"), fontSize: 10, fill: "#f59e0b" }} />
@@ -154,7 +156,13 @@ export function DemandTrendChart({ insights }: DemandTrendChartProps) {
           <CartesianGrid strokeDasharray="3 3" stroke="currentColor" strokeOpacity={0.05} />
           <XAxis dataKey="label" tick={{ fontSize: 10 }} tickLine={false} axisLine={false} />
           <YAxis tick={{ fontSize: 10 }} tickLine={false} axisLine={false} domain={[0, 100]} />
-          <Tooltip contentStyle={{ borderRadius: 8, fontSize: 12 }} formatter={(v: number) => [`${v}/100`, t("demandScore")]} />
+          <Tooltip
+            contentStyle={{ borderRadius: 8, fontSize: 12 }}
+            formatter={(v): [string, string] => {
+              const num = Number(v);
+              return [Number.isFinite(num) ? `${num}/100` : "-", t("demandScore")];
+            }}
+          />
           <Area type="monotone" dataKey="score" stroke="#2563eb" strokeWidth={2} fill="url(#demandGrad)" dot={false} />
         </AreaChart>
       </ResponsiveContainer>

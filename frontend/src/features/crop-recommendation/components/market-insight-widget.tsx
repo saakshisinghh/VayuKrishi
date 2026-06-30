@@ -126,7 +126,14 @@ function MarketCard({ crop }: { crop: CropRecommendation }) {
                   border: 'none',
                   boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
                 }}
-                formatter={(val: number) => [`₹${val.toLocaleString('en-IN')}`, t('price')]}
+                formatter={(val): [string, string] => {
+  const num = Number(val);
+
+  return [
+    Number.isFinite(num) ? `₹${num.toLocaleString("en-IN")}` : "-",
+    t("price"),
+  ];
+}}
               />
               <Line
                 type="monotone"
