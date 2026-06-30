@@ -71,6 +71,13 @@ export const useMarketStore = create<MarketStore>()(
 
       clearComparisonCrops: () => set({ comparisonCrops: [] }),
     }),
-    { name: "market-store", partialState: ["selectedCrop", "selectedRegion", "forecastPeriod"] }
+    {
+      name: "market-store",
+      partialize: (state) => ({
+        selectedCrop: state.selectedCrop,
+        selectedRegion: state.selectedRegion,
+        forecastPeriod: state.forecastPeriod,
+      }),
+    }
   )
 );
