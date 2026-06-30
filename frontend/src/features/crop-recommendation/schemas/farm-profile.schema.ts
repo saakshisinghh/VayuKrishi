@@ -13,38 +13,38 @@ export const locationSchema = z.object({
 // ─── Step 2: Land Details ─────────────────────────────────────────────────────
 export const landDetailsSchema = z.object({
   size: z
-    .number({ invalid_type_error: 'validation.size_required' })
+    .number({ error: 'validation.size_required' })
     .positive('validation.size_positive')
     .max(10000, 'validation.size_max'),
   unit: z.enum(['acres', 'hectares', 'bigha', 'guntha'], {
-    errorMap: () => ({ message: 'validation.unit_required' }),
+    error: 'validation.unit_required',
   }),
   ownershipType: z.enum(['owned', 'leased', 'shared'], {
-    errorMap: () => ({ message: 'validation.ownership_required' }),
+    error: 'validation.ownership_required',
   }),
 });
 
 // ─── Step 3: Soil Information ─────────────────────────────────────────────────
 export const soilInformationSchema = z.object({
   soilType: z.enum(['black', 'red', 'alluvial', 'sandy', 'loamy', 'clay', 'laterite'], {
-    errorMap: () => ({ message: 'validation.soil_type_required' }),
+    error: 'validation.soil_type_required',
   }),
   phValue: z
-    .number({ invalid_type_error: 'validation.ph_required' })
+    .number({ error: 'validation.ph_required' })
     .min(0, 'validation.ph_min')
     .max(14, 'validation.ph_max'),
   organicMatter: z.enum(['low', 'medium', 'high'], {
-    errorMap: () => ({ message: 'validation.organic_matter_required' }),
+    error: 'validation.organic_matter_required',
   }),
 });
 
 // ─── Step 4: Water Availability ───────────────────────────────────────────────
 export const waterInfoSchema = z.object({
   irrigationSource: z.enum(['canal', 'borewell', 'rainwater', 'river', 'tank', 'drip'], {
-    errorMap: () => ({ message: 'validation.irrigation_required' }),
+    error: 'validation.irrigation_required',
   }),
   waterAvailability: z.enum(['abundant', 'moderate', 'scarce'], {
-    errorMap: () => ({ message: 'validation.water_availability_required' }),
+    error: 'validation.water_availability_required',
   }),
   rainDependency: z.boolean(),
 });
