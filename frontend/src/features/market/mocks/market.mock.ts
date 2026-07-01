@@ -243,7 +243,6 @@ export function mockGetCropComparison(cropIds: string[]): CropComparisonData {
   const deduped = Array.from(new Set(cropIds));
   const selected = deduped.length > 0 ? deduped : CROPS.slice(0, 3).map((c) => c.id);
   const crops = selected.map((id, i) => {
-    // Fall back to a crop not already used, to guarantee unique cropId/key values
     const usedIds = new Set(selected.slice(0, i));
     const crop =
       CROPS.find((c) => c.id === id) ??
@@ -262,8 +261,8 @@ export function mockGetCropComparison(cropIds: string[]): CropComparisonData {
       demandScore: 60 + i * 8,
       riskScore: 20 + i * 5,
       profitPotential: 65 + i * 6,
-      trend: i % 2 === 0 ? "up" : "stable",
-      recommendation: i === 0 ? "sell" : i === 1 ? "hold" : "buy",
+      trend: (i % 2 === 0 ? "up" : "stable") as "up" | "down" | "stable",
+      recommendation: (i === 0 ? "sell" : i === 1 ? "hold" : "buy") as "sell" | "hold" | "buy",
       chartData: Array.from({ length: 7 }, (_, d) => ({
         date: new Date(Date.now() - (6 - d) * 86400000).toISOString().split("T")[0],
         price: Math.round(base * (0.97 + d * 0.01)),
