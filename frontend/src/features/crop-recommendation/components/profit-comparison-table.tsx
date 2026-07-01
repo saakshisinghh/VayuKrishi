@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
-import { TrendingUp, IndianRupee, ShieldCheck, Award } from 'lucide-react';
+import { IndianRupee, Award } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import type { CropProfitMetrics } from '../types/profit.types';
 
@@ -50,20 +50,11 @@ export function ProfitComparisonTable({ crops, bestCropId }: ProfitComparisonTab
     }).format(amount);
 
   const ROWS = [
-    { key: 'inputCost', label: t('rows.cost'), format: fmt },
-    { key: 'revenue', label: t('rows.revenue'), format: fmt },
-    { key: 'profit', label: t('rows.profit'), format: fmt, highlight: true },
-    {
-      key: 'roi',
-      label: t('rows.roi'),
-      format: (v: number) => `${v}%`,
-    },
-    {
-      key: 'riskLevel',
-      label: t('rows.risk'),
-      format: null,
-      isRisk: true,
-    },
+    { key: 'inputCost', label: t('rows.cost'), format: fmt, highlight: false, isRisk: false },
+    { key: 'revenue', label: t('rows.revenue'), format: fmt, highlight: false, isRisk: false },
+    { key: 'profit', label: t('rows.profit'), format: fmt, highlight: true, isRisk: false },
+    { key: 'roi', label: t('rows.roi'), format: (v: number) => `${v}%`, highlight: false, isRisk: false },
+    { key: 'riskLevel', label: t('rows.risk'), format: null, highlight: false, isRisk: true },
   ] as const;
 
   return (
@@ -147,7 +138,7 @@ export function ProfitComparisonTable({ crops, bestCropId }: ProfitComparisonTab
                       </div>
                     ) : row.format ? (
                       <span className="text-sm font-medium text-gray-800 dark:text-white">
-                        {row.format((crop as any)[row.key])}
+                        {row.format((crop as unknown as Record<string, number>)[row.key])}
                       </span>
                     ) : null}
                   </td>
