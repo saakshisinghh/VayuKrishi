@@ -1,5 +1,5 @@
 "use client";
-
+import Image from 'next/image';
 import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -68,7 +68,7 @@ export function PersonalDetails() {
             aria-label={t("avatar")}
           >
             {profile?.avatarUrl ? (
-              <img src={profile.avatarUrl} alt={profile.name} className="w-full h-full object-cover" />
+              <Image src={profile.avatarUrl} alt={profile.name} fill className="object-cover" />
             ) : (
               <User className="w-8 h-8 text-muted-foreground" aria-hidden="true" />
             )}
@@ -93,7 +93,7 @@ export function PersonalDetails() {
             [
               { field: "name", label: t("name"), type: "text", required: true },
               { field: "phone", label: t("phone"), type: "tel", required: true },
-              { field: "email", label: t("email"), type: "email" },
+              { field: "email", label: t("email"), type: "email", required: false },
               { field: "village", label: t("village"), type: "text", required: true },
               { field: "district", label: t("district"), type: "text", required: true },
               { field: "state", label: t("state"), type: "text", required: true },
