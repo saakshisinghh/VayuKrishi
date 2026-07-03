@@ -74,7 +74,7 @@ export function DiseaseUploadCard({
       accept: { "image/*": [".jpg", ".jpeg", ".png", ".webp"] },
       multiple: false,
       disabled: isLoading || validating,
-      onDrop: async ([accepted], [rejected]) => {
+      onDrop: async ([accepted], rejected) => {
         if (rejected?.length) {
           setDragError(t("upload.errors.fileType"));
           return;
