@@ -9,7 +9,7 @@ interface UseIntersectionOptions {
 
 export function useIntersection<T extends Element = HTMLDivElement>(
   options: UseIntersectionOptions = {}
-): { ref: React.RefObject<T>; isVisible: boolean } {
+): { ref: React.RefObject<T | null>; isVisible: boolean } {
   const { threshold = 0.1, rootMargin = "0px", once = true } = options;
   const ref = useRef<T>(null);
   const [isVisible, setIsVisible] = useState(false);
