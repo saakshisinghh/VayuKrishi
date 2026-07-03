@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
 import { useState, useCallback } from 'react';
 import { useForm, FormProvider } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import {
   MapPin,
@@ -400,7 +401,7 @@ export function FarmProfileWizard({ onSubmit, isLoading }: FarmProfileWizardProp
                                 min={0}
                                 max={14}
                                 step={0.1}
-                                value={[field.value]}
+                                value={Array.isArray(field.value) ? [...field.value] : [field.value]}
                                 onValueChange={([val]) => field.onChange(val)}
                                 aria-label={t('soil.ph')}
                                 aria-valuemin={0}
